@@ -3,7 +3,7 @@ package com.course.testng;
 import org.testng.annotations.*;
 
 /**
- *    重点关注他们之间的执行顺序
+ *  基本注解。====>重点关注他们之间的执行顺序
  */
 
 public class BasicAnnotation {
