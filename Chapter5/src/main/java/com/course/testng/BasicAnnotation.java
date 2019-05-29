@@ -11,11 +11,13 @@ public class BasicAnnotation {
     @Test   //最基本的注解，把方法标记为测试的一部分。
     public void testCase1(){
         System.out.println("Test这是测试用例1");
+        System.out.printf("Thread Id：%s%n",Thread.currentThread().getId());
     }
 
     @Test
     public void testCase2(){
         System.out.println("Test这是测试用例2");
+        System.out.printf("Thread Id：%s%n",Thread.currentThread().getId());
     }
 
     //在每一个测试用例前后都会执行一次
