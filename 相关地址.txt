@@ -1,0 +1,11 @@
+1、第6章监听器源码地址：https://testerhome.com/topics/8134?locale=zh-TW
+2、测试报告ExtentReports：http://extentreports.com/
+3、moco框架地址：https://repo1.maven.org/maven2/com/github/dreamhead/moco-runner/0.11.0/（选择最大的那个，含standalone的jar包）
+    3.1、解决moco模拟请求返回中文乱码问题:
+            在response中添加设置编码格式为“GBK”，
+            "response":{
+                  "text":"第一个moco框架demo",
+                  "headers":{
+                    "Content-Type":"text/html;charset=gbk"
+                  }
+                }
