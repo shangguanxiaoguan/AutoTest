@@ -1,5 +1,32 @@
 [
   {
-    "description":""
+    "description":"模拟一个不带参数的get请求",
+    "request": {
+      "uri": "/getdemo",
+      "method": "get"
+    },
+    "response": {
+      "text": "这是一个没有参数的get请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "模拟一个带参数的get请求",
+    "request": {
+      "uri": "/getwithparam",
+      "method": "get",
+      "queries": {
+        "name": "刘胡兰",
+        "age": "29"
+      }
+    },
+    "response": {
+      "text": "这是一个带参数的get请求",
+      "headers": {
+        "Content-Type": "text/html;Charset=gbk"
+      }
+    }
   }
 ]
