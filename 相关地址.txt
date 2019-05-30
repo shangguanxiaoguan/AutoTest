@@ -10,7 +10,8 @@
                   }
                 }
     3.2、注意带参数的get请求和post请求参数前面的字段，get是"queries"，post是"forms"
-4、http协议信息头字段含义：
+4、http协议接口：
+  4.1、请求头信息字段含义：
     Accept:浏览器告诉服务器它所支持的数据类型；
     Accept-Charset:浏览器告诉服务器它所采用的字符集；
     Accept-Encoding:浏览器告诉服务器它所支持的压缩格式；
@@ -20,3 +21,23 @@
     Referer:浏览器是从哪个网页点过来的（防盗链）；
     User-Agent:浏览器所使用的浏览器类型、版本等信息；
     Date:浏览器什么时间访问的。
+  4.2、响应头信息字段含义：
+    Location:告诉浏览器去找谁，配合302状态码使用；
+    Server:告诉浏览器服务器的类型；
+    Content-Encoding:告诉浏览器，服务器回送数据采用的压缩格式；
+    Content-Type：服务器回送的数据类型；
+    Last-Modified：数据的最后修改时间；
+    Refresh：用于控制浏览器定时刷新；
+    Content-Disposition:告诉浏览器需要以下载方式打开回送的数据；
+    Transfer-Encoding:告诉浏览器数据是以分块形式回送的。
+  4.3、Cookie与Session的区别点：
+    (1)、cookie在客户端的头信息中；
+    (2)、session在服务端存储，文件、数据库等都可以；
+    (3)、一般来说，session的验证需要cookie带一个字段来表示这个是哪一个session；
+    (4)、所以当客户端禁用cookie时，session将失效
+  4.4、Cookie的总结：
+     (1)、cookie就是一小段文本信息，内容是自定义的；
+     (2)、cookie的格式为key:value；key:value；（测试时，要清楚每个key和value的意思，怎么生成的）
+     (3)cookie的值由服务端生成，客户端保存。
+5、HTTPClient官网地址:hc.apache.org
+
