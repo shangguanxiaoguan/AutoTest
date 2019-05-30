@@ -1,0 +1,47 @@
+[
+  {
+    "description":"使用期权的查询建仓平仓策略接口练习",
+    "request":{
+      "uri":"/etfStrategy/list",
+      "method":"get",
+      "cookies":{
+        "mobile":"15615999092",
+        "userId":"1067313",
+        "token":"SG-15615999092-VLaxciEZSvqpgP4tWOOcYXfpQFPeVGWw3PK"
+      }
+    },
+    "response":{
+      "json":{
+        "flag": true,
+        "timeout": false,
+        "code": 0,
+        "msg": "获取策略列表成功",
+        "data": [
+          {
+            "id":"5",
+            "etfCode":"10001647",
+            "etfName":"50ETF购2月2100",
+            "riseFall":"2",
+            "riseFallMsg":"看跌",
+            "entrustPrice":"0.2465",
+            "buyAmount":"0",
+            "serviceFee":"25",
+            "buyDealPrice":"0",
+            "margin":"null",
+            "entrustTime":"2019-01-17 13:35:58",
+            "clearType":"1",
+            "clearTypeName":"委托卖出",
+            "strategyType":"1",
+            "strategyEntrustType":"2",
+            "exercisePrice":"0",
+            "userId":"1010507",
+            "entrustCount":"1",
+            "nowPrice":"0.2222"
+          }
+        ]
+      }
+    }
+  }
+]
+
+

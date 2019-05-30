@@ -9,3 +9,14 @@
                     "Content-Type":"text/html;charset=gbk"
                   }
                 }
+    3.2、注意带参数的get请求和post请求参数前面的字段，get是"queries"，post是"forms"
+4、http协议信息头字段含义：
+    Accept:浏览器告诉服务器它所支持的数据类型；
+    Accept-Charset:浏览器告诉服务器它所采用的字符集；
+    Accept-Encoding:浏览器告诉服务器它所支持的压缩格式；
+    Accept-Language:浏览器所采用的语言；
+    Host：浏览器想访问服务器哪台主机；
+    if-Modified-Since:浏览器缓存数据的时间；
+    Referer:浏览器是从哪个网页点过来的（防盗链）；
+    User-Agent:浏览器所使用的浏览器类型、版本等信息；
+    Date:浏览器什么时间访问的。
