@@ -1,1 +1,16 @@
-F:\AutoTest\Chapter5\src\main\java\com\course\testng\BasicAnnotation.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\groups\GroupsOnClass1.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\multithread\MultiThreadOnXml.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\BasicAnnotation.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\groups\GroupsOnMethod.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\suite\PayTest.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\suite\SuiteConfig.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\groups\GroupsOnClass2.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\ExceptedException.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\parameter\DataProviderTest.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\DependTest.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\TimeoutTest.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\IgnoreTest.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\groups\GroupsOnClass3.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\multithread\MultiThreadOnAnnotation.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\suite\LoginTest.java
+F:\GuanHuaJin\AutoTest\Chapter5\src\main\java\com\course\testng\parameter\ParameterTest.java
