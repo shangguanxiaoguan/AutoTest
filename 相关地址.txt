@@ -40,4 +40,5 @@
      (2)、cookie的格式为key:value；key:value；（测试时，要清楚每个key和value的意思，怎么生成的）
      (3)cookie的值由服务端生成，客户端保存。
 5、HTTPClient官网地址:hc.apache.org
-
+6、下载插件：lombok
+7、logback模板地址：https://www.cnblogs.com/light-zhang/p/8744647.html
