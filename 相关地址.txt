@@ -42,3 +42,70 @@
 5、HTTPClient官网地址:hc.apache.org
 6、下载插件：lombok
 7、logback模板地址：https://www.cnblogs.com/light-zhang/p/8744647.html
+8、第12章：测试代码打包配置：
+        Step1:
+            <!--    打包配置-->
+                <build>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-surefire-plugin</artifactId>
+                            <version>2.12.4</version>
+                            <configuration>
+                                <suiteXmlFiles>
+                                <!--                        其他项目引用时给成对应的testng.xml的路径-->
+                                    ./src/main/resources/testng.xml
+                                </suiteXmlFiles>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </build>
+        Step 2:
+          打包配置添加好后，在Terminal窗口中，进入Chapter12的目录，输入命令：mvn clean package，这个命令会把代码打成一个jar包
+
+   第13章：接口代码打包配置：
+        Step 1：
+            <!--    打包配置-->
+                <build>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-compiler-plugin</artifactId>
+                            <configuration>
+            <!--                    指定使用的JDK版本-->
+                                <source>1.8</source>
+                                <target>1.8</target>
+                            </configuration>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.springframework.boot</groupId>
+                            <artifactId>spring-boot-maven-plugin</artifactId>
+                            <configuration>
+            <!--                    程序的入口：其他项目用时需要改变，其他内容不用改-->
+                                <mainClass>com.course.Application</mainClass>
+                            </configuration>
+                            <executions>
+                                <execution>
+                                    <goals>
+                                        <goal>repackage</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                        </plugin>
+                        <plugin>
+                            <artifactId>maven-compiler-plugin</artifactId>
+                            <configuration>
+                                <source>1.8</source>
+                                <target>1.8</target>
+                                <encoding>UTF-8</encoding>
+                                <compilerArguments>
+                                    <extdirs>${project.basedir}/lib</extdirs>
+                                </compilerArguments>
+                            </configuration>
+                        </plugin>
+                    </plugins>
+                </build>
+        Step 2:
+            打包配置添加好后，在Terminal窗口中，进入Chapter12的目录，输入命令：mvn clean package，这个命令会把代码打成一个jar包
+        Step 3:
+           在target目录下可以找到生成的jar包，在Terminal中使用命令：java -jar jar包的名字，即可启动程序。

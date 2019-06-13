@@ -7,12 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Chapter6" />
-        <module name="Chapter9" />
         <module name="Chapter13" />
         <module name="Chapter12" />
         <module name="Chapter11" />
         <module name="Chapter10" />
+        <module name="Chapter9" />
+        <module name="Chapter6" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,7 +33,7 @@
       <module name="Chapter10" options="-parameters" />
       <module name="Chapter11" options="-parameters" />
       <module name="Chapter12" options="-parameters" />
-      <module name="Chapter13" options="-parameters" />
+      <module name="Chapter13" options="-parameters -extdirs F:\GuanHuaJin\AutoTest\Chapter13/lib" />
       <module name="Chapter5" options="" />
       <module name="Chapter6" options="-parameters" />
       <module name="Chapter9" options="-parameters" />
