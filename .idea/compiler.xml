@@ -7,12 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Chapter13" />
-        <module name="Chapter12" />
-        <module name="Chapter11" />
         <module name="Chapter10" />
-        <module name="Chapter9" />
+        <module name="Chapter11" />
+        <module name="Chapter12" />
+        <module name="Chapter13" />
+        <module name="Chapter5" />
         <module name="Chapter6" />
+        <module name="Chapter9" />
+        <module name="hejiameng" />
+        <module name="Strategy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,19 +27,23 @@
       <module name="Chapter5" target="1.8" />
       <module name="Chapter6" target="6" />
       <module name="Chapter9" target="1.8" />
+      <module name="hejiameng" target="1.8" />
+      <module name="Strategy" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AutoTest" options="" />
-      <module name="Chapter10" options="-parameters" />
-      <module name="Chapter11" options="-parameters" />
-      <module name="Chapter12" options="-parameters" />
-      <module name="Chapter13" options="-parameters -extdirs F:\GuanHuaJin\AutoTest\Chapter13/lib" />
+      <module name="Chapter10" options="" />
+      <module name="Chapter11" options="" />
+      <module name="Chapter12" options="" />
+      <module name="Chapter13" options="" />
       <module name="Chapter5" options="" />
-      <module name="Chapter6" options="-parameters" />
-      <module name="Chapter9" options="-parameters" />
+      <module name="Chapter6" options="" />
+      <module name="Chapter9" options="" />
+      <module name="Strategy" options="" />
+      <module name="hejiameng" options="" />
     </option>
   </component>
 </project>

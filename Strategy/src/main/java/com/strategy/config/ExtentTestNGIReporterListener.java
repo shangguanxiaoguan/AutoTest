@@ -1,4 +1,4 @@
-package com.course.config;
+package com.strategy.config;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -197,4 +197,3 @@ public class ExtentTestNGIReporterListener implements IReporter {
         return calendar.getTime();
     }
 }
-
