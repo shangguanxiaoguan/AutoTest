@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sangame.hjm.model">
+
+    <sql id="columns">
+        <!--@mbg.generated-->
+        id,category_id,sub_category_id,company_id,title,keyword,photo,recommend_flag,build_date,origin_addr,
+        business_model,product,crowd,area,support,invest_min,invest_max,margin,facility_cost,other_cost,description,
+        direct_store,join_store,message_num,company_name,register_time,
+        created_at,updated_at,creator,modifier,delete_flag
+    </sql>
+
+    <!--获取APP更新接口case-->
+    <select id="updateVersionCase" parameterType="Integer" resultType="com.sangame.hjm.model.UpdateVersionCase">
+        select * from updateVersionCase
+        where id=#{id}
+    </select>
+    <!--关键字搜索接口case-->
+    <select id="keyWordSearchCase" parameterType="Integer" resultType="com.sangame.hjm.model.KeyWordSearchCase">
+        select * from KeyWordSearchCase
+        where id=#{id}
+    </select>
+    <!--根据条件查询品牌接口case-->
+    <select id="searchProjectForConditionCase" parameterType="Integer" resultType="com.sangame.hjm.model.SearchProjectForConditionCase">
+        select title,amountCode,sortCode,subCategoryId,pageSize,pageNum,expect from SearchProjectForConditionCase
+        where id =#{id}
+    </select>
+    <!--猜你喜欢接口case-->
+    <select id="searchYourLikeCase" parameterType="Integer" resultType="com.sangame.hjm.model.SearchYourLikeCase">
+        select pageSize,pageNum from SearchYourLikeCase
+        where id =#{id}
+    </select>
+    <!--商铺详情接口case-->
+    <select id="storeDetailsCase" parameterType="Integer" resultType="com.sangame.hjm.model.StoreDetailsCase">
+        select projectId,expect from StoreDetailsCase
+        where id=#{id}
+    </select>
+    <!--在线留言接口case-->
+    <select id="onLineMessageCase" parameterType="Integer" resultType="com.sangame.hjm.model.OnLineMessageCase">
+        select commentId,content,cngoldId,expect from onlinemessagecase
+        where id=#{id}
+    </select>
+    <!--项目定制接口case-->
+    <select id="projectCustomCase" parameterType="Integer" resultType="com.sangame.hjm.model.ProjectCustomCase">
+        select cngoldId,gender,leavingMessage,name,amountCode,amountValue,interestCategor,phoneNumber,expect from projectcustomcase
+        where id=#{id}
+    </select>
+    <!--商家入驻接口case-->
+    <select id="businessEnterCase" parameterType="Integer" resultType="com.sangame.hjm.model.BusinessEnterCase">
+        select cngoldId,brand,company,name,cityId,phoneNumber,expect from businessentercase
+        where id=#{id}
+    </select>
+
+
+
+
+
+    <!--获取APP更新地址-->
+    <select id="getUpdateVersionInfo" parameterType="Integer" resultType="com.sangame.hjm.model.SysConfig">
+        select * from sys_config
+        where id=#{id}
+    </select>
+    <!--获取banner图信息-->
+    <select id="getBannerTurn" parameterType="Integer" resultType="com.sangame.hjm.model.Banner">
+        select * from jm_banner order by id asc
+    </select>
+    <!--根据条件查询品牌-->
+    <select id="searchProjectForCondition" parameterType="Integer" resultType="com.sangame.hjm.model.JmProject">
+            select
+            <include refid="columns"/>
+            from jm_project
+            <trim prefix="where" suffixOverrides="AND | OR">
+                <if test="id != null">
+                    id=#{id,jdbcType=INTEGER} AND
+                </if>
+                <if test="categoryId != null">
+                    category_id=#{categoryId,jdbcType=INTEGER}AND
+                </if>
+                <if test="subCategoryId != null">
+                    sub_category_id=#{subCategoryId,jdbcType=INTEGER} AND
+                </if>
+                <if test="companyId != null">
+                    company_id=#{companyId,jdbcType=INTEGER} AND
+                </if>
+                <if test="title != null">
+                    title=#{title,jdbcType=VARCHAR} AND
+                </if>
+                <if test="keyword != null">
+                    keyword=#{keyword,jdbcType=VARCHAR} AND
+                </if>
+                <if test="photo != null">
+                    photo=#{photo,,jdbcType=VARCHAR} AND
+                </if>
+                <if test="recommendFlag != null">
+                    recommend_flag=#{recommendFlag,jdbcType=TINYINT} AND
+                </if>
+                <if test="buildDate != null">
+                    build_date=#{buildDate,jdbcType=DATE} AND
+                </if>
+                <if test="originAddr != null">
+                    origin_addr=#{originAddr,jdbcType=VARCHAR} AND
+                </if>
+                <if test="businessModel != null">
+                    business_model= #{businessModel,jdbcType=VARCHAR} AND
+                </if>
+                <if test="product != null">
+                    product=#{product,jdbcType=VARCHAR} AND
+                </if>
+                <if test="crowd != null">
+                    crowd=#{crowd,jdbcType=VARCHAR} AND
+                </if>
+                <if test="area != null">
+                    area=#{area,jdbcType=VARCHAR} AND
+                </if>
+                <if test="support != null">
+                    support=#{support,jdbcType=VARCHAR} AND
+                </if>
+                <if test="investMin != null">
+                    invest_min=#{investMin,jdbcType=DOUBLE} AND
+                </if>
+                <if test="investMax != null">
+                    invest_max= #{investMax,jdbcType=DOUBLE} AND
+                </if>
+                <if test="margin != null">
+                    margin=#{margin,jdbcType=DOUBLE} AND
+                </if>
+                <if test="facilityCost != null">
+                    facility_cost=#{facilityCost,jdbcType=DOUBLE} AND
+                </if>
+                <if test="otherCost != null">
+                    other_cost=#{otherCost,jdbcType=DOUBLE} AND
+                </if>
+                <if test="description != null">
+                    description=#{description,jdbcType=VARCHAR} AND
+                </if>
+                <if test="creator != null">
+                    creator=#{creator,jdbcType=VARCHAR}AND
+                </if>
+                <if test="modifier != null">
+                    modifier=#{modifier,jdbcType=VARCHAR}AND
+                </if>
+                <if test="createAt != null">
+                    created_at=#{createAt,jdbcType=DATE}AND
+                </if>
+                <if test="updateAt != null">
+                    updated_at=#{updateAt,jdbcType=DATE}AND
+                </if>
+                <if test="deleteFlag != null">
+                    delete_flag=#{deleteFlag,jdbcType=TINYINT}AND
+                </if>
+            </trim>
+        <if test="sortCode!=null and sortCode==0">
+            order by invest_min ASC
+        </if>
+        <if test="sortCode!=null and sortCode==1">
+            order by invest_max DESC
+        </if>
+        LIMIT #{pageNum},#{pageSize}
+    </select>
+
+    <!--查询分类接口-->
+    <select id="searchCategory" parameterType="Integer" resultType="com.sangame.hjm.model.JmCategory">
+        select id,createAt,updateAt,creator,modifier,deleteFlag,spell,title,icon from jm_category
+        order by id asc
+    </select>
+
+    <!--商铺详情接口-->
+    <select id="storeDetails" parameterType="Integer" resultType="com.sangame.hjm.model.StoreDetailsResult">
+
+    </select>
+
+    <!--获取在线留言之后的数据-->
+    <select id="getOnLineMessage" parameterType="Integer" resultType="com.sangame.hjm.model.JmComment">
+        select id,created_at,updated_at,creator,modifier,cngold_id,comment_id,content,delete_flag from jm_comment
+        <trim prefix="where" prefixOverrides="and">
+            <if test="null != commentId and '' !=commentId">
+                and comment_id=#{commentId}
+            </if>
+            <if test="null != content and '' !=content">
+                and content=#{content}
+            </if>
+            <if test="null != cngoldId and '' !=cngoldId">
+                and cngold_id=#{cngoldId}
+            </if>
+        </trim>
+    </select>
+
+    <!--获取项目定制之后的数据    数据库中的电话号码是加密的，这里没有把phone_number加上-->
+    <select id="getProjectCustom" parameterType="Integer" resultType="com.sangame.hjm.model.JmNeed">
+        select cngold_id,gender,leaving_message,name,amount_code,interest_category from jm_need
+        <trim prefix="where" prefixOverrides="and">
+            <if test="null != cngoldId and '' !=cngoldId">
+                and cngold_id=#{cngoldId}
+            </if>
+            <if test="null != gender and '' !=gender">
+                and gender=#{gender}
+            </if>
+            <if test="null != leavingMessage and '' !=leavingMessage">
+                and leaving_message=#{leavingMessage}
+            </if>
+            <if test="null != name and '' !=name">
+                and name=#{name}
+            </if>
+            <if test="null != amountCode and '' !=amountCode">
+                and amount_code=#{amountCode}
+            </if>
+            <if test="null != interestCategory and '' !=interestCategory">
+                and interest_category=#{interestCategory}
+            </if>
+        </trim>
+    </select>
+
+    <!--获取商家入驻之后的数据-->
+    <select id="getBusinessEnter" parameterType="Integer" resultType="com.sangame.hjm.model.JmEnterApply">
+        select cngold_id,brand,company,name,city_id from jm_enter_apply
+        <trim prefix="where" prefixOverrides="and">
+            <if test="null !=cngoldId and '' !=cngoldId">
+                and cngold_id=#{cngoldId}
+            </if>
+            <if test="null !=brand and '' !=brand">
+                and brand=#{brand}
+            </if>
+            <if test="null !=company and '' !=company">
+                and company=#{company}
+            </if>
+            <if test="null !=name and '' !=name">
+                and name=#{name}
+            </if>
+            <if test="null !=cityId and '' !=cityId">
+                and city_id=#{cityId}
+            </if>
+        </trim>
+    </select>
+
+</mapper>

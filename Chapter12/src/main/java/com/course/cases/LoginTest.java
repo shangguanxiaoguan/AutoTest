@@ -71,6 +71,7 @@ public class LoginTest {
         //把参数添加到post方法中
         StringEntity entity = new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);
+        System.out.println("loginUrl Post:" + post);
         //执行post
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
         //存放返回结果

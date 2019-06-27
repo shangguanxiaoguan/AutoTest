@@ -52,6 +52,7 @@ public class GetUserInfoTest {
         param.put("id",getUserInfoCase.getUserid());
         post.setHeader("content-type","application/json");
         StringEntity entity = new StringEntity(param.toString(),"utf-8");
+        System.out.println("entity:" + entity);
         post.setEntity(entity);
 
         TestConfig.defaultHttpClient.setCookieStore(TestConfig.store);
