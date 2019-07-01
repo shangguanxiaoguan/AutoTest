@@ -8,7 +8,7 @@ public class JmProject {
     private String updateAt;
     private Object creator;
     private Object modifier;
-    private boolean deleteFlag;
+    private int deleteFlag;
     private int id;
     private int categoryId;
     private int subCategoryId;

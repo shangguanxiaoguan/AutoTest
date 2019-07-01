@@ -11,6 +11,7 @@ import com.sangame.hjm.utils.DatebaseUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.json.JSONObject;
@@ -25,20 +26,27 @@ public class BusinessEnterTest {
     @BeforeTest(groups = "loginTrue",description = "测试准备工作，获取httpClient对象")
     public void beforeTest(){
         TestConfig.BusinessEnterUrl = ConfigFile.getUrl(InterfaceName.BUSINESSENTER);
+        TestConfig.defaultHttpClient = new DefaultHttpClient();
     }
 
     @Test
-    public void businessEnter() throws IOException {
+    public void businessEnter() throws IOException, InterruptedException {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
         BusinessEnterCase businessEnterCase = sqlSession.selectOne("businessEnterCase",1);
 
         //发送请求，获取接口返回数据
         BusinessEnterResult result = getResponseResult(businessEnterCase);
+        System.out.println("商家入驻的result：" + result.toString());
+        Thread.sleep(8000);
 
         //验证结果
+        System.out.println("businessEnterCase.getExpect()：" + businessEnterCase.getExpect());
         JmEnterApply actualResult = sqlSession.selectOne(businessEnterCase.getExpect(),businessEnterCase);
+        System.out.println("商家入驻的验证result：" + actualResult.toString());
 
-        Assert.assertEquals("0",result.getCode());
+
+
+        Assert.assertEquals(0,result.getCode());
         Assert.assertEquals("success",result.getMsg());
         Assert.assertNotNull(actualResult);
 

@@ -5,5 +5,5 @@ import lombok.Data;
 @Data
 public class UpdateVersionCase {
     private String deviceType;
-    private String expectCode;
+    private int expectCode;
 }

@@ -3,7 +3,7 @@ package com.sangame.hjm.model;
 import lombok.Data;
 
 @Data
-public class Banner {
+public class JmBanner {
     private int id;
     private String created_at;
     private String updated_at;

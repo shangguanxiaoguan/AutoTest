@@ -130,7 +130,7 @@ public class KeyWordSearchResult {
         private String updateAt;
         private Object creator;
         private Object modifier;
-        private boolean deleteFlag;
+        private String deleteFlag;
         private int id;
         private int categoryId;
         private int subCategoryId;
@@ -193,11 +193,11 @@ public class KeyWordSearchResult {
             this.modifier = modifier;
         }
 
-        public boolean isDeleteFlag() {
+        public String isDeleteFlag() {
             return deleteFlag;
         }
 
-        public void setDeleteFlag(boolean deleteFlag) {
+        public void setDeleteFlag(String deleteFlag) {
             this.deleteFlag = deleteFlag;
         }
 
@@ -432,5 +432,59 @@ public class KeyWordSearchResult {
         public void setLikes(Object likes) {
             this.likes = likes;
         }
+
+        @Override
+        public String toString() {
+            return "DataBean{" +
+                    "createAt='" + createAt + '\'' +
+                    ", updateAt='" + updateAt + '\'' +
+                    ", creator=" + creator +
+                    ", modifier=" + modifier +
+                    ", deleteFlag=" + deleteFlag +
+                    ", id=" + id +
+                    ", categoryId=" + categoryId +
+                    ", subCategoryId=" + subCategoryId +
+                    ", companyId=" + companyId +
+                    ", title='" + title + '\'' +
+                    ", keyword='" + keyword + '\'' +
+                    ", photo='" + photo + '\'' +
+                    ", recommendFlag=" + recommendFlag +
+                    ", buildDate=" + buildDate +
+                    ", originAddr='" + originAddr + '\'' +
+                    ", businessModel=" + businessModel +
+                    ", product='" + product + '\'' +
+                    ", crowd=" + crowd +
+                    ", area='" + area + '\'' +
+                    ", support='" + support + '\'' +
+                    ", investMin=" + investMin +
+                    ", investMax=" + investMax +
+                    ", margin=" + margin +
+                    ", facilityCost=" + facilityCost +
+                    ", otherCost=" + otherCost +
+                    ", description='" + description + '\'' +
+                    ", directStore=" + directStore +
+                    ", joinStore=" + joinStore +
+                    ", messageNum=" + messageNum +
+                    ", companyName=" + companyName +
+                    ", registerTime=" + registerTime +
+                    ", projectExtra=" + projectExtra +
+                    ", projectPhotos=" + projectPhotos +
+                    ", likes=" + likes +
+                    '}';
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "KeyWordSearchResult{" +
+                "flag=" + flag +
+                ", code=" + code +
+                ", msg='" + msg + '\'' +
+                ", pageSize=" + pageSize +
+                ", pageNum=" + pageNum +
+                ", total=" + total +
+                ", totalPage=" + totalPage +
+                ", data=" + data +
+                '}';
     }
 }
