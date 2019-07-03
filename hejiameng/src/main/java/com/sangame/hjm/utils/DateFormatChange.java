@@ -7,13 +7,18 @@ public class DateFormatChange {
      * @return
      */
     public static String stringDateFormatChange(String stringDate){
-        //用空格分割字符串
-        String[] createdArr = stringDate.split(" ");
-        //取出空格前面的字符串
-        String date = createdArr[0];
-        //取完字符串后再拼接
-        date = date + " 00:00:00";
-        return date;
+        if (stringDate != null){
+            //用空格分割字符串
+            String[] createdArr = stringDate.split(" ");
+            //取出空格前面的字符串
+            String date = createdArr[0];
+            //取完字符串后再拼接
+            date = date + " 00:00:00";
+            return date;
+        }else{
+            return null;
+        }
+
     }
 
     /**
@@ -21,8 +26,12 @@ public class DateFormatChange {
      * @param stringDate
      * @return
      */
-    public static String DateFormatChange(String stringDate){
-        String date = stringDate.replace(".0","");
-        return date;
+    public static String dateFormatChange(String stringDate){
+        if (stringDate != null){
+            String date = stringDate.replace(".0","");
+            return date;
+        }else{
+            return null;
+        }
     }
 }

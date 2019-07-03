@@ -8,6 +8,7 @@ import com.sangame.hjm.model.InterfaceName;
 import com.sangame.hjm.model.JmEnterApply;
 import com.sangame.hjm.utils.ConfigFile;
 import com.sangame.hjm.utils.DatebaseUtil;
+import com.sangame.hjm.utils.HttpMethodPostUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -20,6 +21,13 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+/***
+ * 商家入驻接口测试
+ */
+
 
 public class BusinessEnterTest {
 
@@ -29,44 +37,34 @@ public class BusinessEnterTest {
         TestConfig.defaultHttpClient = new DefaultHttpClient();
     }
 
-    @Test
+    @Test(description = "商家入驻接口测试")
     public void businessEnter() throws IOException, InterruptedException {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
         BusinessEnterCase businessEnterCase = sqlSession.selectOne("businessEnterCase",1);
+        System.out.println("businessEnterCase:" + businessEnterCase.toString());
 
         //发送请求，获取接口返回数据
-        BusinessEnterResult result = getResponseResult(businessEnterCase);
-        System.out.println("商家入驻的result：" + result.toString());
-        Thread.sleep(8000);
+        Map<String,Object> map = new HashMap<>();
+        map.put("cngoldId",businessEnterCase.getCngoldId());
+        map.put("brand",businessEnterCase.getBrand());
+        map.put("company",businessEnterCase.getCompany());
+        map.put("name",businessEnterCase.getName());
+        map.put("cityId",businessEnterCase.getCityId());
+        map.put("phoneNumber",businessEnterCase.getPhoneNumber());
+        String result = HttpMethodPostUtil.httpMethodPost(TestConfig.BusinessEnterUrl,map);
+        BusinessEnterResult businessEnterResult = new Gson().fromJson(result,BusinessEnterResult.class);
+        System.out.println("上家入驻接口返回的数据：" + businessEnterResult.toString());
 
         //验证结果
+        Thread.sleep(3000);
         System.out.println("businessEnterCase.getExpect()：" + businessEnterCase.getExpect());
-        JmEnterApply actualResult = sqlSession.selectOne(businessEnterCase.getExpect(),businessEnterCase);
-        System.out.println("商家入驻的验证result：" + actualResult.toString());
+        JmEnterApply expectedResult = sqlSession.selectOne("getBusinessEnter",businessEnterCase);
+        System.out.println("商家入驻的验证result：" + expectedResult.toString());
 
-
-
-        Assert.assertEquals(0,result.getCode());
-        Assert.assertEquals("success",result.getMsg());
-        Assert.assertNotNull(actualResult);
+        Assert.assertEquals(0,businessEnterResult.getCode());
+        Assert.assertEquals("success",businessEnterResult.getMsg());
+        Assert.assertNotNull(expectedResult);
 
     }
 
-    private BusinessEnterResult getResponseResult(BusinessEnterCase businessEnterCase) throws IOException {
-        HttpPost post = new HttpPost(TestConfig.BusinessEnterUrl);
-        JSONObject param = new JSONObject();
-        param.put("cngoldId",businessEnterCase.getCngoldId());
-        param.put("brand",businessEnterCase.getBrand());
-        param.put("company",businessEnterCase.getCompany());
-        param.put("name",businessEnterCase.getName());
-        param.put("cityId",businessEnterCase.getCityId());
-        param.put("phoneNumber",businessEnterCase.getPhoneNumber());
-        StringEntity entity = new StringEntity(param.toString(),"utf-8");
-        post.setEntity(entity);
-        System.out.println("BusinessEnterUrl post：" + post);
-        HttpResponse response = TestConfig.defaultHttpClient.execute(post);
-        String result = EntityUtils.toString(response.getEntity());
-        BusinessEnterResult resultClass = new Gson().fromJson(result,BusinessEnterResult.class);
-        return resultClass;
-    }
 }

@@ -48,6 +48,12 @@ public class ConfigFile {
         if (name == InterfaceName.BUSINESSENTER){
             uri = bundle.getString("BusinessEnter.uri");
         }
+        if (name == InterfaceName.GETHOMEJOINHEADLINE){
+            uri = bundle.getString("getHomeJoinHeadline.uri");
+        }
+        if (name == InterfaceName.SEARCHSUBCATEGORYBYCATEGORYID){
+            uri = bundle.getString("searchSubCategoryByCategoryId.uri");
+        }
         testUrl = address + uri;
         return testUrl;
     }

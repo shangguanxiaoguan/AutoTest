@@ -4,12 +4,12 @@ import lombok.Data;
 
 @Data
 public class BusinessEnterCase {
-    private int id;
-    private String cngoldId;
+//    private int id;
+    private int cngoldId;
     private String brand;
     private String company;
     private String name;
-    private String cityId;
+    private int cityId;
     private String phoneNumber;
     private String expect;
 }

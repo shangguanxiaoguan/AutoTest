@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public class SearchYourLikeCase {
     private int id;
-    private String pageSize;
-    private String pageNum;
+    private int pageSize;
+    private int pageNum;
 }

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="合加盟测试套件">
+    <test name="合加盟测试用例">
+        <classes>
+            <class name="com.sangame.hjm.cases.LoginTest">
+                <methods>
+                    <include name="beforeTest"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.GetUpdateVersionTest">
+                <methods>
+                    <include name="updateVersionAndroid"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.GetJmBannerTurnTest">
+                <methods>
+                    <include name="getBannerTurn"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.GetHomeSubCategoryTest">
+                <methods>
+                    <include name="getHomeSubCategory"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.KeyWordSearchTest">
+                <methods>
+                    <include name="keyWordSearch"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.SearchProjectForConditionTest">
+                <methods>
+                    <include name="searchProjectForCondition"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.SearchCategoryTest">
+                <methods>
+                    <include name="searchCategory"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.SearchYourLikeTest">
+                <methods>
+                    <include name="searchYourLike"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.StoreDetailsTest">
+                <methods>
+                    <include name="storeDetails"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.OnLineMessageTest">
+                <methods>
+                    <include name="onLineMessage"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.ProjectCustomTest">
+                <methods>
+                    <include name="projectCustom"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.BusinessEnterTest">
+                <methods>
+                    <include name="businessEnter"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.SearchHomeJoinHeadlineTest">
+                <methods>
+                    <include name="searchHomeJoinHeadline"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.SearchSubCategoryByCategoryIdTest">
+                <methods>
+                    <include name="SearchSubCategoryByCategoryId"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.sangame.hjm.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+
+</suite>

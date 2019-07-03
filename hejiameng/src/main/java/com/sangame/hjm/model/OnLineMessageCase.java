@@ -5,8 +5,8 @@ import lombok.Data;
 @Data
 public class OnLineMessageCase {
     //private int id;
-    private String commentId;
+    private int commentId;
     private String content;
-    private String cngoldId;
+    private int cngoldId;
     private String expect;
 }

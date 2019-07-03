@@ -122,7 +122,7 @@ public class SearchYourLikeResult {
         private String updateAt;
         private Object creator;
         private Object modifier;
-        private boolean deleteFlag;
+        private String deleteFlag;
         private int id;
         private int categoryId;
         private int subCategoryId;
@@ -130,7 +130,7 @@ public class SearchYourLikeResult {
         private String title;
         private String keyword;
         private String photo;
-        private int recommendFlag;
+        private Integer recommendFlag;
         private String buildDate;
         private String originAddr;
         private Object businessModel;
@@ -142,7 +142,7 @@ public class SearchYourLikeResult {
         private int investMax;
         private Object margin;
         private Object facilityCost;
-        private int otherCost;
+        private Integer otherCost;
         private Object description;
 
         public String getCreateAt() {
@@ -177,11 +177,11 @@ public class SearchYourLikeResult {
             this.modifier = modifier;
         }
 
-        public boolean isDeleteFlag() {
+        public String isDeleteFlag() {
             return deleteFlag;
         }
 
-        public void setDeleteFlag(boolean deleteFlag) {
+        public void setDeleteFlag(String deleteFlag) {
             this.deleteFlag = deleteFlag;
         }
 
@@ -241,7 +241,7 @@ public class SearchYourLikeResult {
             this.photo = photo;
         }
 
-        public int getRecommendFlag() {
+        public Integer getRecommendFlag() {
             return recommendFlag;
         }
 
@@ -337,7 +337,7 @@ public class SearchYourLikeResult {
             this.facilityCost = facilityCost;
         }
 
-        public int getOtherCost() {
+        public Integer getOtherCost() {
             return otherCost;
         }
 
@@ -352,5 +352,51 @@ public class SearchYourLikeResult {
         public void setDescription(Object description) {
             this.description = description;
         }
+
+        @Override
+        public String toString() {
+            return "DataBean{" +
+                    "createAt='" + createAt + '\'' +
+                    ", updateAt='" + updateAt + '\'' +
+                    ", creator=" + creator +
+                    ", modifier=" + modifier +
+                    ", deleteFlag=" + deleteFlag +
+                    ", id=" + id +
+                    ", categoryId=" + categoryId +
+                    ", subCategoryId=" + subCategoryId +
+                    ", companyId=" + companyId +
+                    ", title='" + title + '\'' +
+                    ", keyword='" + keyword + '\'' +
+                    ", photo='" + photo + '\'' +
+                    ", recommendFlag=" + recommendFlag +
+                    ", buildDate='" + buildDate + '\'' +
+                    ", originAddr='" + originAddr + '\'' +
+                    ", businessModel=" + businessModel +
+                    ", product='" + product + '\'' +
+                    ", crowd=" + crowd +
+                    ", area='" + area + '\'' +
+                    ", support='" + support + '\'' +
+                    ", investMin=" + investMin +
+                    ", investMax=" + investMax +
+                    ", margin=" + margin +
+                    ", facilityCost=" + facilityCost +
+                    ", otherCost=" + otherCost +
+                    ", description=" + description +
+                    '}';
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "SearchYourLikeResult{" +
+                "flag=" + flag +
+                ", code=" + code +
+                ", msg='" + msg + '\'' +
+                ", pageSize=" + pageSize +
+                ", pageNum=" + pageNum +
+                ", total=" + total +
+                ", totalPage=" + totalPage +
+                ", data=" + data +
+                '}';
     }
 }

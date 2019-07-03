@@ -150,7 +150,7 @@ public class SearchProjectForConditionResult {
         private int investMax;
         private Object margin;
         private Object facilityCost;
-        private int otherCost;
+        private Integer otherCost;
         private String description;
         private int directStore;
         private int joinStore;
@@ -353,7 +353,7 @@ public class SearchProjectForConditionResult {
             this.facilityCost = facilityCost;
         }
 
-        public int getOtherCost() {
+        public Integer getOtherCost() {
             return otherCost;
         }
 
@@ -432,5 +432,59 @@ public class SearchProjectForConditionResult {
         public void setLikes(Object likes) {
             this.likes = likes;
         }
+
+        @Override
+        public String toString() {
+            return "DataBean{" +
+                    "createAt='" + createAt + '\'' +
+                    ", updateAt='" + updateAt + '\'' +
+                    ", creator=" + creator +
+                    ", modifier=" + modifier +
+                    ", deleteFlag=" + deleteFlag +
+                    ", id=" + id +
+                    ", categoryId=" + categoryId +
+                    ", subCategoryId=" + subCategoryId +
+                    ", companyId=" + companyId +
+                    ", title='" + title + '\'' +
+                    ", keyword='" + keyword + '\'' +
+                    ", photo='" + photo + '\'' +
+                    ", recommendFlag=" + recommendFlag +
+                    ", buildDate=" + buildDate +
+                    ", originAddr='" + originAddr + '\'' +
+                    ", businessModel=" + businessModel +
+                    ", product='" + product + '\'' +
+                    ", crowd=" + crowd +
+                    ", area='" + area + '\'' +
+                    ", support='" + support + '\'' +
+                    ", investMin=" + investMin +
+                    ", investMax=" + investMax +
+                    ", margin=" + margin +
+                    ", facilityCost=" + facilityCost +
+                    ", otherCost=" + otherCost +
+                    ", description='" + description + '\'' +
+                    ", directStore=" + directStore +
+                    ", joinStore=" + joinStore +
+                    ", messageNum=" + messageNum +
+                    ", companyName=" + companyName +
+                    ", registerTime=" + registerTime +
+                    ", projectExtra=" + projectExtra +
+                    ", projectPhotos=" + projectPhotos +
+                    ", likes=" + likes +
+                    '}';
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "SearchProjectForConditionResult{" +
+                "flag=" + flag +
+                ", code=" + code +
+                ", msg='" + msg + '\'' +
+                ", pageSize=" + pageSize +
+                ", pageNum=" + pageNum +
+                ", total=" + total +
+                ", totalPage=" + totalPage +
+                ", data=" + data +
+                '}';
     }
 }

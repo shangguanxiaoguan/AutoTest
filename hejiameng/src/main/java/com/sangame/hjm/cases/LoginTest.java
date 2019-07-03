@@ -3,7 +3,11 @@ package com.sangame.hjm.cases;
 import com.sangame.hjm.config.TestConfig;
 import com.sangame.hjm.model.InterfaceName;
 import com.sangame.hjm.utils.ConfigFile;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import java.net.CookieStore;
 
 public class LoginTest {
 
@@ -12,6 +16,7 @@ public class LoginTest {
         TestConfig.updateVersionUrl = ConfigFile.getUrl(InterfaceName.UPDATEVERSION);
         TestConfig.getBannerTurnUrl = ConfigFile.getUrl(InterfaceName.GETBANNERTURN);
         TestConfig.getHomeSubCategoryUrl = ConfigFile.getUrl(InterfaceName.GETHOMESUBCATEGORY);
+        TestConfig.keyWordSearchUrl = ConfigFile.getUrl(InterfaceName.KEYWORDSEARCH);
         TestConfig.searchProjectForConditionUrl = ConfigFile.getUrl(InterfaceName.SEARCHPROJECTFORCONDITION);
         TestConfig.searchCategoryUrl = ConfigFile.getUrl(InterfaceName.SEARCHCATEGORY);
         TestConfig.searchYourLikeUrl = ConfigFile.getUrl(InterfaceName.SEARCHYOURLIKE);
@@ -20,7 +25,12 @@ public class LoginTest {
         TestConfig.searchInvestmentUrl = ConfigFile.getUrl(InterfaceName.SEARCHINVESTMENT);
         TestConfig.projectCustomUrl = ConfigFile.getUrl(InterfaceName.PROJECTCUSTOM);
         TestConfig.BusinessEnterUrl = ConfigFile.getUrl(InterfaceName.BUSINESSENTER);
-        TestConfig.keyWordSearchUrl = ConfigFile.getUrl(InterfaceName.KEYWORDSEARCH);
+        TestConfig.searchHomeJoinHeadlineUrl = ConfigFile.getUrl(InterfaceName.GETHOMEJOINHEADLINE);
+        TestConfig.searchSubCategoryByCategoryIdUrl = ConfigFile.getUrl(InterfaceName.SEARCHSUBCATEGORYBYCATEGORYID);
+
+        TestConfig.defaultHttpClient = new DefaultHttpClient();
+//        TestConfig.store
+
 
     }
 }

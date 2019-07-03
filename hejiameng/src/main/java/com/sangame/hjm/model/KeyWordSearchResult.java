@@ -138,7 +138,7 @@ public class KeyWordSearchResult {
         private String title;
         private String keyword;
         private String photo;
-        private int recommendFlag;
+        private Integer recommendFlag;
         private Object buildDate;
         private String originAddr;
         private Object businessModel;
@@ -257,7 +257,7 @@ public class KeyWordSearchResult {
             this.photo = photo;
         }
 
-        public int getRecommendFlag() {
+        public Integer getRecommendFlag() {
             return recommendFlag;
         }
 

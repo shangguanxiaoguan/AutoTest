@@ -8,7 +8,7 @@
             <transactionManager type="JDBC"></transactionManager>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://192.168.100.145:3306/jiameng?useSSL=false"/>
+                <property name="url" value="jdbc:mysql://192.168.105.73:3306/jiameng?useSSL=false"/>
                 <property name="username" value="root"/>
                 <property name="password" value="123456"/>
             </dataSource>

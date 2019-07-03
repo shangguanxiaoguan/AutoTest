@@ -27,15 +27,15 @@ import java.util.List;
 
 public class GetHomeSubCategoryTest {
 
-    @BeforeTest(groups = "loginTrue",description = "测试准备工作，获取httpClient对象")
-    public void beforeTest(){
-        TestConfig.updateVersionUrl = ConfigFile.getUrl(InterfaceName.UPDATEVERSION);
-        TestConfig.getBannerTurnUrl = ConfigFile.getUrl(InterfaceName.GETBANNERTURN);
-        TestConfig.getHomeSubCategoryUrl = ConfigFile.getUrl(InterfaceName.GETHOMESUBCATEGORY);
-        TestConfig.defaultHttpClient = new DefaultHttpClient();
-    }
+//    @BeforeTest(groups = "loginTrue",description = "测试准备工作，获取httpClient对象")
+//    public void beforeTest(){
+//        TestConfig.updateVersionUrl = ConfigFile.getUrl(InterfaceName.UPDATEVERSION);
+//        TestConfig.getBannerTurnUrl = ConfigFile.getUrl(InterfaceName.GETBANNERTURN);
+//        TestConfig.getHomeSubCategoryUrl = ConfigFile.getUrl(InterfaceName.GETHOMESUBCATEGORY);
+//        TestConfig.defaultHttpClient = new DefaultHttpClient();
+//    }
 
-    @Test
+    @Test(description = "首页主要分类接口测试")
     public void getHomeSubCategory() throws IOException {
 
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
@@ -59,8 +59,8 @@ public class GetHomeSubCategoryTest {
                 result.getData().get(i).setDeleteFlag("1");
             }
 
-            Assert.assertEquals(result.getData().get(i).getCreateAt(),DateFormatChange.stringDateFormatChange(actualResult.get(i).getCreated_at()));
-            Assert.assertEquals(result.getData().get(i).getUpdateAt(),DateFormatChange.stringDateFormatChange(actualResult.get(i).getUpdated_at()));
+            Assert.assertEquals(result.getData().get(i).getCreateAt(),DateFormatChange.dateFormatChange(actualResult.get(i).getCreated_at()));
+            Assert.assertEquals(result.getData().get(i).getUpdateAt(),DateFormatChange.dateFormatChange(actualResult.get(i).getUpdated_at()));
             Assert.assertEquals(result.getData().get(i).getCreator(),actualResult.get(i).getCreator());
             Assert.assertEquals(result.getData().get(i).getModifier(),actualResult.get(i).getModifier());
             Assert.assertEquals(result.getData().get(i).isDeleteFlag(),String.valueOf(actualResult.get(i).getDelete_flag()));
@@ -71,7 +71,7 @@ public class GetHomeSubCategoryTest {
             Assert.assertEquals(result.getData().get(i).getIcon(),actualResult.get(i).getIcon());
             Assert.assertEquals(result.getData().get(i).getHotFlag(),actualResult.get(i).getHot_flag());
             Assert.assertEquals(result.getData().get(i).getRecommendFlag(),actualResult.get(i).getRecommend_flag());
-            Assert.assertEquals(result.getData().get(i).getIndexFlag(),actualResult.get(i).getIndex_flag());
+            Assert.assertEquals(result.getData().get(i).getIndexFlag(),Integer.valueOf(actualResult.get(i).getIndex_flag()));
         }
 
 

@@ -16,8 +16,8 @@ public class JmProject {
     private String title;
     private String keyword;
     private String photo;
-    private Object recommendFlag;
-    private Object buildDate;
+    private Integer recommendFlag;
+    private String buildDate;
     private String originAddr;
     private Object businessModel;
     private String product;
@@ -28,7 +28,7 @@ public class JmProject {
     private int investMax;
     private Object margin;
     private Object facilityCost;
-    private int otherCost;
+    private Integer otherCost;
     private String description;
     private int directStore;
     private int joinStore;
@@ -38,4 +38,9 @@ public class JmProject {
     private Object projectExtra;
     private Object projectPhotos;
     private Object likes;
+    private int attribute;
+    private Integer state;
+    private String core;
+    private Integer investCode;
+    private double investValue;
 }

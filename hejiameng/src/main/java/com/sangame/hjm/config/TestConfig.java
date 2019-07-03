@@ -18,6 +18,8 @@ public class TestConfig {
     public static String searchInvestmentUrl;
     public static String projectCustomUrl;
     public static String BusinessEnterUrl;
+    public static String searchHomeJoinHeadlineUrl;
+    public static String searchSubCategoryByCategoryIdUrl;
 
 
     public static DefaultHttpClient defaultHttpClient;

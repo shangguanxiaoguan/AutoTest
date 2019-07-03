@@ -23,13 +23,13 @@ import java.io.IOException;
 
 public class GetUpdateVersionTest {
 
-    @BeforeTest(groups = "loginTrue",description = "测试准备工作，获取httpClient对象")
-    public void beforeTest(){
-        TestConfig.updateVersionUrl = ConfigFile.getUrl(InterfaceName.UPDATEVERSION);
-        TestConfig.getBannerTurnUrl = ConfigFile.getUrl(InterfaceName.GETBANNERTURN);
-        TestConfig.getHomeSubCategoryUrl = ConfigFile.getUrl(InterfaceName.GETHOMESUBCATEGORY);
-        TestConfig.defaultHttpClient = new DefaultHttpClient();
-    }
+//    @BeforeTest(groups = "loginTrue",description = "测试准备工作，获取httpClient对象")
+//    public void beforeTest(){
+//        TestConfig.updateVersionUrl = ConfigFile.getUrl(InterfaceName.UPDATEVERSION);
+//        TestConfig.getBannerTurnUrl = ConfigFile.getUrl(InterfaceName.GETBANNERTURN);
+//        TestConfig.getHomeSubCategoryUrl = ConfigFile.getUrl(InterfaceName.GETHOMESUBCATEGORY);
+//        TestConfig.defaultHttpClient = new DefaultHttpClient();
+//    }dependsOnGroups = "loginTrue",
 
 
     @Test(description = "检查Android的版本更新信息")

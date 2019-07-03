@@ -14,5 +14,5 @@ public class JmProjectStat {
     private int visit_count;
     private int join_store_count;
     private int direct_store_count;
-    private int delete_flag;
+    private String delete_flag;
 }

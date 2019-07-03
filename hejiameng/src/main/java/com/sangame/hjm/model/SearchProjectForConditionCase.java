@@ -6,10 +6,10 @@ import lombok.Data;
 public class SearchProjectForConditionCase {
 //    private int id;
     private String title;
-    private String amountCode;
-    private String sortCode;
-    private String subCategoryId;
-    private String pageSize;
-    private String pageNum;
+    private int amountCode;
+    private int sortCode;
+    private int subCategoryId;
+    private int pageSize;
+    private int pageNum;
     private String expect;
 }

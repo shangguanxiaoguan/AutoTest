@@ -165,7 +165,7 @@ public class GetHomeSubCategoryResult {
             this.recommendFlag = recommendFlag;
         }
 
-        public int getIndexFlag() {
+        public Integer getIndexFlag() {
             return indexFlag;
         }
 

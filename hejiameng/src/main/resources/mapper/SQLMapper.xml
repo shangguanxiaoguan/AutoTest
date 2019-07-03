@@ -10,50 +10,57 @@
         created_at,updated_at,creator,modifier,delete_flag-->
     <sql id="columns">
         <!--@mbg.generated-->
-        id,category_id,sub_category_id,company_id,title,keyword,photo,recommend_flag,build_date,origin_addr,
-        business_model,product,crowd,area,support,invest_min,invest_max,margin,facility_cost,other_cost,description,
-        direct_store,join_store,message_num,company_name,register_time,
-        created_at,updated_at,creator,modifier,delete_flag
+        id,created_at as createAt,updated_at as updateAt,creator,modifier,direct_store as directStore,
+        join_store as joinStore,message_num messageNum,category_id categoryId,sub_category_id subCategoryId,company_id companyId,
+        title,keyword,photo,recommend_flag recommendFlag,register_time registerTime,
+        company_name companyName,build_date buildDate,origin_addr originAddr,business_model businessModel,product,crowd,
+        area,support,invest_min investMin,invest_max investMax,margin,facility_cost facilityCost,other_cost otherCost,description,
+        state,attribute,delete_flag deleteFlag,core,invest_code investCode,invest_value investValue
     </sql>
 
     <!--获取APP更新接口case-->
     <select id="updateVersionCase" parameterType="Integer" resultType="com.sangame.hjm.model.UpdateVersionCase">
-        select * from updateVersionCase
+        select * from updateversioncase
         where id=#{id}
     </select>
     <!--关键字搜索接口case-->
     <select id="keyWordSearchCase" parameterType="Integer" resultType="com.sangame.hjm.model.KeyWordSearchCase">
-        select * from KeyWordSearchCase
+        select * from keywordsearchcase
         where id=#{id}
     </select>
     <!--根据条件查询品牌接口case-->
     <select id="searchProjectForConditionCase" parameterType="Integer" resultType="com.sangame.hjm.model.SearchProjectForConditionCase">
-        select title,amountCode,sortCode,subCategoryId,pageSize,pageNum,expect from SearchProjectForConditionCase
+        select title,amountCode,sortCode,subCategoryId,pageSize,pageNum,expect from searchprojectforconditioncase
         where id =#{id}
     </select>
     <!--猜你喜欢接口case-->
     <select id="searchYourLikeCase" parameterType="Integer" resultType="com.sangame.hjm.model.SearchYourLikeCase">
-        select pageSize,pageNum from SearchYourLikeCase
+        select pageSize,pageNum from searchyourlikecase
         where id =#{id}
     </select>
     <!--商铺详情接口case-->
     <select id="storeDetailsCase" parameterType="Integer" resultType="com.sangame.hjm.model.StoreDetailsCase">
-        select projectId,expect from StoreDetailsCase
+        select projectId,expect from storedetailscase
         where id=#{id}
     </select>
     <!--在线留言接口case-->
-    <select id="onLineMessageCase" parameterType="Integer" resultType="com.sangame.hjm.model.OnLineMessageCase">
+    <select id="onLineMessageCase" parameterType="com.sangame.hjm.model.OnLineMessageCase" resultType="com.sangame.hjm.model.OnLineMessageCase">
         select commentId,content,cngoldId,expect from onlinemessagecase
         where id=#{id}
     </select>
     <!--项目定制接口case-->
     <select id="projectCustomCase" parameterType="Integer" resultType="com.sangame.hjm.model.ProjectCustomCase">
-        select cngoldId,gender,leavingMessage,name,amountCode,amountValue,interestCategor,phoneNumber,expect from projectcustomcase
+        select cngoldId,gender,leavingMessage,name,amountCode,amountValue,interestCategory,phoneNumber,expect from projectcustomcase
         where id=#{id}
     </select>
     <!--商家入驻接口case-->
     <select id="businessEnterCase" parameterType="Integer" resultType="com.sangame.hjm.model.BusinessEnterCase">
         select cngoldId,brand,company,name,cityId,phoneNumber,expect from businessentercase
+        where id=#{id}
+    </select>
+    <!--根据行业查询分类接口case-->
+    <select id="searchSubCategoryByCategoryIdCase" parameterType="Integer" resultType="com.sangame.hjm.model.SearchSubCategoryByCategoryIdCase">
+        select categoryid from searchsubcategorybycategoryidcase
         where id=#{id}
     </select>
 
@@ -76,83 +83,14 @@
         <include refid="columns"/>
         from jm_project
         <trim prefix="where" suffixOverrides="AND | OR">
-            <if test="id != null">
-                id=#{id,jdbcType=INTEGER} AND
-            </if>
-            <if test="categoryId != null">
-                category_id=#{categoryId,jdbcType=INTEGER} AND
-            </if>
             <if test="subCategoryId != null">
                 sub_category_id=#{subCategoryId,jdbcType=INTEGER} AND
-            </if>
-            <if test="companyId != null">
-                company_id=#{companyId,jdbcType=INTEGER} AND
             </if>
             <if test="title != null">
                 title like concat('%', #{title,jdbcType=VARCHAR},'%') AND
             </if>
-            <if test="keyword != null">
-                keyword like "%"#{keyword}"%" AND
-            </if>
-            <if test="photo != null">
-                photo=#{photo,jdbcType=VARCHAR} AND
-            </if>
-            <if test="recommendFlag != null">
-                recommend_flag=#{recommendFlag,jdbcType=TINYINT} AND
-            </if>
-            <if test="buildDate != null">
-                build_date=#{buildDate,jdbcType=DATE} AND
-            </if>
-            <if test="originAddr != null">
-                origin_addr=#{originAddr,jdbcType=VARCHAR} AND
-            </if>
-            <if test="businessModel != null">
-                business_model= #{businessModel,jdbcType=VARCHAR} AND
-            </if>
-            <if test="product != null">
-                product=#{product,jdbcType=VARCHAR} AND
-            </if>
-            <if test="crowd != null">
-                crowd=#{crowd,jdbcType=VARCHAR} AND
-            </if>
-            <if test="area != null">
-                area=#{area,jdbcType=VARCHAR} AND
-            </if>
-            <if test="support != null">
-                support=#{support,jdbcType=VARCHAR} AND
-            </if>
-            <if test="investMin != null">
-                invest_min &gt;=#{investMin,jdbcType=DOUBLE} AND
-            </if>
-            <if test="investMax != null">
-                invest_max &lt;= #{investMax,jdbcType=DOUBLE} AND
-            </if>
-            <if test="margin != null">
-                margin=#{margin,jdbcType=DOUBLE} AND
-            </if>
-            <if test="facilityCost != null">
-                facility_cost=#{facilityCost,jdbcType=DOUBLE} AND
-            </if>
-            <if test="otherCost != null">
-                other_cost=#{otherCost,jdbcType=DOUBLE} AND
-            </if>
-            <if test="description != null">
-                description=#{description,jdbcType=VARCHAR} AND
-            </if>
-            <if test="creator != null">
-                creator=#{creator,jdbcType=VARCHAR} AND
-            </if>
-            <if test="modifier != null">
-                modifier=#{modifier,jdbcType=VARCHAR} AND
-            </if>
-            <if test="createAt != null">
-                created_at=#{createAt,jdbcType=DATE} AND
-            </if>
-            <if test="updateAt != null">
-                updated_at=#{updateAt,jdbcType=DATE} AND
-            </if>
-            <if test="deleteFlag != null">
-                delete_flag=#{deleteFlag,jdbcType=TINYINT} AND
+            <if test="amountCode != null">
+                invest_code=#{amountCode}
             </if>
         </trim>
         <if test="sortCode!=null and sortCode==0">
@@ -161,23 +99,79 @@
         <if test="sortCode!=null and sortCode==1">
             order by invest_max DESC
         </if>
-        LIMIT #{pageNum},#{pageSize}
+
     </select>
 
-    <!--查询分类接口-->
+    <!--查询总条数-->
+    <select id="searchJmProjectForConditionTotal" parameterType="com.sangame.hjm.model.SearchProjectForConditionCase" resultType="java.lang.Integer">
+        select
+        count(1)
+        from jm_project
+        <trim prefix="where" suffixOverrides="AND | OR">
+            <if test="subCategoryId != null">
+                sub_category_id=#{subCategoryId,jdbcType=INTEGER} AND
+            </if>
+            <if test="title != null">
+                title like concat('%', #{title,jdbcType=VARCHAR},'%') AND
+            </if>
+            <if test="amountCode != null">
+                invest_code=#{amountCode}
+            </if>
+        </trim>
+    </select>
+
+
+    <!--查询分类接口  id,create_at,update_at,creator,modifier,delete_flag,spell,title,icon-->
     <select id="searchCategory" parameterType="Integer" resultType="com.sangame.hjm.model.JmCategory">
-        select id,createAt,updateAt,creator,modifier,deleteFlag,spell,title,icon from jm_category
+        select id,created_at createAt,updated_at updateAt,creator,modifier,title,spell,icon,delete_flag deleteFlag
+        from jm_category
+        where delete_flag =0
         order by id asc
     </select>
 
-    <!--商铺详情接口-->
-    <select id="storeDetails" parameterType="Integer" resultType="com.sangame.hjm.model.StoreDetailsResult">
+    <!--猜你喜欢接口-->
+    <select id="searchYourLike" parameterType="Integer" resultType="com.sangame.hjm.model.JmProject">
+        select
+        <include refid="columns"/>
+         from jm_project
+        where state=1 and attribute=0
+        order by id
+        LIMIT #{pageNum},#{pageSize}
+    </select>
+    <!--pageNum =  (page-1)*pageSize-->
+    <!--获取猜你喜欢总条数-->
+    <select id="searchYourLikeTotal" parameterType="com.sangame.hjm.model.SearchYourLikeCase" resultType="Integer">
+        select count(1) from jm_project where state=1 and attribute=0
+    </select>
 
+    <!--商铺详情接口-->
+    <!--第一步：获取商品-->
+    <select id="getJmProject" parameterType="com.sangame.hjm.model.StoreDetailsCase" resultType="com.sangame.hjm.model.JmProject">
+        select
+        <include refid="columns"/>
+         from jm_project where id=#{projectId}
+    </select>
+    <!--第二步：获取商品介绍-->
+    <select id="getJmProjectExtra" parameterType="com.sangame.hjm.model.StoreDetailsCase" resultType="com.sangame.hjm.model.JmProjectExtra">
+        select
+        id,created_at createdAt,updated_at updatedAt,creator,modifier,project_id projectId,introduce,delete_flag deleteFlag
+        from jm_project_extra where project_id=#{projectId}
+    </select>
+    <!--第三步：获取商品照片-->
+    <select id="getJmProjectPhoto" parameterType="com.sangame.hjm.model.StoreDetailsCase" resultType="com.sangame.hjm.model.JmProjectPhoto">
+        select id,created_at,updated_at,creator,modifier,project_id,photo,delete_flag,name,position
+         from jm_project_photo
+         where project_id=#{projectId}
+    </select>
+    <!--第四步：获取商品加盟详情-->
+    <select id="getJmProjectStat" parameterType="com.sangame.hjm.model.StoreDetailsCase" resultType="com.sangame.hjm.model.JmProjectStat">
+        select * from jm_project_stat where project_id=#{projectId}
     </select>
 
     <!--获取在线留言之后的数据-->
     <select id="getOnLineMessage" parameterType="com.sangame.hjm.model.OnLineMessageCase" resultType="com.sangame.hjm.model.JmComment">
-        select id,created_at,updated_at,creator,modifier,cngold_id,comment_id,content,delete_flag from jm_comment
+        select id,created_at createdAt,updated_at updatedAt,creator,modifier,cngold_id cngoldId,comment_id commentId,content,delete_flag deleteFlag
+        from jm_comment
         <trim prefix="where" prefixOverrides="and">
             <if test="null != commentId and '' !=commentId">
                 and comment_id=#{commentId}
@@ -193,7 +187,10 @@
 
     <!--获取项目定制之后的数据    数据库中的电话号码是加密的，这里没有把phone_number加上-->
     <select id="getProjectCustom" parameterType="com.sangame.hjm.model.ProjectCustomCase" resultType="com.sangame.hjm.model.JmNeed">
-        select cngold_id,gender,leaving_message,name,amount_code,interest_category from jm_need
+        select id,created_at createdAt,updated_at updatedAt,creator,modifier,cngold_id cngoldId,gender,job,invest_min investMin,
+        invest_max investMax,interest_category interestCategory,delete_flag deleteFlag,leaving_message leavingMessage,name,
+        phone_number phoneNumber,amount_code amountCode
+        from jm_need
         <trim prefix="where" prefixOverrides="and">
             <if test="null != cngoldId and '' !=cngoldId">
                 and cngold_id=#{cngoldId}
@@ -210,15 +207,15 @@
             <if test="null != amountCode and '' !=amountCode">
                 and amount_code=#{amountCode}
             </if>
-            <if test="null != interestCategory and '' !=interestCategory">
-                and interest_category=#{interestCategory}
-            </if>
+            <!--<if test="null != interestCategory and '' !=interestCategory">-->
+                <!--and interest_category=#{interestCategory}-->
+            <!--</if>-->
         </trim>
     </select>
 
     <!--获取商家入驻之后的数据-->
     <select id="getBusinessEnter" parameterType="com.sangame.hjm.model.BusinessEnterCase" resultType="com.sangame.hjm.model.JmEnterApply">
-        select cngold_id,brand,company,name,city_id from jm_enter_apply
+        select id,created_at,updated_at,creator,modifier,cngold_id,brand,company,name,city_id,delete_flag,phone_number from jm_enter_apply
         <trim prefix="where" prefixOverrides="and">
             <if test="null !=cngoldId and '' !=cngoldId">
                 and cngold_id=#{cngoldId}
@@ -284,11 +281,10 @@
     </select>
 
     <!--关键字搜索接口   <include refid="columns"/>-->
-    <!--createAt,updateAt,creator,modifier,deleteFlag,id,categoryId,subCategoryId,companyId,title,keyword,photo,recommendFlag,buildDate,
-        originAd,business,product,crowd,area,support,investMin,investMax,margin,facilityCost,otherCost,description,directStore,joinStore,
-        messageNum,companyName,registerTime,projectExtra,projectPhoto,likes-->
-    <select id="keyWordSearch" parameterType="com.sangame.hjm.model.JmProject" resultType="com.sangame.hjm.model.JmProject">
-        select * from jm_project
+    <select id="keyWordSearch" parameterType="com.sangame.hjm.model.KeyWordSearchCase" resultType="com.sangame.hjm.model.JmProject">
+        select
+        <include refid="columns"/>
+        from jm_project
         <trim prefix="where" suffixOverrides="AND | OR">
             <if test="keyword != null">
                 keyword like "%"#{keyword}"%" AND
@@ -305,6 +301,22 @@
                 keyword like "%"#{keyword}"%"  AND
             </if>
         </trim>
+    </select>
+
+    <!--查询首页加盟头条-->
+    <select id="getHomeJoinHeadline" parameterType="Integer" resultType="com.sangame.hjm.model.JmProject">
+        select
+        <include refid="columns"/>
+        from jm_project
+        where state=1 and attribute=1
+        LIMIT 10
+    </select>
+    
+    <!--根据行业查询分类-->
+    <select id="searchSubCategoryByCategoryId" parameterType="com.sangame.hjm.model.SearchSubCategoryByCategoryIdCase" resultType="com.sangame.hjm.model.JmSubCategory">
+        select id,created_at,updated_at,creator,modifier,category_id,title,spell,icon,hot_flag,recommend_flag,index_flag,delete_flag
+        from jm_sub_category
+        where category_id=#{categoryId}
     </select>
 
 </mapper>

@@ -1,22 +1,22 @@
 package com.sangame.hjm.cases;
 
-
 import com.google.gson.Gson;
 import com.sangame.hjm.config.TestConfig;
+import com.sangame.hjm.model.InterfaceName;
 import com.sangame.hjm.model.JmComment;
 import com.sangame.hjm.model.OnLineMessageCase;
 import com.sangame.hjm.model.OnLineMessageResult;
+import com.sangame.hjm.utils.ConfigFile;
 import com.sangame.hjm.utils.DatebaseUtil;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.StringEntity;
-import org.apache.http.util.EntityUtils;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.ibatis.session.SqlSession;
-import org.json.JSONObject;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import static com.sangame.hjm.utils.HttpMethodPostUtil.httpMethodPost;
 
 /**
  * 在线留言接口测试
@@ -25,34 +25,37 @@ import java.io.IOException;
 
 public class OnLineMessageTest {
 
-    @Test
-    public void onLineMessage() throws IOException {
+    @BeforeTest
+    public void beforeTest(){
+        TestConfig.onLineMessageUrl = ConfigFile.getUrl(InterfaceName.ONLINEMESSAGE);
+        TestConfig.defaultHttpClient = new DefaultHttpClient();
+    }
+
+    @Test(description = "在线留言接口测试")
+    public void onLineMessage() throws IOException, InterruptedException {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
         OnLineMessageCase onLineMessageCase = sqlSession.selectOne("onLineMessageCase","1"); //先取第一条数据
 
         //发送请求，获取接口返回数据
-        OnLineMessageResult result = getResponseResult(onLineMessageCase);
+//        try {
+            Map<String,Object> map=new HashMap<>();
+            map.put("commentId",onLineMessageCase.getCommentId());
+            map.put("cngoldId",onLineMessageCase.getCngoldId());
+            map.put("content",onLineMessageCase.getContent());
+            String result=httpMethodPost(TestConfig.onLineMessageUrl,map);
+            OnLineMessageResult onLineMessageResult = new Gson().fromJson(result,OnLineMessageResult.class);
+            System.out.println("在线留言接口返回的数据：" + onLineMessageResult.toString());
+                    //获取在线留言后的数据
+            JmComment expectedResult = sqlSession.selectOne("getOnLineMessage",onLineMessageCase);
+            if (expectedResult != null){
+                System.out.println("获取在线留言后的数据：" + expectedResult.toString());
+                //验证结果
+                Assert.assertEquals(onLineMessageResult.getCode(),0);
+                Assert.assertEquals(onLineMessageResult.getMsg(),"success");
+                Assert.assertNotNull(expectedResult);
 
-        //验证结果
-        JmComment actualResult = sqlSession.selectOne(onLineMessageCase.getExpect(),onLineMessageCase);
-        Assert.assertEquals("0",result.getCode());
-        Assert.assertEquals("success",result.getMsg());
-        Assert.assertNotNull(actualResult);
+            }
 
     }
 
-    private OnLineMessageResult getResponseResult(OnLineMessageCase onLineMessageCase) throws IOException {
-        HttpPost post = new HttpPost(TestConfig.onLineMessageUrl);
-        JSONObject param = new JSONObject();
-        param.put("commentId",onLineMessageCase.getCommentId());
-        param.put("content",onLineMessageCase.getContent());
-        param.put("cngoldId",onLineMessageCase.getCngoldId());
-        StringEntity entity = new StringEntity(param.toString(),"utf-8");
-        post.setEntity(entity);
-        System.out.println("onLineMessageUrl post:" + post);
-        HttpResponse response = TestConfig.defaultHttpClient.execute(post);
-        String result = EntityUtils.toString(response.getEntity());
-        OnLineMessageResult resultClass = new Gson().fromJson(result,OnLineMessageResult.class);
-        return resultClass;
-    }
 }

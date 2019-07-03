@@ -5,19 +5,19 @@ import lombok.Data;
 @Data
 public class JmNeed {
     private int id;
-    private String created_at;
-    private String updated_at;
+    private String createdAt;
+    private String updatedAt;
     private String creator;
     private String modifier;
-    private int cngold_id;
+    private int cngoldId;
     private int gender;
     private int job;
-    private double invest_min;
-    private double invest_max;
-    private int interest_category;
-    private int delete_flag;
-    private String leaving_message;
+    private double investMin;
+    private double investMax;
+    private int interestCategory;
+    private int deleteFlag;
+    private String leavingMessage;
     private String name;
-    private String phone_number;
-    private int amount_code;
+    private String phoneNumber;
+    private int amountCode;
 }

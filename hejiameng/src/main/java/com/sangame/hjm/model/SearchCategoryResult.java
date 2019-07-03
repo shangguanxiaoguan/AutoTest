@@ -132,5 +132,29 @@ public class SearchCategoryResult {
         public void setIcon(Object icon) {
             this.icon = icon;
         }
+
+        @Override
+        public String toString() {
+            return "DataBean{" +
+                    "createAt='" + createAt + '\'' +
+                    ", updateAt='" + updateAt + '\'' +
+                    ", creator=" + creator +
+                    ", modifier=" + modifier +
+                    ", deleteFlag=" + deleteFlag +
+                    ", id=" + id +
+                    ", spell='" + spell + '\'' +
+                    ", title='" + title + '\'' +
+                    ", icon=" + icon +
+                    '}';
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "SearchCategoryResult{" +
+                "code=" + code +
+                ", msg='" + msg + '\'' +
+                ", data=" + data +
+                '}';
     }
 }

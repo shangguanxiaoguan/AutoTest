@@ -146,11 +146,11 @@ public class MpGenerator {
         // // 关闭默认 xml 生成，调整生成 至 根目录
         TemplateConfig tc = new TemplateConfig();
         tc.setXml(null);
-//         tc.setController(null);//不生成controller
-//         tc.setService(null);
-//         tc.setServiceImpl(null);
+         tc.setController(null);//不生成controller
+         tc.setService(null);
+         tc.setServiceImpl(null);
 //         tc.setEntity(null);
-//         tc.setMapper(null);
+         tc.setMapper(null);
         mpg.setTemplate(tc);
 
         // 自定义模板配置，可以 copy 源码 mybatis-plus/src/main/resources/templates 下面内容修改，

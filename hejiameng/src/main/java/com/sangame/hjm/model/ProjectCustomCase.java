@@ -4,14 +4,14 @@ import lombok.Data;
 
 @Data
 public class ProjectCustomCase {
-    private int id;
-    private String cngoldId;
-    private String gender;
+//    private int id;
+    private int cngoldId;
+    private int gender;
     private String leavingMessage;
     private String name;
-    private String amountCode;
-    private String amountValue;
-    private String interestCategory;
+    private int amountCode;
+    private double amountValue;
+    private int interestCategory;
     private String phoneNumber;
     private String expect;
 }

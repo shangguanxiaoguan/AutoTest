@@ -15,6 +15,6 @@ public class JmSubCategory {
     private String icon;
     private Integer hot_flag;
     private Integer recommend_flag;
-    private int index_flag;
+    private Integer index_flag;
     private Integer delete_flag;
 }

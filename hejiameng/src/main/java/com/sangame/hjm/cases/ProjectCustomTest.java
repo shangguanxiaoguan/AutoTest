@@ -3,20 +3,27 @@ package com.sangame.hjm.cases;
 
 import com.google.gson.Gson;
 import com.sangame.hjm.config.TestConfig;
+import com.sangame.hjm.model.InterfaceName;
 import com.sangame.hjm.model.JmNeed;
 import com.sangame.hjm.model.ProjectCustomCase;
 import com.sangame.hjm.model.ProjectCustomResult;
+import com.sangame.hjm.utils.ConfigFile;
 import com.sangame.hjm.utils.DatebaseUtil;
+import com.sangame.hjm.utils.HttpMethodPostUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.json.JSONObject;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 项目定制接口测试
@@ -24,39 +31,45 @@ import java.io.IOException;
 
 public class ProjectCustomTest {
 
-    @Test
-    public void projectCustom() throws IOException {
+    @BeforeTest
+    public void beforeTest(){
+        TestConfig.projectCustomUrl = ConfigFile.getUrl(InterfaceName.PROJECTCUSTOM);
+        TestConfig.defaultHttpClient = new DefaultHttpClient();
+    }
+
+    @Test(description = "项目定制接口测试")
+    public void projectCustom() throws IOException, InterruptedException {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
         ProjectCustomCase projectCustomCase = sqlSession.selectOne("projectCustomCase",1);
+        System.out.println("projectCustomCase:" + projectCustomCase.toString());
 
         //发送请求，获取接口返回数据
-        ProjectCustomResult result = getResponseResult(projectCustomCase);
+//        try {
+            Map<String,Object> map = new HashMap<>();
+            map.put("cngoldId",projectCustomCase.getCngoldId());
+            map.put("gender",projectCustomCase.getGender());
+            map.put("leavingMessage",projectCustomCase.getLeavingMessage());
+            map.put("name",projectCustomCase.getName());
+            map.put("amountCode",projectCustomCase.getAmountCode());
+            map.put("amountValue",projectCustomCase.getAmountValue());
+            map.put("interestCategory",projectCustomCase.getInterestCategory());
+            map.put("phoneNumber",projectCustomCase.getPhoneNumber());
+            String result = HttpMethodPostUtil.httpMethodPost(TestConfig.projectCustomUrl,map);
+            ProjectCustomResult projectCustomResult = new Gson().fromJson(result,ProjectCustomResult.class);
+            System.out.println("项目定制接口返回的结果：" + projectCustomResult.toString());
 
-        //验证结果
-        JmNeed actualResult = sqlSession.selectOne(projectCustomCase.getExpect(),projectCustomCase);
 
-        Assert.assertEquals("0",result.getCode());
-        Assert.assertEquals("success",result.getMsg());
-        Assert.assertNotNull(actualResult);
+            //验证结果
+            JmNeed expectedResult = sqlSession.selectOne("getProjectCustom",projectCustomCase);
+            System.out.println("数据库查询出的结果：" + expectedResult.toString());
+
+            Assert.assertEquals(projectCustomResult.getCode(),0);
+            Assert.assertEquals(projectCustomResult.getMsg(),"success");
+            Assert.assertNotNull(expectedResult);
+//        }catch (Exception e){
+//            System.out.println("异常：" + e.getMessage());
+//        }
+
     }
 
-    private ProjectCustomResult getResponseResult(ProjectCustomCase projectCustomCase) throws IOException {
-        HttpPost post = new HttpPost(TestConfig.projectCustomUrl);
-        JSONObject param = new JSONObject();
-        param.put("cngoldId",projectCustomCase.getCngoldId());
-        param.put("gender",projectCustomCase.getGender());
-        param.put("leavingMessage",projectCustomCase.getLeavingMessage());
-        param.put("name",projectCustomCase.getName());
-        param.put("amountCode",projectCustomCase.getAmountCode());
-        param.put("amountValue",projectCustomCase.getAmountValue());
-        param.put("interestCategory",projectCustomCase.getInterestCategory());
-        param.put("phoneNumber",projectCustomCase.getPhoneNumber());
-        StringEntity entity = new StringEntity(param.toString(),"utf-8");
-        post.setEntity(entity);
-        System.out.println("projectCustomUrl post：" + post);
-        HttpResponse response = TestConfig.defaultHttpClient.execute(post);
-        String result = EntityUtils.toString(response.getEntity());
-        ProjectCustomResult resultClass = new Gson().fromJson(result,ProjectCustomResult.class);
-        return resultClass;
-    }
 }
