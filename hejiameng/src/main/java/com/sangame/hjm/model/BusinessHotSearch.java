@@ -3,7 +3,7 @@ package com.sangame.hjm.model;
 import lombok.Data;
 
 @Data
-public class JmProject {
+public class BusinessHotSearch {
     private String createAt;
     private String updateAt;
     private Object creator;
@@ -34,7 +34,7 @@ public class JmProject {
     private int joinStore;
     private int messageNum;
     private Object companyName;
-    private int registerTime;
+    private Integer registerTime;
     private Object projectExtra;
     private Object projectPhotos;
     private Object likes;
@@ -44,4 +44,5 @@ public class JmProject {
     private Integer investCode;
     private double investValue;
     private int regionId;
+    private JmProjectStat projectStat;
 }

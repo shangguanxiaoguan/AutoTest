@@ -80,6 +80,7 @@ public class GetHomeSubCategoryTest {
     private GetHomeSubCategoryResult getJsonResult() throws IOException {
 
         HttpGet get = new HttpGet(TestConfig.getHomeSubCategoryUrl);
+        System.out.println("首页主要分类Url get：" + get);
         HttpResponse response = TestConfig.defaultHttpClient.execute(get);
         String result = EntityUtils.toString(response.getEntity());
         GetHomeSubCategoryResult resultClass = new Gson().fromJson(result,GetHomeSubCategoryResult.class);

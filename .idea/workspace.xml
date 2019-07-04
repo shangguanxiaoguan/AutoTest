@@ -2,83 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3890c92-0e19-47f6-93a2-114a20ef0d8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_generator_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_engine_core_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchSubCategoryByCategoryIdTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchHomeJoinHeadlineResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchSubCategoryByCategoryIdCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchSubCategoryByCategoryIdResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/StoreDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/HttpMethodPostUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/PageInfoUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/resources/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearchResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/Chapter12.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/Chapter12.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/utils/MpGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter12/src/main/java/com/course/utils/MpGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessEnterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessEnterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessHotSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessHotSearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetHomeSubCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetHomeSubCategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetJmBannerTurnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetJmBannerTurnTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetUpdateVersionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetUpdateVersionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/KeyWordSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/KeyWordSearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/OnLineMessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/OnLineMessageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/ProjectCustomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/ProjectCustomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchCategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchProjectForConditionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchProjectForConditionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchYourLikeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchYourLikeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/StoreDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/StoreDetailsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/config/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/config/TestConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessEnterCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessEnterCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/GetHomeSubCategoryResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/GetHomeSubCategoryResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/InterfaceName.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/InterfaceName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmNeed.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmNeed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectExtra.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectExtra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectPhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectPhoto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmSubCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmSubCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/KeyWordSearchResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/KeyWordSearchResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/OnLineMessageCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/OnLineMessageCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/OnLineMessageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/OnLineMessageResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/ProjectCustomCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/ProjectCustomCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/ProjectCustomResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/ProjectCustomResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchCategoryResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchCategoryResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchProjectForConditionCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchProjectForConditionCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchProjectForConditionResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchProjectForConditionResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchYourLikeCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchYourLikeCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchYourLikeResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchYourLikeResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/StoreDetailsResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/StoreDetailsResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/ConfigFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/ConfigFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/DateFormatChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/DateFormatChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/resources/databaseConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/resources/databaseConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Chapter/target/" />
@@ -119,48 +52,48 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="33" />
-          <entry key="java" value="26876" />
+          <entry key="dummy" value="34" />
+          <entry key="java" value="30512" />
           <entry key="json" value="271" />
-          <entry key="properties" value="866" />
-          <entry key="txt" value="88" />
-          <entry key="xml" value="5354" />
+          <entry key="properties" value="992" />
+          <entry key="txt" value="90" />
+          <entry key="xml" value="5816" />
           <entry key="yml" value="250" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="26876" />
+          <entry key="JAVA" value="30512" />
           <entry key="JSON" value="271" />
-          <entry key="PLAIN_TEXT" value="121" />
-          <entry key="Properties" value="866" />
-          <entry key="SQL" value="103" />
-          <entry key="XML" value="5251" />
+          <entry key="PLAIN_TEXT" value="124" />
+          <entry key="Properties" value="992" />
+          <entry key="SQL" value="121" />
+          <entry key="XML" value="5695" />
           <entry key="YAML" value="250" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="21" />
+          <entry key="class" value="22" />
           <entry key="dtd" value="2" />
-          <entry key="java" value="507" />
+          <entry key="java" value="554" />
           <entry key="json" value="5" />
-          <entry key="properties" value="33" />
-          <entry key="txt" value="4" />
-          <entry key="xml" value="100" />
+          <entry key="properties" value="35" />
+          <entry key="txt" value="5" />
+          <entry key="xml" value="102" />
           <entry key="yml" value="2" />
           <entry key="基本操作说明" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="21" />
+          <entry key="CLASS" value="22" />
           <entry key="DTD" value="2" />
-          <entry key="JAVA" value="507" />
+          <entry key="JAVA" value="554" />
           <entry key="JSON" value="5" />
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Properties" value="33" />
-          <entry key="XML" value="100" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Properties" value="35" />
+          <entry key="XML" value="102" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -169,10 +102,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/OnLineMessageTest.java">
+        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/ProjectCustomTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-422">
-              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="201">
+              <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetHomeSubCategoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="82" column="51" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/StoreDetailsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,46 +141,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/ProjectCustomTest.java">
+        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectStat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-236">
-              <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/UpdateUserInfoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="343">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="19" />
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="30" />
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="30" />
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="27" />
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="28" />
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="27" />
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="28" />
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="28" />
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="33" />
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="34" />
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml">
+        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="198" column="36" lean-forward="true" selection-start-line="198" selection-start-column="36" selection-end-line="198" selection-end-column="36" />
+            <state relative-caret-position="447">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/OnLineMessageCase.java">
+        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchCategoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="456">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchProjectForConditionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="74" column="83" selection-start-line="74" selection-start-column="83" selection-end-line="74" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -241,7 +205,6 @@
       <find>actualData</find>
       <find>projectPhotos</find>
       <find>get(i).</find>
-      <find>expectedResult</find>
       <find>createAt</find>
       <find>d</find>
       <find>re</find>
@@ -252,7 +215,10 @@
       <find>jmProject</find>
       <find>猜你喜欢接口返回的data数据</find>
       <find>projectCustomCase</find>
+      <find>expectedResult</find>
+      <find>getCreateYunXinID</find>
       <find>getProjectCustom</find>
+      <find>getJmProjectStat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -261,30 +227,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchCategoryResult.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmCategory.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchYourLikeCase.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/StoreDetails.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/PageInfoUtil.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/DateFormatChange.java" />
-        <option value="$PROJECT_DIR$/Chapter12/src/main/java/com/course/utils/MpGenerator.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectExtra.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/OnLineMessageResult.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmComment.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/resources/databaseConfig.xml" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadline.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/config/TestConfig.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/InterfaceName.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/ConfigFile.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchSubCategoryByCategoryIdCase.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchSubCategoryByCategoryIdResult.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/LoginTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetUpdateVersionTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/resources/testng.xml" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetJmBannerTurnTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/ProjectCustomResult.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/OnLineMessageCase.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetHomeSubCategoryTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/GetHomeSubCategoryResult.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/HttpMethodPostUtil.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmNeed.java" />
@@ -297,21 +246,38 @@
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/StoreDetailsResult.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectPhoto.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectStat.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/StoreDetailsTest.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessEnterTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchProjectForConditionCase.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchProjectForConditionTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchCategoryTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchHomeJoinHeadlineResult.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmSubCategory.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchSubCategoryByCategoryIdTest.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProject.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchProjectForConditionResult.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/CreateYunXinIDResult.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/DistributeYunXinIDCase.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/DistributeYunXinIDResult.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/resources/databaseConfig.xml" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/OnLineMessageTest.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessEnterTest.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/CreateYunXinIDCase.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/CreateYunXinIDTest.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmYunXin.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/DistributeYunXinIDTest.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/InterfaceName.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/config/TestConfig.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/ConfigFile.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/LoginTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/PreferenceRecommendTest.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProject.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearchResult.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearch.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessHotSearchTest.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetHomeSubCategoryTest.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/ProjectCustomTest.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/StoreDetailsTest.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchProjectForConditionTest.java" />
       </list>
     </option>
   </component>
@@ -364,51 +330,6 @@
             <path>
               <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter12" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter12" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter12" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter12" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter12" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="course" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter12" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="course" type="462c0819:PsiDirectoryNode" />
-              <item name="cases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
               <item name="hejiameng" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -450,6 +371,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hjm" type="462c0819:PsiDirectoryNode" />
               <item name="cases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="hejiameng" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hjm" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
@@ -484,7 +415,9 @@
               <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
               <item name="hejiameng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
@@ -508,7 +441,7 @@
     <property name="SearchEverywhereHistoryKey" value="设置静态文件&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562153944958" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562234352978" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="F:/hejiameng/server" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -545,10 +478,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ProjectCustomTest.projectCustom">
+  <component name="RunManager" selected="TestNG.F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml">
     <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Chapter13" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.course.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BusinessHotSearchTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hejiameng" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sangame.hjm.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sangame.hjm.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.sangame.hjm.cases.BusinessHotSearchTest" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -563,7 +512,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OnLineMessageTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PreferenceRecommendTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hejiameng" />
       <extension name="coverage">
         <pattern>
@@ -572,41 +521,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sangame.hjm.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.sangame.hjm.cases.OnLineMessageTest" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProjectCustomTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hejiameng" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sangame.hjm.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sangame.hjm.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.sangame.hjm.cases.ProjectCustomTest" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProjectCustomTest.projectCustom" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="hejiameng" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sangame.hjm.cases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sangame.hjm.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.sangame.hjm.cases.ProjectCustomTest" />
-      <option name="METHOD_NAME" value="projectCustom" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="com.sangame.hjm.cases.PreferenceRecommendTest" />
       <properties />
       <listeners />
       <method v="2">
@@ -629,21 +544,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StoreDetailsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="hejiameng" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sangame.hjm.cases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sangame.hjm.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.sangame.hjm.cases.StoreDetailsTest" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.Application (1)" />
+      <item itemvalue="TestNG.PreferenceRecommendTest" />
+      <item itemvalue="TestNG.BusinessHotSearchTest" />
       <item itemvalue="TestNG.F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" />
+      <item itemvalue="TestNG.StoreDetailsTest" />
       <item itemvalue="TestNG.SearchProjectForConditionTest" />
-      <item itemvalue="TestNG.OnLineMessageTest" />
-      <item itemvalue="TestNG.ProjectCustomTest" />
-      <item itemvalue="TestNG.ProjectCustomTest.projectCustom" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ProjectCustomTest.projectCustom" />
-        <item itemvalue="TestNG.ProjectCustomTest" />
-        <item itemvalue="TestNG.OnLineMessageTest" />
         <item itemvalue="TestNG.F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" />
         <item itemvalue="TestNG.SearchProjectForConditionTest" />
+        <item itemvalue="TestNG.StoreDetailsTest" />
+        <item itemvalue="TestNG.BusinessHotSearchTest" />
+        <item itemvalue="TestNG.PreferenceRecommendTest" />
       </list>
     </recent_temporary>
   </component>
@@ -668,7 +599,7 @@
       <workItem from="1560737110165" duration="24723000" />
       <workItem from="1561338445553" duration="43000000" />
       <workItem from="1561511144978" duration="78910000" />
-      <workItem from="1561944964416" duration="93384000" />
+      <workItem from="1561944964416" duration="125587000" />
     </task>
     <task id="LOCAL-00001" summary="TestNG的基本注解">
       <created>1558937379964</created>
@@ -754,43 +685,57 @@
       <option name="project" value="LOCAL" />
       <updated>1561945100061</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="hejiameng接口测试代码完善2">
+      <created>1562154078765</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1562154078766</updated>
+    </task>
+    <task id="LOCAL-00014" summary="hejiameng接口测试代码完善3">
+      <created>1562217101066</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1562217101066</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OnLineMessageTest - 2019.07.03 at 19h 07m 46s.xml">
-      <configuration name="OnLineMessageTest" configurationId="TestNG" />
+    <history-entry file="StoreDetailsTest - 2019.07.04 at 16h 55m 27s.xml">
+      <configuration name="StoreDetailsTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OnLineMessageTest - 2019.07.03 at 19h 08m 29s.xml">
-      <configuration name="OnLineMessageTest" configurationId="TestNG" />
+    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.04 at 16h 55m 46s.xml">
+      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="OnLineMessageTest - 2019.07.03 at 19h 09m 27s.xml">
-      <configuration name="OnLineMessageTest" configurationId="TestNG" />
+    <history-entry file="SearchProjectForConditionTest - 2019.07.04 at 17h 18m 30s.xml">
+      <configuration name="SearchProjectForConditionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProjectCustomTest - 2019.07.03 at 19h 10m 16s.xml">
-      <configuration name="ProjectCustomTest" configurationId="TestNG" />
+    <history-entry file="SearchProjectForConditionTest - 2019.07.04 at 17h 20m 42s.xml">
+      <configuration name="SearchProjectForConditionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProjectCustomTest - 2019.07.03 at 19h 11m 14s.xml">
-      <configuration name="ProjectCustomTest" configurationId="TestNG" />
+    <history-entry file="SearchProjectForConditionTest - 2019.07.04 at 17h 21m 16s.xml">
+      <configuration name="SearchProjectForConditionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProjectCustomTest - 2019.07.03 at 19h 14m 11s.xml">
-      <configuration name="ProjectCustomTest" configurationId="TestNG" />
+    <history-entry file="SearchProjectForConditionTest - 2019.07.04 at 17h 21m 49s.xml">
+      <configuration name="SearchProjectForConditionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProjectCustomTest - 2019.07.03 at 19h 16m 00s.xml">
-      <configuration name="ProjectCustomTest" configurationId="TestNG" />
+    <history-entry file="SearchProjectForConditionTest - 2019.07.04 at 17h 23m 19s.xml">
+      <configuration name="SearchProjectForConditionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProjectCustomTest_projectCustom - 2019.07.03 at 19h 16m 27s.xml">
-      <configuration name="ProjectCustomTest.projectCustom" configurationId="TestNG" />
+    <history-entry file="SearchProjectForConditionTest - 2019.07.04 at 17h 24m 15s.xml">
+      <configuration name="SearchProjectForConditionTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProjectCustomTest_projectCustom - 2019.07.03 at 19h 18m 09s.xml">
-      <configuration name="ProjectCustomTest.projectCustom" configurationId="TestNG" />
+    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.04 at 17h 24m 29s.xml">
+      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProjectCustomTest_projectCustom - 2019.07.03 at 19h 18m 59s.xml">
-      <configuration name="ProjectCustomTest.projectCustom" configurationId="TestNG" />
+    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.04 at 17h 26m 59s.xml">
+      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="334353000" />
+    <option name="totallyTimeSpent" value="366556000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -803,9 +748,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22654584" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22654584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -815,17 +759,17 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.43213898" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.25841478" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3854506" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.23669924" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.33880597" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4993036" weight="0.47339848" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50080776" side_tool="true" weight="0.33880597" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4993036" weight="0.47339848" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.23669924" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.2649294" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -860,7 +804,9 @@
     <MESSAGE value="Strategy前期配置" />
     <MESSAGE value="hejiameng接口测试代码" />
     <MESSAGE value="hejiameng接口测试代码完善1" />
-    <option name="LAST_COMMIT_MESSAGE" value="hejiameng接口测试代码完善1" />
+    <MESSAGE value="hejiameng接口测试代码完善2" />
+    <MESSAGE value="hejiameng接口测试代码完善3" />
+    <option name="LAST_COMMIT_MESSAGE" value="hejiameng接口测试代码完善3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -871,12 +817,6 @@
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/OnLineMessageTest.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -885,160 +825,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/PageInfoUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/httpcomponents/httpclient/4.5.8/httpclient-4.5.8.jar!/org/apache/http/impl/client/CloseableHttpClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/testng/testng/6.9.7/testng-6.9.7.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="779" selection-start-line="779" selection-end-line="779" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/testng/testng/6.9.7/testng-6.9.7.jar!/org/testng/internal/TestMethodWorker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar!/org/apache/http/entity/StringEntity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/httpcomponents/httpclient/4.5.8/httpclient-4.5.8.jar!/org/apache/http/client/methods/HttpEntityEnclosingRequestBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#631#632#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/httpcomponents/httpclient/4.5.8/httpclient-4.5.8.jar!/org/apache/http/client/methods/HttpPost.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar!/org/apache/http/message/AbstractHttpMessage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/httpcomponents/httpclient/4.5.8/httpclient-4.5.8.jar!/org/apache/http/client/methods/HttpRequestBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#970#971#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1815#1816#0" expanded="true" />
-            <element signature="e#1910#1911#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar!/org/apache/http/util/Args.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar!/org/apache/http/params/HttpProtocolParams.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/GetHomeSubCategoryResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="167" column="22" selection-start-line="167" selection-start-column="22" selection-end-line="167" selection-end-column="22" />
-          <folding>
-            <element signature="e#5718#5719#0" expanded="true" />
-            <element signature="e#5758#5759#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetHomeSubCategoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="73" column="64" selection-start-line="73" selection-start-column="64" selection-end-line="73" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/src/main/java/com/course/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/src/main/java/com/course/controller/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="94" column="49" lean-forward="true" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/databaseConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="97" selection-start-line="10" selection-start-column="97" selection-end-line="10" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/HttpMethodPostUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmComment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1102,50 +888,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/StoreDetailsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="190" column="89" selection-start-line="190" selection-start-column="89" selection-end-line="190" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchYourLikeResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-566">
           <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/StoreDetailsResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="1082" column="45" selection-start-line="1082" selection-start-column="45" selection-end-line="1082" selection-end-column="45" />
-          <folding>
-            <element signature="e#5893#5894#0" expanded="true" />
-            <element signature="e#5920#5921#0" expanded="true" />
-            <element signature="e#5957#5958#0" expanded="true" />
-            <element signature="e#5989#5990#0" expanded="true" />
-            <element signature="e#6019#6020#0" expanded="true" />
-            <element signature="e#6045#6046#0" expanded="true" />
-            <element signature="e#6083#6084#0" expanded="true" />
-            <element signature="e#6113#6114#0" expanded="true" />
-            <element signature="e#6146#6147#0" expanded="true" />
-            <element signature="e#6173#6174#0" expanded="true" />
-            <element signature="e#6215#6216#0" expanded="true" />
-            <element signature="e#6247#6248#0" expanded="true" />
-            <element signature="e#40106#40107#0" expanded="true" />
-            <element signature="e#40155#40156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectStat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1170,43 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/config/TestConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchCategoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="65" column="52" lean-forward="true" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchHomeJoinHeadlineResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="108" column="23" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
-          <folding>
-            <element signature="e#1176#1177#0" expanded="true" />
-            <element signature="e#1203#1204#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1396#1397#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1510#1511#0" expanded="true" />
-            <element signature="e#1542#1543#0" expanded="true" />
-            <element signature="e#8859#8860#0" expanded="true" />
-            <element signature="e#8899#8900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmSubCategory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
@@ -1224,23 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="84" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchProjectForConditionResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -1252,41 +944,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchProjectForConditionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="91" column="67" lean-forward="true" selection-start-line="91" selection-start-column="67" selection-end-line="91" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessEnterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/ProjectCustomResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/OnLineMessageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-422">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -1297,24 +958,623 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/CreateYunXinIDResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5238">
+          <caret line="194" column="18" selection-start-line="194" selection-start-column="18" selection-end-line="194" selection-end-column="18" />
+          <folding>
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#1762#1763#0" expanded="true" />
+            <element signature="e#1801#1802#0" expanded="true" />
+            <element signature="e#1853#1854#0" expanded="true" />
+            <element signature="e#1901#1902#0" expanded="true" />
+            <element signature="e#1940#1941#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
+            <element signature="e#2031#2032#0" expanded="true" />
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2117#2118#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#2205#2206#0" expanded="true" />
+            <element signature="e#2251#2252#0" expanded="true" />
+            <element signature="e#2290#2291#0" expanded="true" />
+            <element signature="e#2329#2330#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
+            <element signature="e#2429#2430#0" expanded="true" />
+            <element signature="e#2470#2471#0" expanded="true" />
+            <element signature="e#2511#2512#0" expanded="true" />
+            <element signature="e#2568#2569#0" expanded="true" />
+            <element signature="e#2620#2621#0" expanded="true" />
+            <element signature="e#2650#2651#0" expanded="true" />
+            <element signature="e#2683#2684#0" expanded="true" />
+            <element signature="e#2720#2721#0" expanded="true" />
+            <element signature="e#2756#2757#0" expanded="true" />
+            <element signature="e#2793#2794#0" expanded="true" />
+            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="e#2878#2879#0" expanded="true" />
+            <element signature="e#2922#2923#0" expanded="true" />
+            <element signature="e#2960#2961#0" expanded="true" />
+            <element signature="e#2998#2999#0" expanded="true" />
+            <element signature="e#3048#3049#0" expanded="true" />
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="e#3131#3132#0" expanded="true" />
+            <element signature="e#3168#3169#0" expanded="true" />
+            <element signature="e#3216#3217#0" expanded="true" />
+            <element signature="e#3260#3261#0" expanded="true" />
+            <element signature="e#3298#3299#0" expanded="true" />
+            <element signature="e#3336#3337#0" expanded="true" />
+            <element signature="e#3386#3387#0" expanded="true" />
+            <element signature="e#3432#3433#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+            <element signature="e#3510#3511#0" expanded="true" />
+            <element signature="e#3562#3563#0" expanded="true" />
+            <element signature="e#3610#3611#0" expanded="true" />
+            <element signature="e#3648#3649#0" expanded="true" />
+            <element signature="e#3686#3687#0" expanded="true" />
+            <element signature="e#3736#3737#0" expanded="true" />
+            <element signature="e#3782#3783#0" expanded="true" />
+            <element signature="e#3822#3823#0" expanded="true" />
+            <element signature="e#3862#3863#0" expanded="true" />
+            <element signature="e#3916#3917#0" expanded="true" />
+            <element signature="e#3966#3967#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter12/src/main/java/com/course/cases/UpdateUserInfoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+        <state relative-caret-position="-385">
+          <caret line="43" column="57" lean-forward="true" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/databaseConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="97" selection-start-line="10" selection-start-column="97" selection-end-line="10" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.5.1/mybatis-3.5.1.jar!/org/apache/ibatis/session/SqlSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/DatebaseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="13" column="76" lean-forward="true" selection-start-line="13" selection-start-column="76" selection-end-line="13" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessEnterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/OnLineMessageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-679">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/CreateYunXinIDCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/DistributeYunXinIDResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#1793#1794#0" expanded="true" />
+            <element signature="e#1832#1833#0" expanded="true" />
+            <element signature="e#1884#1885#0" expanded="true" />
+            <element signature="e#1932#1933#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
+            <element signature="e#2010#2011#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
+            <element signature="e#2110#2111#0" expanded="true" />
+            <element signature="e#2148#2149#0" expanded="true" />
+            <element signature="e#2186#2187#0" expanded="true" />
+            <element signature="e#2236#2237#0" expanded="true" />
+            <element signature="e#2282#2283#0" expanded="true" />
+            <element signature="e#2321#2322#0" expanded="true" />
+            <element signature="e#2360#2361#0" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2460#2461#0" expanded="true" />
+            <element signature="e#2501#2502#0" expanded="true" />
+            <element signature="e#2542#2543#0" expanded="true" />
+            <element signature="e#2599#2600#0" expanded="true" />
+            <element signature="e#2651#2652#0" expanded="true" />
+            <element signature="e#2681#2682#0" expanded="true" />
+            <element signature="e#2714#2715#0" expanded="true" />
+            <element signature="e#2751#2752#0" expanded="true" />
+            <element signature="e#2787#2788#0" expanded="true" />
+            <element signature="e#2821#2822#0" expanded="true" />
+            <element signature="e#2858#2859#0" expanded="true" />
+            <element signature="e#2903#2904#0" expanded="true" />
+            <element signature="e#2947#2948#0" expanded="true" />
+            <element signature="e#2985#2986#0" expanded="true" />
+            <element signature="e#3023#3024#0" expanded="true" />
+            <element signature="e#3073#3074#0" expanded="true" />
+            <element signature="e#3119#3120#0" expanded="true" />
+            <element signature="e#3156#3157#0" expanded="true" />
+            <element signature="e#3193#3194#0" expanded="true" />
+            <element signature="e#3241#3242#0" expanded="true" />
+            <element signature="e#3285#3286#0" expanded="true" />
+            <element signature="e#3323#3324#0" expanded="true" />
+            <element signature="e#3361#3362#0" expanded="true" />
+            <element signature="e#3411#3412#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
+            <element signature="e#3496#3497#0" expanded="true" />
+            <element signature="e#3535#3536#0" expanded="true" />
+            <element signature="e#3587#3588#0" expanded="true" />
+            <element signature="e#3635#3636#0" expanded="true" />
+            <element signature="e#3673#3674#0" expanded="true" />
+            <element signature="e#3711#3712#0" expanded="true" />
+            <element signature="e#3761#3762#0" expanded="true" />
+            <element signature="e#3807#3808#0" expanded="true" />
+            <element signature="e#3847#3848#0" expanded="true" />
+            <element signature="e#3887#3888#0" expanded="true" />
+            <element signature="e#3941#3942#0" expanded="true" />
+            <element signature="e#3991#3992#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmYunXin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/DistributeYunXinIDCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/DistributeYunXinIDTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/InterfaceName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="75" lean-forward="true" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/config/TestConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="31" column="97" selection-start-line="31" selection-start-column="97" selection-end-line="31" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchHomeJoinHeadlineResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2916">
+          <caret line="108" column="23" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+          <folding>
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1240#1241#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1302#1303#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1396#1397#0" expanded="true" />
+            <element signature="e#1435#1436#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1510#1511#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/ConfigFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/CreateYunXinIDTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/相关地址.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1993" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/PreferenceRecommendTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/StoreDetailsResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17577">
+          <caret line="1082" column="45" selection-start-line="1082" selection-start-column="45" selection-end-line="1082" selection-end-column="45" />
+          <folding>
+            <element signature="e#5893#5894#0" expanded="true" />
+            <element signature="e#5920#5921#0" expanded="true" />
+            <element signature="e#5957#5958#0" expanded="true" />
+            <element signature="e#5989#5990#0" expanded="true" />
+            <element signature="e#6019#6020#0" expanded="true" />
+            <element signature="e#6045#6046#0" expanded="true" />
+            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#6113#6114#0" expanded="true" />
+            <element signature="e#6146#6147#0" expanded="true" />
+            <element signature="e#6173#6174#0" expanded="true" />
+            <element signature="e#6215#6216#0" expanded="true" />
+            <element signature="e#6247#6248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearchResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="118" column="23" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
+          <folding>
+            <element signature="e#9864#9865#0" expanded="true" />
+            <element signature="e#9891#9892#0" expanded="true" />
+            <element signature="e#9928#9929#0" expanded="true" />
+            <element signature="e#9960#9961#0" expanded="true" />
+            <element signature="e#9990#9991#0" expanded="true" />
+            <element signature="e#10016#10017#0" expanded="true" />
+            <element signature="e#10054#10055#0" expanded="true" />
+            <element signature="e#10084#10085#0" expanded="true" />
+            <element signature="e#10123#10124#0" expanded="true" />
+            <element signature="e#10150#10151#0" expanded="true" />
+            <element signature="e#10198#10199#0" expanded="true" />
+            <element signature="e#10230#10231#0" expanded="true" />
+            <element signature="e#13144#13145#0" expanded="true" />
+            <element signature="e#13183#13184#0" expanded="true" />
+            <element signature="e#13235#13236#0" expanded="true" />
+            <element signature="e#13283#13284#0" expanded="true" />
+            <element signature="e#13322#13323#0" expanded="true" />
+            <element signature="e#13361#13362#0" expanded="true" />
+            <element signature="e#13413#13414#0" expanded="true" />
+            <element signature="e#13461#13462#0" expanded="true" />
+            <element signature="e#13499#13500#0" expanded="true" />
+            <element signature="e#13537#13538#0" expanded="true" />
+            <element signature="e#13587#13588#0" expanded="true" />
+            <element signature="e#13633#13634#0" expanded="true" />
+            <element signature="e#13672#13673#0" expanded="true" />
+            <element signature="e#13711#13712#0" expanded="true" />
+            <element signature="e#13763#13764#0" expanded="true" />
+            <element signature="e#13811#13812#0" expanded="true" />
+            <element signature="e#13852#13853#0" expanded="true" />
+            <element signature="e#13893#13894#0" expanded="true" />
+            <element signature="e#13950#13951#0" expanded="true" />
+            <element signature="e#14002#14003#0" expanded="true" />
+            <element signature="e#14032#14033#0" expanded="true" />
+            <element signature="e#14065#14066#0" expanded="true" />
+            <element signature="e#14102#14103#0" expanded="true" />
+            <element signature="e#14138#14139#0" expanded="true" />
+            <element signature="e#14176#14177#0" expanded="true" />
+            <element signature="e#14217#14218#0" expanded="true" />
+            <element signature="e#14270#14271#0" expanded="true" />
+            <element signature="e#14322#14323#0" expanded="true" />
+            <element signature="e#14363#14364#0" expanded="true" />
+            <element signature="e#14407#14408#0" expanded="true" />
+            <element signature="e#14466#14467#0" expanded="true" />
+            <element signature="e#14524#14525#0" expanded="true" />
+            <element signature="e#14567#14568#0" expanded="true" />
+            <element signature="e#14610#14611#0" expanded="true" />
+            <element signature="e#14670#14671#0" expanded="true" />
+            <element signature="e#14726#14727#0" expanded="true" />
+            <element signature="e#14772#14773#0" expanded="true" />
+            <element signature="e#14818#14819#0" expanded="true" />
+            <element signature="e#14884#14885#0" expanded="true" />
+            <element signature="e#14946#14947#0" expanded="true" />
+            <element signature="e#14983#14984#0" expanded="true" />
+            <element signature="e#15023#15024#0" expanded="true" />
+            <element signature="e#15074#15075#0" expanded="true" />
+            <element signature="e#15124#15125#0" expanded="true" />
+            <element signature="e#15160#15161#0" expanded="true" />
+            <element signature="e#15196#15197#0" expanded="true" />
+            <element signature="e#15242#15243#0" expanded="true" />
+            <element signature="e#15284#15285#0" expanded="true" />
+            <element signature="e#15322#15323#0" expanded="true" />
+            <element signature="e#15360#15361#0" expanded="true" />
+            <element signature="e#15410#15411#0" expanded="true" />
+            <element signature="e#15456#15457#0" expanded="true" />
+            <element signature="e#15492#15493#0" expanded="true" />
+            <element signature="e#15528#15529#0" expanded="true" />
+            <element signature="e#15574#15575#0" expanded="true" />
+            <element signature="e#15616#15617#0" expanded="true" />
+            <element signature="e#15660#15661#0" expanded="true" />
+            <element signature="e#15704#15705#0" expanded="true" />
+            <element signature="e#15766#15767#0" expanded="true" />
+            <element signature="e#15824#15825#0" expanded="true" />
+            <element signature="e#15864#15865#0" expanded="true" />
+            <element signature="e#15904#15905#0" expanded="true" />
+            <element signature="e#15958#15959#0" expanded="true" />
+            <element signature="e#16008#16009#0" expanded="true" />
+            <element signature="e#16049#16050#0" expanded="true" />
+            <element signature="e#16090#16091#0" expanded="true" />
+            <element signature="e#16146#16147#0" expanded="true" />
+            <element signature="e#16198#16199#0" expanded="true" />
+            <element signature="e#16242#16243#0" expanded="true" />
+            <element signature="e#16286#16287#0" expanded="true" />
+            <element signature="e#16348#16349#0" expanded="true" />
+            <element signature="e#16406#16407#0" expanded="true" />
+            <element signature="e#16444#16445#0" expanded="true" />
+            <element signature="e#16482#16483#0" expanded="true" />
+            <element signature="e#16532#16533#0" expanded="true" />
+            <element signature="e#16578#16579#0" expanded="true" />
+            <element signature="e#16614#16615#0" expanded="true" />
+            <element signature="e#16650#16651#0" expanded="true" />
+            <element signature="e#16696#16697#0" expanded="true" />
+            <element signature="e#16738#16739#0" expanded="true" />
+            <element signature="e#16773#16774#0" expanded="true" />
+            <element signature="e#16808#16809#0" expanded="true" />
+            <element signature="e#16852#16853#0" expanded="true" />
+            <element signature="e#16892#16893#0" expanded="true" />
+            <element signature="e#16930#16931#0" expanded="true" />
+            <element signature="e#16968#16969#0" expanded="true" />
+            <element signature="e#17018#17019#0" expanded="true" />
+            <element signature="e#17064#17065#0" expanded="true" />
+            <element signature="e#17101#17102#0" expanded="true" />
+            <element signature="e#17141#17142#0" expanded="true" />
+            <element signature="e#17192#17193#0" expanded="true" />
+            <element signature="e#17242#17243#0" expanded="true" />
+            <element signature="e#17279#17280#0" expanded="true" />
+            <element signature="e#17319#17320#0" expanded="true" />
+            <element signature="e#17370#17371#0" expanded="true" />
+            <element signature="e#17420#17421#0" expanded="true" />
+            <element signature="e#17457#17458#0" expanded="true" />
+            <element signature="e#17494#17495#0" expanded="true" />
+            <element signature="e#17542#17543#0" expanded="true" />
+            <element signature="e#17586#17587#0" expanded="true" />
+            <element signature="e#17629#17630#0" expanded="true" />
+            <element signature="e#17672#17673#0" expanded="true" />
+            <element signature="e#17732#17733#0" expanded="true" />
+            <element signature="e#17788#17789#0" expanded="true" />
+            <element signature="e#17828#17829#0" expanded="true" />
+            <element signature="e#17868#17869#0" expanded="true" />
+            <element signature="e#17922#17923#0" expanded="true" />
+            <element signature="e#17972#17973#0" expanded="true" />
+            <element signature="e#18014#18015#0" expanded="true" />
+            <element signature="e#18056#18057#0" expanded="true" />
+            <element signature="e#18114#18115#0" expanded="true" />
+            <element signature="e#18168#18169#0" expanded="true" />
+            <element signature="e#18210#18211#0" expanded="true" />
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18310#18311#0" expanded="true" />
+            <element signature="e#18364#18365#0" expanded="true" />
+            <element signature="e#18407#18408#0" expanded="true" />
+            <element signature="e#18450#18451#0" expanded="true" />
+            <element signature="e#18510#18511#0" expanded="true" />
+            <element signature="e#18566#18567#0" expanded="true" />
+            <element signature="e#18599#18600#0" expanded="true" />
+            <element signature="e#18635#18636#0" expanded="true" />
+            <element signature="e#18678#18679#0" expanded="true" />
+            <element signature="e#18720#18721#0" expanded="true" />
+            <element signature="e#18760#18761#0" expanded="true" />
+            <element signature="e#18800#18801#0" expanded="true" />
+            <element signature="e#18854#18855#0" expanded="true" />
+            <element signature="e#18904#18905#0" expanded="true" />
+            <element signature="e#18941#18942#0" expanded="true" />
+            <element signature="e#18981#18982#0" expanded="true" />
+            <element signature="e#19032#19033#0" expanded="true" />
+            <element signature="e#19082#19083#0" expanded="true" />
+            <element signature="e#19126#19127#0" expanded="true" />
+            <element signature="e#19170#19171#0" expanded="true" />
+            <element signature="e#19232#19233#0" expanded="true" />
+            <element signature="e#19290#19291#0" expanded="true" />
+            <element signature="e#19331#19332#0" expanded="true" />
+            <element signature="e#19372#19373#0" expanded="true" />
+            <element signature="e#19428#19429#0" expanded="true" />
+            <element signature="e#19480#19481#0" expanded="true" />
+            <element signature="e#19521#19522#0" expanded="true" />
+            <element signature="e#19562#19563#0" expanded="true" />
+            <element signature="e#19618#19619#0" expanded="true" />
+            <element signature="e#19670#19671#0" expanded="true" />
+            <element signature="e#19713#19714#0" expanded="true" />
+            <element signature="e#19756#19757#0" expanded="true" />
+            <element signature="e#19816#19817#0" expanded="true" />
+            <element signature="e#19872#19873#0" expanded="true" />
+            <element signature="e#19916#19917#0" expanded="true" />
+            <element signature="e#19960#19961#0" expanded="true" />
+            <element signature="e#20022#20023#0" expanded="true" />
+            <element signature="e#20080#20081#0" expanded="true" />
+            <element signature="e#20116#20117#0" expanded="true" />
+            <element signature="e#20152#20153#0" expanded="true" />
+            <element signature="e#20198#20199#0" expanded="true" />
+            <element signature="e#20240#20241#0" expanded="true" />
+            <element signature="e#20275#20276#0" expanded="true" />
+            <element signature="e#20310#20311#0" expanded="true" />
+            <element signature="e#20354#20355#0" expanded="true" />
+            <element signature="e#20394#20395#0" expanded="true" />
+            <element signature="e#20429#20430#0" expanded="true" />
+            <element signature="e#20464#20465#0" expanded="true" />
+            <element signature="e#20508#20509#0" expanded="true" />
+            <element signature="e#20548#20549#0" expanded="true" />
+            <element signature="e#20589#20590#0" expanded="true" />
+            <element signature="e#20630#20631#0" expanded="true" />
+            <element signature="e#20686#20687#0" expanded="true" />
+            <element signature="e#20738#20739#0" expanded="true" />
+            <element signature="e#20780#20781#0" expanded="true" />
+            <element signature="e#20822#20823#0" expanded="true" />
+            <element signature="e#20880#20881#0" expanded="true" />
+            <element signature="e#20934#20935#0" expanded="true" />
+            <element signature="e#20973#20974#0" expanded="true" />
+            <element signature="e#21012#21013#0" expanded="true" />
+            <element signature="e#21064#21065#0" expanded="true" />
+            <element signature="e#21112#21113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="45" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessHotSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetHomeSubCategoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="82" column="51" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/ProjectCustomTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-236">
-          <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+        <state relative-caret-position="201">
+          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectStat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="19" />
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="30" />
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="30" />
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="27" />
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="28" />
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="27" />
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="28" />
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="28" />
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="33" />
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="34" />
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="198" column="36" lean-forward="true" selection-start-line="198" selection-start-column="36" selection-end-line="198" selection-end-column="36" />
+        <state relative-caret-position="189">
+          <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/StoreDetailsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchCategoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchProjectForConditionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="74" column="83" selection-start-line="74" selection-start-column="83" selection-end-line="74" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

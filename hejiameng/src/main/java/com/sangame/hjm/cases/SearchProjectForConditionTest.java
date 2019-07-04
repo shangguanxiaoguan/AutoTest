@@ -60,8 +60,8 @@ public class SearchProjectForConditionTest {
             Assert.assertEquals(result.getTotal(),0);
             Assert.assertEquals(result.getTotalPage(),0);
         }else{
-            Assert.assertEquals(String.valueOf(result.getPageSize()),searchProjectForConditionCase.getPageSize());
-            Assert.assertEquals(result.getPageNum(),searchProjectForConditionCase.getPageNum());
+            Assert.assertEquals(result.getPageSize(),searchProjectForConditionCase.getPageSize());
+            Assert.assertEquals(result.getPageNum(),0);
             Assert.assertEquals(result.getTotal(),expectTotal);
             Assert.assertEquals((double) result.getTotalPage(),Math.ceil((float)expectTotal/Integer.valueOf(searchProjectForConditionCase.getPageSize())));
             for (int i = 0; i < expectedResult.size(); i++){
@@ -69,7 +69,12 @@ public class SearchProjectForConditionTest {
                 Assert.assertEquals(result.getData().get(i).getUpdateAt(),DateFormatChange.dateFormatChange(expectedResult.get(i).getUpdateAt()));
                 Assert.assertEquals(result.getData().get(i).getCreator(),expectedResult.get(i).getCreator());
                 Assert.assertEquals(result.getData().get(i).getModifier(),expectedResult.get(i).getModifier());
-                Assert.assertEquals(result.getData().get(i).isDeleteFlag(),String.valueOf(expectedResult.get(i).getDeleteFlag()));
+                if (expectedResult.get(i).getDeleteFlag() == 0){
+                    Assert.assertEquals(result.getData().get(i).isDeleteFlag(),false);
+                }else{
+                    Assert.assertEquals(result.getData().get(i).isDeleteFlag(),true);
+                }
+
                 Assert.assertEquals(result.getData().get(i).getId(),expectedResult.get(i).getId());
                 Assert.assertEquals(result.getData().get(i).getCategoryId(),expectedResult.get(i).getCategoryId());
                 Assert.assertEquals(result.getData().get(i).getSubCategoryId(),expectedResult.get(i).getSubCategoryId());
@@ -109,7 +114,7 @@ public class SearchProjectForConditionTest {
 //        Field[] fields = searchProjectForConditionCase.getClass().getDeclaredFields();
 
         HttpGet get =new HttpGet(TestConfig.searchProjectForConditionUrl + "?title=" + searchProjectForConditionCase.getTitle()
-                + "&amountCode=" + searchProjectForConditionCase.getAmountCode()
+                + "&investCode=" + searchProjectForConditionCase.getAmountCode()
                 + "&sortCode=" + searchProjectForConditionCase.getSortCode()
                 + "&subCategoryId=" + searchProjectForConditionCase.getSubCategoryId()
                 + "&pageSize=" + searchProjectForConditionCase.getPageSize()

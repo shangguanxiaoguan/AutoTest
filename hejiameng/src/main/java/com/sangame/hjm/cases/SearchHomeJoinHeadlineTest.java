@@ -103,6 +103,7 @@ public class SearchHomeJoinHeadlineTest {
 
     private SearchHomeJoinHeadlineResult getResponseResult() throws IOException {
         HttpGet get = new HttpGet(TestConfig.searchHomeJoinHeadlineUrl);
+        System.out.println("查询首页加盟头条Url get：" + get);
         HttpResponse response = TestConfig.defaultHttpClient.execute(get);
         String result = EntityUtils.toString(response.getEntity(),"utf-8");
         SearchHomeJoinHeadlineResult resultClass = new Gson().fromJson(result,SearchHomeJoinHeadlineResult.class);

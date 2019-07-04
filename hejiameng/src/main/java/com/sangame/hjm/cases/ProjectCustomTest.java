@@ -50,8 +50,8 @@ public class ProjectCustomTest {
             map.put("gender",projectCustomCase.getGender());
             map.put("leavingMessage",projectCustomCase.getLeavingMessage());
             map.put("name",projectCustomCase.getName());
-            map.put("amountCode",projectCustomCase.getAmountCode());
-            map.put("amountValue",projectCustomCase.getAmountValue());
+            map.put("investCode",projectCustomCase.getAmountCode());
+            map.put("investValue",projectCustomCase.getAmountValue());
             map.put("interestCategory",projectCustomCase.getInterestCategory());
             map.put("phoneNumber",projectCustomCase.getPhoneNumber());
             String result = HttpMethodPostUtil.httpMethodPost(TestConfig.projectCustomUrl,map);
@@ -66,9 +66,7 @@ public class ProjectCustomTest {
 //            Assert.assertEquals(projectCustomResult.getCode(),0);
 //            Assert.assertEquals(projectCustomResult.getMsg(),"success");
             Assert.assertNotNull(expectedResult);
-//        }catch (Exception e){
-//            System.out.println("异常：" + e.getMessage());
-//        }
+
 
     }
 

@@ -52,10 +52,7 @@ public class StoreDetailsTest {
         if (!jmProjectPhoto.isEmpty()){
             System.out.println("获取商铺照片：" + jmProjectPhoto.toString());
         }
-        JmProjectStat jmProjectStat = sqlSession.selectOne("getJmProjectStat",storeDetailsCase);
-        if (jmProjectStat != null){
-            System.out.println("获取商铺加盟详情：" + jmProjectStat.toString());
-        }
+
 
         //验证结果
         Assert.assertEquals(result.getCode(),0);
@@ -158,6 +155,11 @@ public class StoreDetailsTest {
         //验证猜你喜欢数据
 
         //验证商铺加盟详情数据
+        SqlSession jmProjectStatSession = DatebaseUtil.getSqlSession();
+        JmProjectStat jmProjectStat = jmProjectStatSession.selectOne("getJmProjectStat",storeDetailsCase);
+        if (jmProjectStat != null){
+            System.out.println("获取商铺加盟详情：" + jmProjectStat.toString());
+        }
         if (result.getData().getStat() !=null && jmProjectStat !=null){
             if (result.getData().getStat().isDeleteFlag().equals("false")){
                 result.getData().setDeleteFlag("0");
@@ -180,7 +182,7 @@ public class StoreDetailsTest {
             if (jmProjectStat.getVisit_count() ==0){
                 Assert.assertEquals(result.getData().getStat().getVisitCount(),null);
             }else{
-                Assert.assertEquals(result.getData().getStat().getVisitCount(),jmProjectStat.getVisit_count());
+                Assert.assertEquals(result.getData().getStat().getVisitCount(),Double.valueOf(jmProjectStat.getVisit_count()));
             }
             if (jmProjectStat.getJoin_store_count() == 0){
                 Assert.assertEquals(result.getData().getStat().getJoinStoreCount(),null);

@@ -15,7 +15,7 @@
         title,keyword,photo,recommend_flag recommendFlag,register_time registerTime,
         company_name companyName,build_date buildDate,origin_addr originAddr,business_model businessModel,product,crowd,
         area,support,invest_min investMin,invest_max investMax,margin,facility_cost facilityCost,other_cost otherCost,description,
-        state,attribute,delete_flag deleteFlag,core,invest_code investCode,invest_value investValue
+        state,attribute,delete_flag deleteFlag,core,invest_code investCode,invest_value investValue,region_id regionId
     </sql>
 
     <!--获取APP更新接口case-->
@@ -176,7 +176,8 @@
     </select>
     <!--第四步：获取商品加盟详情-->
     <select id="getJmProjectStat" parameterType="com.sangame.hjm.model.StoreDetailsCase" resultType="com.sangame.hjm.model.JmProjectStat">
-        select * from jm_project_stat where project_id=#{projectId}
+        select id,created_at,updated_at,creator,modifier,project_id,apply_count,visit_count,join_store_count,direct_store_count,delete_flag
+        from jm_project_stat where project_id=#{projectId}
     </select>
 
     <!--获取在线留言之后的数据-->
@@ -200,7 +201,7 @@
     <select id="getProjectCustom" parameterType="com.sangame.hjm.model.ProjectCustomCase" resultType="com.sangame.hjm.model.JmNeed">
         select id,created_at createdAt,updated_at updatedAt,creator,modifier,cngold_id cngoldId,gender,job,invest_min investMin,
         invest_max investMax,interest_category interestCategory,delete_flag deleteFlag,leaving_message leavingMessage,name,
-        phone_number phoneNumber,amount_code amountCode
+        phone_number phoneNumber,invest_code amountCode
         from jm_need
         <trim prefix="where" prefixOverrides="and">
             <if test="null != cngoldId and '' !=cngoldId">
@@ -216,7 +217,7 @@
                 and name=#{name}
             </if>
             <if test="null != amountCode and '' !=amountCode">
-                and amount_code=#{amountCode}
+                and invest_code=#{amountCode}
             </if>
             <if test="null != interestCategory and '' !=interestCategory">
                 and interest_category=#{interestCategory}
@@ -352,6 +353,20 @@
         where state=1 and attribute=0
         order by created_at desc
         LIMIT 10
+    </select>
+
+    <!--查询商机热搜-->
+    <select id="getBusinessHotSearch" parameterType="Integer" resultType="com.sangame.hjm.model.BusinessHotSearch">
+        select p.id,p.created_at as createAt,p.updated_at as updateAt,p.creator,p.modifier,direct_store as directStore,
+        join_store as joinStore,message_num messageNum,category_id categoryId,sub_category_id subCategoryId,company_id companyId,
+        title,keyword,photo,recommend_flag recommendFlag,register_time registerTime,
+        company_name companyName,build_date buildDate,origin_addr originAddr,business_model businessModel,product,crowd,
+        area,support,invest_min investMin,invest_max investMax,margin,facility_cost facilityCost,other_cost otherCost,description,
+        state,attribute,p.delete_flag deleteFlag,core,invest_code investCode,invest_value investValue,region_id regionId,apply_count,visit_count
+        from jm_project p INNER JOIN jm_project_stat s on p.id=s.project_id
+        WHERE s.created_at > DATE_SUB(CURDATE(), INTERVAL 1 WEEK)
+        ORDER BY s.visit_count DESC
+        LIMIT 0,10;
     </select>
     
 </mapper>
