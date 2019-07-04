@@ -10,7 +10,7 @@ public class JmProjectStat {
     private String creator;
     private String modifier;
     private int project_id;
-    private int apply_count;
+    private Integer apply_count;
     private int visit_count;
     private int join_store_count;
     private int direct_store_count;

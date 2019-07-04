@@ -912,7 +912,7 @@ public class StoreDetailsResult {
             private String deleteFlag;
             private int id;
             private int projectId;
-            private int applyCount;
+            private Integer applyCount;
             private Object visitCount;
             private int joinStoreCount;
             private int directStoreCount;
@@ -973,7 +973,7 @@ public class StoreDetailsResult {
                 this.projectId = projectId;
             }
 
-            public int getApplyCount() {
+            public Integer getApplyCount() {
                 return applyCount;
             }
 

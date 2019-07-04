@@ -50,17 +50,15 @@ public class SearchHomeJoinHeadlineTest {
         Assert.assertEquals(result.getData().size(),expectedResult.size());
         if (!result.getData().isEmpty() && !expectedResult.isEmpty()){
             for (int i = 0;i < expectedResult.size(); i++){
-                if (result.getData().get(i).isDeleteFlag().equals("false")){
-                    result.getData().get(i).setDeleteFlag("0");
-                }else if (result.getData().get(i).isDeleteFlag().equals("true")){
-                    result.getData().get(i).setDeleteFlag("1");
-                }
-
                 Assert.assertEquals(result.getData().get(i).getCreateAt(), DateFormatChange.dateFormatChange(expectedResult.get(i).getCreateAt()));
                 Assert.assertEquals(result.getData().get(i).getUpdateAt(), DateFormatChange.dateFormatChange(expectedResult.get(i).getUpdateAt()));
                 Assert.assertEquals(result.getData().get(i).getCreator(),expectedResult.get(i).getCreator());
                 Assert.assertEquals(result.getData().get(i).getModifier(),expectedResult.get(i).getModifier());
-                Assert.assertEquals(result.getData().get(i).isDeleteFlag(),String.valueOf(expectedResult.get(i).getDeleteFlag()));
+                if (expectedResult.get(i).getDeleteFlag() == 0){
+                    Assert.assertEquals(result.getData().get(i).isDeleteFlag(),false);
+                }else{
+                    Assert.assertEquals(result.getData().get(i).isDeleteFlag(),true);
+                }
                 Assert.assertEquals(result.getData().get(i).getId(),expectedResult.get(i).getId());
                 Assert.assertEquals(result.getData().get(i).getCategoryId(),expectedResult.get(i).getCategoryId());
                 Assert.assertEquals(result.getData().get(i).getSubCategoryId(),expectedResult.get(i).getSubCategoryId());

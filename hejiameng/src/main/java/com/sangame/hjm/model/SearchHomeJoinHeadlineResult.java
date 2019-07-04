@@ -84,7 +84,7 @@ public class SearchHomeJoinHeadlineResult {
         private String updateAt;
         private Object creator;
         private Object modifier;
-        private String deleteFlag;
+        private boolean deleteFlag;
         private int id;
         private int categoryId;
         private int subCategoryId;
@@ -151,11 +151,11 @@ public class SearchHomeJoinHeadlineResult {
             this.modifier = modifier;
         }
 
-        public String isDeleteFlag() {
+        public boolean isDeleteFlag() {
             return deleteFlag;
         }
 
-        public void setDeleteFlag(String deleteFlag) {
+        public void setDeleteFlag(boolean deleteFlag) {
             this.deleteFlag = deleteFlag;
         }
 

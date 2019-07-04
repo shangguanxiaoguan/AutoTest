@@ -100,8 +100,8 @@ public class BusinessHotSearchTest {
             }else if(expectedResult.get(i).getAttribute() == 1){
                 Assert.assertEquals(result.getData().get(i).getAttributeName(),"头条");
             }
-            Assert.assertEquals(result.getData().get(i).getApplyCount(),expectedResult.get(i).getProjectStat().getApply_count());
-            Assert.assertEquals(result.getData().get(i).getVisitCount(),expectedResult.get(i).getProjectStat().getVisit_count());
+            Assert.assertEquals(result.getData().get(i).getApplyCount(),expectedResult.get(i).getApply_count());
+            Assert.assertEquals(result.getData().get(i).getVisitCount(),expectedResult.get(i).getVisit_count());
             Assert.assertEquals(result.getData().get(i).getInvestCode(),expectedResult.get(i).getInvestCode());
             Assert.assertEquals(result.getData().get(i).getInvestValue(),expectedResult.get(i).getInvestValue());
             Assert.assertEquals(result.getData().get(i).getRegionId(),expectedResult.get(i).getRegionId());

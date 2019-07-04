@@ -86,6 +86,30 @@
                 </methods>
             </class>
 
+            <class name="com.sangame.hjm.cases.CreateYunXinIDTest">
+                <methods>
+                    <include name="createYunXinID"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.DistributeYunXinIDTest">
+                <methods>
+                    <include name="distributeYunXinID"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.PreferenceRecommendTest">
+                <methods>
+                    <include name="preferenceRecommend"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.BusinessHotSearchTest">
+                <methods>
+                    <include name="businessHotSearch"/>
+                </methods>
+            </class>
+
         </classes>
     </test>
 

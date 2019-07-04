@@ -120,7 +120,7 @@ public class BusinessHotSearchResult {
         private String stateName;
         private int attribute;
         private String attributeName;
-        private Object applyCount;
+        private Integer applyCount;
         private Object visitCount;
         private Object projectExtra;
         private Object projectPhotos;
@@ -403,11 +403,12 @@ public class BusinessHotSearchResult {
             this.attributeName = attributeName;
         }
 
-        public Object getApplyCount() {
+        public Integer getApplyCount() {
             return applyCount;
         }
 
-        public void setApplyCount(Object applyCount) {
+        public void setApplyCount(Integer
+                                          applyCount) {
             this.applyCount = applyCount;
         }
 

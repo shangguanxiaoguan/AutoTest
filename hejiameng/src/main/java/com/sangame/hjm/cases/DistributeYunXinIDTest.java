@@ -75,7 +75,8 @@ public class DistributeYunXinIDTest {
         System.out.println("分配云信客服用户URL get：" + get);
         HttpResponse response = TestConfig.defaultHttpClient.execute(get);
         String result = EntityUtils.toString(response.getEntity());
-        DistributeYunXinIDResult resultClass= new Gson().fromJson(result,DistributeYunXinIDResult.class);
+        System.out.println("result:" + result);
+        DistributeYunXinIDResult resultClass = new Gson().fromJson(result,DistributeYunXinIDResult.class);
         return resultClass;
     }
 
