@@ -27,6 +27,9 @@ public class LoginTest {
         TestConfig.BusinessEnterUrl = ConfigFile.getUrl(InterfaceName.BUSINESSENTER);
         TestConfig.searchHomeJoinHeadlineUrl = ConfigFile.getUrl(InterfaceName.GETHOMEJOINHEADLINE);
         TestConfig.searchSubCategoryByCategoryIdUrl = ConfigFile.getUrl(InterfaceName.SEARCHSUBCATEGORYBYCATEGORYID);
+        TestConfig.createYunXinIDUrl = ConfigFile.getUrl(InterfaceName.CREATEYUNXINID);
+        TestConfig.distributeYunXinIDUrl = ConfigFile.getUrl(InterfaceName.DISTRIBUTEYUNXINID);
+        TestConfig.preferenceRecommendUrl = ConfigFile.getUrl(InterfaceName.PREFERENCERECOMMEND);
 
         TestConfig.defaultHttpClient = new DefaultHttpClient();
 //        TestConfig.store

@@ -20,6 +20,10 @@ public class TestConfig {
     public static String BusinessEnterUrl;
     public static String searchHomeJoinHeadlineUrl;
     public static String searchSubCategoryByCategoryIdUrl;
+    public static String distributeYunXinIDUrl;
+    public static String createYunXinIDUrl;
+    public static String preferenceRecommendUrl;
+    public static String businessHotSearchUrl;
 
 
     public static DefaultHttpClient defaultHttpClient;

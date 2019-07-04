@@ -54,6 +54,18 @@ public class ConfigFile {
         if (name == InterfaceName.SEARCHSUBCATEGORYBYCATEGORYID){
             uri = bundle.getString("searchSubCategoryByCategoryId.uri");
         }
+        if (name == InterfaceName.CREATEYUNXINID){
+            uri = bundle.getString("createYunXinID.uri");
+        }
+        if (name == InterfaceName.DISTRIBUTEYUNXINID){
+            uri = bundle.getString("distributeYunXinID.uri");
+        }
+        if (name == InterfaceName.PREFERENCERECOMMEND){
+            uri = bundle.getString("preferenceRecommend.uri");
+        }
+        if (name == InterfaceName.BUSINESSHOTSEARCH){
+            uri = bundle.getString("businessHotSearch.uri");
+        }
         testUrl = address + uri;
         return testUrl;
     }

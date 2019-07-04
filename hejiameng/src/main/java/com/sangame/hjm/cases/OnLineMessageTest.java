@@ -36,25 +36,25 @@ public class OnLineMessageTest {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
         OnLineMessageCase onLineMessageCase = sqlSession.selectOne("onLineMessageCase","1"); //先取第一条数据
 
-        //发送请求，获取接口返回数据
-//        try {
-            Map<String,Object> map=new HashMap<>();
-            map.put("commentId",onLineMessageCase.getCommentId());
-            map.put("cngoldId",onLineMessageCase.getCngoldId());
-            map.put("content",onLineMessageCase.getContent());
-            String result=httpMethodPost(TestConfig.onLineMessageUrl,map);
-            OnLineMessageResult onLineMessageResult = new Gson().fromJson(result,OnLineMessageResult.class);
-            System.out.println("在线留言接口返回的数据：" + onLineMessageResult.toString());
-                    //获取在线留言后的数据
-            JmComment expectedResult = sqlSession.selectOne("getOnLineMessage",onLineMessageCase);
-            if (expectedResult != null){
-                System.out.println("获取在线留言后的数据：" + expectedResult.toString());
-                //验证结果
-                Assert.assertEquals(onLineMessageResult.getCode(),0);
-                Assert.assertEquals(onLineMessageResult.getMsg(),"success");
-                Assert.assertNotNull(expectedResult);
+        Map<String,Object> map=new HashMap<>();
+        map.put("commentId",onLineMessageCase.getCommentId());
+        map.put("cngoldId",onLineMessageCase.getCngoldId());
+        map.put("content",onLineMessageCase.getContent());
+        String result=httpMethodPost(TestConfig.onLineMessageUrl,map);
+        OnLineMessageResult onLineMessageResult = new Gson().fromJson(result,OnLineMessageResult.class);
+        System.out.println("在线留言接口返回的数据：" + onLineMessageResult.toString());
 
-            }
+        //获取在线留言后的数据
+        SqlSession expectedSession = DatebaseUtil.getSqlSession();
+        JmComment expectedResult = expectedSession.selectOne("getOnLineMessage",onLineMessageCase);
+        if (expectedResult != null){
+            System.out.println("获取在线留言后的数据：" + expectedResult.toString());
+            //验证结果
+            Assert.assertEquals(onLineMessageResult.getCode(),0);
+            Assert.assertEquals(onLineMessageResult.getMsg(),"success");
+            Assert.assertNotNull(expectedResult);
+
+        }
 
     }
 

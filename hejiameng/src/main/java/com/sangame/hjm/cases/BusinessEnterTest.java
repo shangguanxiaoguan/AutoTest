@@ -56,9 +56,9 @@ public class BusinessEnterTest {
         System.out.println("上家入驻接口返回的数据：" + businessEnterResult.toString());
 
         //验证结果
-        Thread.sleep(3000);
+        SqlSession expectedSession = DatebaseUtil.getSqlSession();
         System.out.println("businessEnterCase.getExpect()：" + businessEnterCase.getExpect());
-        JmEnterApply expectedResult = sqlSession.selectOne("getBusinessEnter",businessEnterCase);
+        JmEnterApply expectedResult = expectedSession.selectOne("getBusinessEnter",businessEnterCase);
         System.out.println("商家入驻的验证result：" + expectedResult.toString());
 
         Assert.assertEquals(0,businessEnterResult.getCode());

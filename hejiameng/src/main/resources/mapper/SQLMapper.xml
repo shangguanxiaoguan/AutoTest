@@ -63,6 +63,17 @@
         select categoryid from searchsubcategorybycategoryidcase
         where id=#{id}
     </select>
+    <!--创建云信客服用户case-->
+    <select id="createYunXinIDCase" parameterType="Integer" resultType="com.sangame.hjm.model.CreateYunXinIDCase">
+        select userId,expect from createyunxinidcase
+        where id=#{id}
+    </select>
+    <!--分配云信客服case-->
+    <select id="distributeYunXinIDCase" parameterType="Integer" resultType="com.sangame.hjm.model.DistributeYunXinIDCase">
+        select accid,expect from distributeyunxinidcase
+        where id=#{id}
+    </select>
+
 
 
 
@@ -207,9 +218,9 @@
             <if test="null != amountCode and '' !=amountCode">
                 and amount_code=#{amountCode}
             </if>
-            <!--<if test="null != interestCategory and '' !=interestCategory">-->
-                <!--and interest_category=#{interestCategory}-->
-            <!--</if>-->
+            <if test="null != interestCategory and '' !=interestCategory">
+                and interest_category=#{interestCategory}
+            </if>
         </trim>
     </select>
 
@@ -319,4 +330,28 @@
         where category_id=#{categoryId}
     </select>
 
+    <!--获取创建云信客服之后的数据-->
+    <select id="getCreateYunXinID" parameterType="com.sangame.hjm.model.CreateYunXinIDCase" resultType="com.sangame.hjm.model.JmYunXin">
+        select id,user_id,yx_accid,yx_name,yx_token,crm_agent,access_app,created_at,updated_at,modifier,creator,delete_flag
+        from jm_yunxin
+        where user_id =#{userId}
+    </select>
+
+    <!--分配云信客服-->
+    <select id="getDistributeYunXinID" parameterType="com.sangame.hjm.model.DistributeYunXinIDCase" resultType="com.sangame.hjm.model.JmYunXin">
+        select id,user_id,yx_accid,yx_name,yx_token,crm_agent,access_app,created_at,updated_at,modifier,creator,delete_flag
+        from jm_yunxin
+        where yx_accid =#{accid}
+    </select>
+    
+    <!--查询优选推荐-->
+    <select id="getPreferenceRecommend" parameterType="Integer" resultType="com.sangame.hjm.model.JmProject">
+        select
+        <include refid="columns"/>
+        from jm_project
+        where state=1 and attribute=0
+        order by created_at desc
+        LIMIT 10
+    </select>
+    
 </mapper>
