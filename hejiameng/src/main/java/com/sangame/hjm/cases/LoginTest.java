@@ -30,6 +30,7 @@ public class LoginTest {
         TestConfig.createYunXinIDUrl = ConfigFile.getUrl(InterfaceName.CREATEYUNXINID);
         TestConfig.distributeYunXinIDUrl = ConfigFile.getUrl(InterfaceName.DISTRIBUTEYUNXINID);
         TestConfig.preferenceRecommendUrl = ConfigFile.getUrl(InterfaceName.PREFERENCERECOMMEND);
+        TestConfig.userRegisterUrl = ConfigFile.getUrl(InterfaceName.USERREGISTER);
 
         TestConfig.defaultHttpClient = new DefaultHttpClient();
 //        TestConfig.store

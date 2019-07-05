@@ -62,6 +62,12 @@
                 </methods>
             </class>
 
+            <class name="com.sangame.hjm.cases.SearchInvestmentTest">
+                <methods>
+                    <include name="searchInvestment"/>
+                </methods>
+            </class>
+
             <class name="com.sangame.hjm.cases.ProjectCustomTest">
                 <methods>
                     <include name="projectCustom"/>
@@ -107,6 +113,12 @@
             <class name="com.sangame.hjm.cases.BusinessHotSearchTest">
                 <methods>
                     <include name="businessHotSearch"/>
+                </methods>
+            </class>
+
+            <class name="com.sangame.hjm.cases.UserRegisterTest">
+                <methods>
+                    <include name="userRegister"/>
                 </methods>
             </class>
 

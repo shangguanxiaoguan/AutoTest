@@ -66,6 +66,9 @@ public class ConfigFile {
         if (name == InterfaceName.BUSINESSHOTSEARCH){
             uri = bundle.getString("businessHotSearch.uri");
         }
+        if (name == InterfaceName.USERREGISTER){
+            uri = bundle.getString("userRegister.uri");
+        }
         testUrl = address + uri;
         return testUrl;
     }

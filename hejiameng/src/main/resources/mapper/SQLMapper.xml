@@ -73,6 +73,12 @@
         select accid,expect from distributeyunxinidcase
         where id=#{id}
     </select>
+    <!--用户注册上报case-->
+    <select id="userRegisterCase" parameterType="Integer" resultType="com.sangame.hjm.model.UserRegisterCase">
+        select passportId,expect from userregistercase
+        where id=#{id}
+    </select>
+
 
 
 
@@ -321,6 +327,7 @@
         <include refid="columns"/>
         from jm_project
         where state=1 and attribute=1
+        order by created_at desc
         LIMIT 10
     </select>
     
@@ -355,7 +362,7 @@
         LIMIT 10
     </select>
 
-    <!--查询商机热搜-->
+    <!--查询商机热搜   WHERE s.created_at > DATE_SUB(CURDATE(), INTERVAL 1 WEEK)-->
     <select id="getBusinessHotSearch" parameterType="Integer" resultType="com.sangame.hjm.model.BusinessHotSearch">
         select p.id,p.created_at as createAt,p.updated_at as updateAt,p.creator,p.modifier,direct_store as directStore,
         join_store as joinStore,message_num messageNum,category_id categoryId,sub_category_id subCategoryId,company_id companyId,
@@ -364,7 +371,6 @@
         area,support,invest_min investMin,invest_max investMax,margin,facility_cost facilityCost,other_cost otherCost,description,
         state,attribute,p.delete_flag deleteFlag,core,invest_code investCode,invest_value investValue,region_id regionId,apply_count,visit_count
         from jm_project p INNER JOIN jm_project_stat s on p.id=s.project_id
-        WHERE s.created_at > DATE_SUB(CURDATE(), INTERVAL 1 WEEK)
         ORDER BY s.visit_count DESC
         LIMIT 0,10;
     </select>

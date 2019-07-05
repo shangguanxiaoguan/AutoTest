@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3890c92-0e19-47f6-93a2-114a20ef0d8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchInvestmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/UserRegisterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmInvestmentAmountEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchInvestmentResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/UserRegisterCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/UserRegisterResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessHotSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessHotSearchTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/DistributeYunXinIDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/DistributeYunXinIDTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearchResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearchResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchHomeJoinHeadlineResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchHomeJoinHeadlineResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/StoreDetailsResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/StoreDetailsResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/config/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/config/TestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/InterfaceName.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/InterfaceName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmBanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmBanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/ConfigFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/ConfigFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hejiameng/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/resources/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Chapter/target/" />
@@ -53,22 +57,22 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="34" />
-          <entry key="java" value="30608" />
+          <entry key="java" value="31661" />
           <entry key="json" value="271" />
-          <entry key="properties" value="992" />
-          <entry key="txt" value="91" />
-          <entry key="xml" value="6020" />
+          <entry key="properties" value="1021" />
+          <entry key="txt" value="98" />
+          <entry key="xml" value="6148" />
           <entry key="yml" value="250" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="30608" />
+          <entry key="JAVA" value="31661" />
           <entry key="JSON" value="271" />
-          <entry key="PLAIN_TEXT" value="125" />
-          <entry key="Properties" value="992" />
-          <entry key="SQL" value="122" />
-          <entry key="XML" value="5898" />
+          <entry key="PLAIN_TEXT" value="132" />
+          <entry key="Properties" value="1021" />
+          <entry key="SQL" value="124" />
+          <entry key="XML" value="6024" />
           <entry key="YAML" value="250" />
         </counts>
       </usages-collector>
@@ -76,11 +80,11 @@
         <counts>
           <entry key="class" value="22" />
           <entry key="dtd" value="2" />
-          <entry key="java" value="570" />
+          <entry key="java" value="581" />
           <entry key="json" value="5" />
-          <entry key="properties" value="35" />
+          <entry key="properties" value="37" />
           <entry key="txt" value="5" />
-          <entry key="xml" value="106" />
+          <entry key="xml" value="110" />
           <entry key="yml" value="2" />
           <entry key="基本操作说明" value="2" />
         </counts>
@@ -89,11 +93,11 @@
         <counts>
           <entry key="CLASS" value="22" />
           <entry key="DTD" value="2" />
-          <entry key="JAVA" value="570" />
+          <entry key="JAVA" value="581" />
           <entry key="JSON" value="5" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Properties" value="35" />
-          <entry key="XML" value="106" />
+          <entry key="Properties" value="37" />
+          <entry key="XML" value="110" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -101,23 +105,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/DistributeYunXinIDTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+            <state relative-caret-position="426">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,26 +120,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="358" column="104" selection-start-line="358" selection-start-column="104" selection-end-line="358" selection-end-column="104" />
+            <state relative-caret-position="310">
+              <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearch.java">
+        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmBanner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+            <state relative-caret-position="265">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessHotSearchTest.java">
+        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchInvestmentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="102" selection-start-line="102" selection-end-line="102" />
+            <state relative-caret-position="403">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,10 +148,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/PreferenceRecommendTest.java">
+        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/UserRegisterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="59" column="70" lean-forward="true" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
+            <state relative-caret-position="403">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,27 +159,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchHomeJoinHeadlineResult.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="157" column="41" selection-start-line="157" selection-start-column="41" selection-end-line="157" selection-end-column="41" />
-              <folding>
-                <element signature="e#1176#1177#0" expanded="true" />
-                <element signature="e#1203#1204#0" expanded="true" />
-                <element signature="e#1240#1241#0" expanded="true" />
-                <element signature="e#1272#1273#0" expanded="true" />
-                <element signature="e#1302#1303#0" expanded="true" />
-                <element signature="e#1328#1329#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
-                <element signature="e#1396#1397#0" expanded="true" />
-                <element signature="e#1435#1436#0" expanded="true" />
-                <element signature="e#1462#1463#0" expanded="true" />
-                <element signature="e#1510#1511#0" expanded="true" />
-                <element signature="e#1542#1543#0" expanded="true" />
-                <element signature="e#4887#4888#0" expanded="true" />
-                <element signature="e#4928#4929#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2505">
+              <caret line="120" column="50" selection-start-line="120" selection-start-column="50" selection-end-line="120" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -230,13 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchSubCategoryByCategoryIdResult.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetUpdateVersionTest.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetJmBannerTurnTest.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/ProjectCustomResult.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/OnLineMessageCase.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/GetHomeSubCategoryResult.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/HttpMethodPostUtil.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmNeed.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/ProjectCustomCase.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessEnterCase.java" />
@@ -259,11 +228,6 @@
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/CreateYunXinIDCase.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/CreateYunXinIDTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmYunXin.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/InterfaceName.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/config/TestConfig.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/ConfigFile.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/LoginTest.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/PreferenceRecommendTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProject.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/GetHomeSubCategoryTest.java" />
@@ -271,16 +235,28 @@
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/StoreDetailsTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchProjectForConditionTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/pom.xml" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/resources/testng.xml" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectStat.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearchResult.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/DistributeYunXinIDTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/StoreDetailsResult.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchHomeJoinHeadlineResult.java" />
-        <option value="$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessHotSearchTest.java" />
         <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearch.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmBanner.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchInvestmentResult.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmInvestmentAmountEnum.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchInvestmentTest.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/UserRegisterCase.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/InterfaceName.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/ConfigFile.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/config/TestConfig.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/LoginTest.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/UserRegisterResult.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/UserRegisterTest.java" />
+        <option value="$PROJECT_DIR$/hejiameng/src/main/resources/testng.xml" />
       </list>
     </option>
   </component>
@@ -333,6 +309,32 @@
             <path>
               <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter12" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter12" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter12" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter12" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
               <item name="hejiameng" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -381,7 +383,29 @@
               <item name="hejiameng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hjm" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="hejiameng" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hjm" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="hejiameng" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hjm" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
@@ -390,13 +414,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
               <item name="hejiameng" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -414,7 +437,7 @@
     <property name="SearchEverywhereHistoryKey" value="设置静态文件&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562243157539" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562303379546" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="F:/hejiameng/server" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -485,7 +508,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PreferenceRecommendTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchInvestmentTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hejiameng" />
       <extension name="coverage">
         <pattern>
@@ -494,7 +517,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sangame.hjm.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.sangame.hjm.cases.PreferenceRecommendTest" />
+      <option name="MAIN_CLASS_NAME" value="com.sangame.hjm.cases.SearchInvestmentTest" />
       <properties />
       <listeners />
       <method v="2">
@@ -517,7 +540,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StoreDetailsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRegisterTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="hejiameng" />
       <extension name="coverage">
         <pattern>
@@ -526,7 +549,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sangame.hjm.cases" />
-      <option name="MAIN_CLASS_NAME" value="com.sangame.hjm.cases.StoreDetailsTest" />
+      <option name="MAIN_CLASS_NAME" value="com.sangame.hjm.cases.UserRegisterTest" />
       <properties />
       <listeners />
       <method v="2">
@@ -535,19 +558,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.Application (1)" />
-      <item itemvalue="TestNG.PreferenceRecommendTest" />
       <item itemvalue="TestNG.BusinessHotSearchTest" />
       <item itemvalue="TestNG.F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" />
-      <item itemvalue="TestNG.StoreDetailsTest" />
       <item itemvalue="TestNG.SearchProjectForConditionTest" />
+      <item itemvalue="TestNG.SearchInvestmentTest" />
+      <item itemvalue="TestNG.UserRegisterTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" />
+        <item itemvalue="TestNG.UserRegisterTest" />
+        <item itemvalue="TestNG.SearchInvestmentTest" />
         <item itemvalue="TestNG.BusinessHotSearchTest" />
         <item itemvalue="TestNG.SearchProjectForConditionTest" />
-        <item itemvalue="TestNG.StoreDetailsTest" />
-        <item itemvalue="TestNG.PreferenceRecommendTest" />
       </list>
     </recent_temporary>
   </component>
@@ -572,7 +595,7 @@
       <workItem from="1560737110165" duration="24723000" />
       <workItem from="1561338445553" duration="43000000" />
       <workItem from="1561511144978" duration="78910000" />
-      <workItem from="1561944964416" duration="128944000" />
+      <workItem from="1561944964416" duration="140942000" />
     </task>
     <task id="LOCAL-00001" summary="TestNG的基本注解">
       <created>1558937379964</created>
@@ -679,43 +702,50 @@
       <option name="project" value="LOCAL" />
       <updated>1562239837681</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="hejiameng接口测试代码打包配置">
+      <created>1562243235708</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1562243235709</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SearchProjectForConditionTest - 2019.07.04 at 17h 21m 49s.xml">
-      <configuration name="SearchProjectForConditionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchProjectForConditionTest - 2019.07.04 at 17h 23m 19s.xml">
-      <configuration name="SearchProjectForConditionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SearchProjectForConditionTest - 2019.07.04 at 17h 24m 15s.xml">
-      <configuration name="SearchProjectForConditionTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.04 at 17h 24m 29s.xml">
-      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.04 at 17h 26m 59s.xml">
-      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.04 at 19h 48m 48s.xml">
-      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.04 at 20h 00m 40s.xml">
-      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.04 at 20h 11m 46s.xml">
-      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="BusinessHotSearchTest - 2019.07.04 at 20h 21m 33s.xml">
-      <configuration name="BusinessHotSearchTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.04 at 20h 23m 30s.xml">
       <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.04 at 20h 26m 04s.xml">
+      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.05 at 09h 52m 02s.xml">
+      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.05 at 10h 33m 27s.xml">
+      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.05 at 10h 44m 02s.xml">
+      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="F__IdeaProjects_AutoTest_hejiameng_src_main_resources_testng_xml - 2019.07.05 at 10h 48m 54s.xml">
+      <configuration name="F:/IdeaProjects/AutoTest/hejiameng/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SearchInvestmentTest - 2019.07.05 at 11h 15m 44s.xml">
+      <configuration name="SearchInvestmentTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="UserRegisterTest - 2019.07.05 at 11h 50m 19s.xml">
+      <configuration name="UserRegisterTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="UserRegisterTest - 2019.07.05 at 11h 51m 27s.xml">
+      <configuration name="UserRegisterTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="UserRegisterTest - 2019.07.05 at 13h 03m 17s.xml">
+      <configuration name="UserRegisterTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="369913000" />
+    <option name="totallyTimeSpent" value="381911000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -728,6 +758,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22654584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -739,7 +770,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.53528774" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.33659065" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3854506" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -749,7 +780,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50080776" side_tool="true" weight="0.33880597" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4993036" weight="0.23561347" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.23669924" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3843648" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.2649294" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -787,7 +818,8 @@
     <MESSAGE value="hejiameng接口测试代码完善2" />
     <MESSAGE value="hejiameng接口测试代码完善3" />
     <MESSAGE value="hejiameng接口测试代码完善4" />
-    <option name="LAST_COMMIT_MESSAGE" value="hejiameng接口测试代码完善4" />
+    <MESSAGE value="hejiameng接口测试代码打包配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="hejiameng接口测试代码打包配置" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -806,76 +838,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/ProjectCustomCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessEnterCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmEnterApply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/KeyWordSearchResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="140" column="23" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
-          <folding>
-            <element signature="e#13570#13571#0" expanded="true" />
-            <element signature="e#13614#13615#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/KeyWordSearchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="81" column="89" selection-start-line="81" selection-start-column="89" selection-end-line="81" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmProjectPhoto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchYourLikeResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-566">
-          <caret line="90" column="24" selection-start-line="90" selection-start-column="24" selection-end-line="90" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/httpcomponents/httpclient/4.5.8/httpclient-4.5.8.jar!/org/apache/http/impl/client/CloseableHttpResponseProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchYourLikeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="113" column="56" lean-forward="true" selection-start-line="113" selection-start-column="56" selection-end-line="113" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchProjectForConditionCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1067,41 +1029,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/InterfaceName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="75" lean-forward="true" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/config/TestConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="31" column="97" selection-start-line="31" selection-start-column="97" selection-end-line="31" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/ConfigFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/相关地址.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1993" />
@@ -1142,13 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="102" column="55" selection-start-line="102" selection-start-column="55" selection-end-line="102" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/CreateYunXinIDTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1156,13 +1076,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="108" column="55" selection-start-line="108" selection-start-column="55" selection-end-line="108" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -1295,16 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/PreferenceRecommendTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="59" column="70" lean-forward="true" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchHomeJoinHeadlineResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1335,37 +1238,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="358" column="104" selection-start-line="358" selection-start-column="104" selection-end-line="358" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/BusinessHotSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessHotSearchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1376,6 +1252,193 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2853" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="106" column="18" lean-forward="true" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/BusinessHotSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/PreferenceRecommendTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchHomeJoinHeadlineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmBanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/SearchInvestmentResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+          <folding>
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1186#1187#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/UserRegisterCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/InterfaceName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="88" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/ConfigFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/config/TestConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="32" column="83" selection-start-line="32" selection-start-column="83" selection-end-line="32" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/JmInvestmentAmountEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/mapper/SQLMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/model/UserRegisterResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+          <folding>
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/SearchInvestmentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/cases/UserRegisterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/src/main/resources/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hejiameng/src/main/resources/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2505">
+          <caret line="120" column="50" selection-start-line="120" selection-start-column="50" selection-end-line="120" selection-end-column="50" />
         </state>
       </provider>
     </entry>

@@ -24,6 +24,7 @@ public class TestConfig {
     public static String createYunXinIDUrl;
     public static String preferenceRecommendUrl;
     public static String businessHotSearchUrl;
+    public static String userRegisterUrl;
 
 
     public static DefaultHttpClient defaultHttpClient;
