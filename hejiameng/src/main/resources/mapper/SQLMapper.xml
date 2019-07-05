@@ -50,7 +50,7 @@
     </select>
     <!--项目定制接口case-->
     <select id="projectCustomCase" parameterType="Integer" resultType="com.sangame.hjm.model.ProjectCustomCase">
-        select cngoldId,gender,leavingMessage,name,amountCode,amountValue,interestCategory,phoneNumber,expect from projectcustomcase
+        select cngoldId,gender,leavingMessage,name,investCode,investValue,interestCategory,phoneNumber,projectId,expect from projectcustomcase
         where id=#{id}
     </select>
     <!--商家入驻接口case-->
@@ -222,11 +222,14 @@
             <if test="null != name and '' !=name">
                 and name=#{name}
             </if>
-            <if test="null != amountCode and '' !=amountCode">
-                and invest_code=#{amountCode}
+            <if test="null != investCode and '' !=investCode">
+                and invest_code=#{investCode}
             </if>
             <if test="null != interestCategory and '' !=interestCategory">
                 and interest_category=#{interestCategory}
+            </if>
+            <if test="null != projectId and '' !=projectId">
+                and project_id=#{projectId}
             </if>
         </trim>
     </select>

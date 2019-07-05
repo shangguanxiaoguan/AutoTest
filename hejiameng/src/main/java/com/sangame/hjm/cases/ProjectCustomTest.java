@@ -38,9 +38,9 @@ public class ProjectCustomTest {
     }
 
     @Test(description = "项目定制接口测试")
-    public void projectCustom() throws IOException, InterruptedException {
+    public void projectCustom() throws IOException {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
-        ProjectCustomCase projectCustomCase = sqlSession.selectOne("projectCustomCase",1);
+        ProjectCustomCase projectCustomCase = sqlSession.selectOne("projectCustomCase",2);
         System.out.println("projectCustomCase:" + projectCustomCase.toString());
 
         //发送请求，获取接口返回数据
@@ -50,10 +50,12 @@ public class ProjectCustomTest {
             map.put("gender",projectCustomCase.getGender());
             map.put("leavingMessage",projectCustomCase.getLeavingMessage());
             map.put("name",projectCustomCase.getName());
-            map.put("investCode",projectCustomCase.getAmountCode());
-            map.put("investValue",projectCustomCase.getAmountValue());
+            map.put("investCode",projectCustomCase.getInvestCode());
+            map.put("investValue",projectCustomCase.getInvestValue());
             map.put("interestCategory",projectCustomCase.getInterestCategory());
             map.put("phoneNumber",projectCustomCase.getPhoneNumber());
+            map.put("projectId",projectCustomCase.getProjectId());
+        System.out.println("map"+map.toString());
             String result = HttpMethodPostUtil.httpMethodPost(TestConfig.projectCustomUrl,map);
             ProjectCustomResult projectCustomResult = new Gson().fromJson(result,ProjectCustomResult.class);
             System.out.println("项目定制接口返回的结果：" + projectCustomResult.toString());

@@ -9,9 +9,10 @@ public class ProjectCustomCase {
     private int gender;
     private String leavingMessage;
     private String name;
-    private int amountCode;
-    private double amountValue;
+    private int investCode;
+    private double investValue;
     private int interestCategory;
     private String phoneNumber;
+    private int projectId;
     private String expect;
 }

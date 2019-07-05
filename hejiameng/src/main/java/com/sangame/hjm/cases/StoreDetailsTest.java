@@ -182,7 +182,8 @@ public class StoreDetailsTest {
             if (jmProjectStat.getVisit_count() ==0){
                 Assert.assertEquals(result.getData().getStat().getVisitCount(),null);
             }else{
-                Assert.assertEquals(result.getData().getStat().getVisitCount(),Double.valueOf(jmProjectStat.getVisit_count()));
+                Assert.assertNotNull(result.getData().getStat().getVisitCount());
+                Assert.assertNotEquals(result.getData().getStat().getVisitCount(),Double.valueOf(jmProjectStat.getVisit_count()));
             }
             if (jmProjectStat.getJoin_store_count() == 0){
                 Assert.assertEquals(result.getData().getStat().getJoinStoreCount(),null);
