@@ -12,7 +12,7 @@ public class BusinessHotSearch {
     private int id;
     private int categoryId;
     private int subCategoryId;
-    private Object companyId;
+    private Integer companyId;
     private String title;
     private String keyword;
     private String photo;
@@ -43,7 +43,7 @@ public class BusinessHotSearch {
     private String core;
     private Integer investCode;
     private double investValue;
-    private int regionId;
+    private Integer regionId;
 //    private JmProjectStat projectStat;
 //private int id;
 //    private String created_at;
@@ -52,7 +52,7 @@ public class BusinessHotSearch {
 //    private String modifier;
     private int project_id;
     private Integer apply_count;
-    private int visit_count;
+    private Integer visit_count;
     private int join_store_count;
     private int direct_store_count;
     private String delete_flag;

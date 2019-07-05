@@ -90,7 +90,7 @@ public class PreferenceRecommendTest {
                 Assert.assertEquals(result.getData().get(i).getState(), expectedResult.get(i).getState());
                 Assert.assertEquals(result.getData().get(i).getStateName(), "上架中");
                 Assert.assertEquals(result.getData().get(i).getAttribute(), expectedResult.get(i).getAttribute());
-                Assert.assertEquals(result.getData().get(i).getAttributeName(), "头条");
+                Assert.assertEquals(result.getData().get(i).getAttributeName(), "推荐");
                 Assert.assertEquals(result.getData().get(i).getProjectExtra(), expectedResult.get(i).getProjectExtra());
                 Assert.assertEquals(result.getData().get(i).getProjectPhotos(), expectedResult.get(i).getProjectPhotos());
                 Assert.assertEquals(result.getData().get(i).getLikes(), expectedResult.get(i).getLikes());

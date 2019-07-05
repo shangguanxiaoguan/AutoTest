@@ -90,7 +90,7 @@ public class SearchHomeJoinHeadlineResult {
         private int subCategoryId;
         private Object categoryName;
         private Object subCategoryName;
-        private Object companyId;
+        private Integer companyId;
         private String title;
         private String keyword;
         private String photo;
@@ -199,11 +199,11 @@ public class SearchHomeJoinHeadlineResult {
             this.subCategoryName = subCategoryName;
         }
 
-        public Object getCompanyId() {
+        public Integer getCompanyId() {
             return companyId;
         }
 
-        public void setCompanyId(Object companyId) {
+        public void setCompanyId(Integer companyId) {
             this.companyId = companyId;
         }
 

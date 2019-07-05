@@ -96,11 +96,11 @@ public class BusinessHotSearchResult {
         private int subCategoryId;
         private Object categoryName;
         private Object subCategoryName;
-        private int companyId;
+        private Integer companyId;
         private String title;
         private Object keyword;
         private String photo;
-        private Object recommendFlag;
+        private Integer recommendFlag;
         private String buildDate;
         private String originAddr;
         private String businessModel;
@@ -115,13 +115,13 @@ public class BusinessHotSearchResult {
         private Object otherCost;
         private String description;
         private Object companyName;
-        private Object registerTime;
+        private Integer registerTime;
         private Integer state;
         private String stateName;
         private int attribute;
         private String attributeName;
         private Integer applyCount;
-        private Object visitCount;
+        private Integer visitCount;
         private Object projectExtra;
         private Object projectPhotos;
         private Object likes;
@@ -129,7 +129,7 @@ public class BusinessHotSearchResult {
         private Object stat;
         private Object investCode;
         private Object investValue;
-        private Object regionId;
+        private Integer regionId;
 
         public String getCreateAt() {
             return createAt;
@@ -211,7 +211,7 @@ public class BusinessHotSearchResult {
             this.subCategoryName = subCategoryName;
         }
 
-        public int getCompanyId() {
+        public Integer getCompanyId() {
             return companyId;
         }
 
@@ -243,11 +243,11 @@ public class BusinessHotSearchResult {
             this.photo = photo;
         }
 
-        public Object getRecommendFlag() {
+        public Integer getRecommendFlag() {
             return recommendFlag;
         }
 
-        public void setRecommendFlag(Object recommendFlag) {
+        public void setRecommendFlag(int recommendFlag) {
             this.recommendFlag = recommendFlag;
         }
 
@@ -363,11 +363,11 @@ public class BusinessHotSearchResult {
             this.companyName = companyName;
         }
 
-        public Object getRegisterTime() {
+        public Integer getRegisterTime() {
             return registerTime;
         }
 
-        public void setRegisterTime(Object registerTime) {
+        public void setRegisterTime(Integer registerTime) {
             this.registerTime = registerTime;
         }
 
@@ -412,11 +412,11 @@ public class BusinessHotSearchResult {
             this.applyCount = applyCount;
         }
 
-        public Object getVisitCount() {
+        public Integer getVisitCount() {
             return visitCount;
         }
 
-        public void setVisitCount(Object visitCount) {
+        public void setVisitCount(Integer visitCount) {
             this.visitCount = visitCount;
         }
 
@@ -476,11 +476,11 @@ public class BusinessHotSearchResult {
             this.investValue = investValue;
         }
 
-        public Object getRegionId() {
+        public Integer getRegionId() {
             return regionId;
         }
 
-        public void setRegionId(Object regionId) {
+        public void setRegionId(Integer regionId) {
             this.regionId = regionId;
         }
 

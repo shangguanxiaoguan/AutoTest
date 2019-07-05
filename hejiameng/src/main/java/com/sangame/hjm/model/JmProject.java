@@ -12,7 +12,7 @@ public class JmProject {
     private int id;
     private int categoryId;
     private int subCategoryId;
-    private Object companyId;
+    private Integer companyId;
     private String title;
     private String keyword;
     private String photo;

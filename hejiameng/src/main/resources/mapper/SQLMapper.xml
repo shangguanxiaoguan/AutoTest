@@ -358,7 +358,7 @@
         <include refid="columns"/>
         from jm_project
         where state=1 and attribute=0
-        order by created_at desc
+        order by updated_at desc
         LIMIT 10
     </select>
 
@@ -371,6 +371,7 @@
         area,support,invest_min investMin,invest_max investMax,margin,facility_cost facilityCost,other_cost otherCost,description,
         state,attribute,p.delete_flag deleteFlag,core,invest_code investCode,invest_value investValue,region_id regionId,apply_count,visit_count
         from jm_project p INNER JOIN jm_project_stat s on p.id=s.project_id
+        where p.state=1
         ORDER BY s.visit_count DESC
         LIMIT 0,10;
     </select>
