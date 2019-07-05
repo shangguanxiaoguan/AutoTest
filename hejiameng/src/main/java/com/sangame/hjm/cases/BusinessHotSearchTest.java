@@ -38,7 +38,8 @@ public class BusinessHotSearchTest {
         System.out.println("查询商机热搜接口返回的data结果：" + result.getData().toString());
 
         //获取数据库数据
-        List<BusinessHotSearch> expectedResult = sqlSession.selectList("getBusinessHotSearch");
+        SqlSession expectedSession = DatebaseUtil.getSqlSession();
+        List<BusinessHotSearch> expectedResult = expectedSession.selectList("getBusinessHotSearch");
         System.out.println("数据库结果：" + expectedResult.toString());
 
         //验证结果
@@ -101,13 +102,15 @@ public class BusinessHotSearchTest {
                 Assert.assertEquals(result.getData().get(i).getAttributeName(),"头条");
             }
             //Assert.assertEquals(result.getData().get(i).getApplyCount(),expectedResult.get(i).getApply_count());
-            Assert.assertEquals(result.getData().get(i).getVisitCount(),expectedResult.get(i).getVisit_count());
-            //Assert.assertEquals(result.getData().get(i).getInvestCode(),expectedResult.get(i).getInvestCode());
-//            if (expectedResult.get(i).getInvestValue() == 0.0){
-//                Assert.assertEquals(result.getData().get(i).getInvestValue(),null);
-//            }else{
-//                Assert.assertEquals(result.getData().get(i).getInvestValue(),expectedResult.get(i).getInvestValue());
-//            }
+            //Assert.assertEquals(result.getData().get(i).getVisitCount(),expectedResult.get(i).getVisit_count());
+            Assert.assertNotNull(result.getData().get(i).getVisitCount());
+            Assert.assertNotEquals(result.getData().get(i).getVisitCount(),expectedResult.get(i).getVisit_count());
+            Assert.assertEquals(result.getData().get(i).getInvestCode(),expectedResult.get(i).getInvestCode());
+            if (expectedResult.get(i).getInvestValue() == 0.0){
+                Assert.assertEquals(result.getData().get(i).getInvestValue(),null);
+            }else{
+                Assert.assertEquals(result.getData().get(i).getInvestValue(),expectedResult.get(i).getInvestValue());
+            }
             //Assert.assertEquals(result.getData().get(i).getRegionId(),expectedResult.get(i).getRegionId());
 
         }

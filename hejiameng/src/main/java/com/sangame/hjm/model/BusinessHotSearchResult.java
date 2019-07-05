@@ -127,7 +127,7 @@ public class BusinessHotSearchResult {
         private Object likes;
         private Object core;
         private Object stat;
-        private Object investCode;
+        private Integer investCode;
         private Object investValue;
         private Integer regionId;
 
@@ -460,11 +460,11 @@ public class BusinessHotSearchResult {
             this.stat = stat;
         }
 
-        public Object getInvestCode() {
+        public Integer getInvestCode() {
             return investCode;
         }
 
-        public void setInvestCode(Object investCode) {
+        public void setInvestCode(Integer investCode) {
             this.investCode = investCode;
         }
 
