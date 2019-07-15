@@ -34,6 +34,9 @@ public class SearchCategoryTest {
 
     @Test(description = "查询分类接口")
     public void searchCategory() throws IOException {
+
+        System.out.printf("Thread Id：%s%n",Thread.currentThread().getId());
+
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
 
         //发送请求，获取接口返回数据
@@ -60,6 +63,7 @@ public class SearchCategoryTest {
             Assert.assertEquals(result.getData().get(i).getTitle(),expectedResult.get(i).getTitle());
             Assert.assertEquals(result.getData().get(i).getIcon(),expectedResult.get(i).getIcon());
         }
+
     }
 
     private SearchCategoryResult getResponseResult() throws IOException {
