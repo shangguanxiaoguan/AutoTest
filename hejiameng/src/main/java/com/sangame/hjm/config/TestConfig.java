@@ -25,6 +25,9 @@ public class TestConfig {
     public static String preferenceRecommendUrl;
     public static String businessHotSearchUrl;
     public static String userRegisterUrl;
+    public static String sendMobileUrl;
+    public static String loginOrRegisterUrl;
+    public static String searchAllTradeUrl;
 
 
     public static DefaultHttpClient defaultHttpClient;

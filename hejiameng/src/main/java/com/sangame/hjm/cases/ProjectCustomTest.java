@@ -40,7 +40,7 @@ public class ProjectCustomTest {
     @Test(description = "项目定制接口测试")
     public void projectCustom() throws IOException {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
-        ProjectCustomCase projectCustomCase = sqlSession.selectOne("projectCustomCase",2);
+        ProjectCustomCase projectCustomCase = sqlSession.selectOne("projectCustomCase",1);
         System.out.println("projectCustomCase:" + projectCustomCase.toString());
 
         //发送请求，获取接口返回数据

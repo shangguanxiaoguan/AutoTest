@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class ProjectCustomCase {
 //    private int id;
-    private int cngoldId;
+    private String cngoldId;
     private int gender;
     private String leavingMessage;
     private String name;

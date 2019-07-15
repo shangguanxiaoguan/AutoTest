@@ -9,6 +9,7 @@ public class SearchProjectForConditionCase {
     private int amountCode;
     private int sortCode;
     private int subCategoryId;
+    private int categoryId;
     private int pageSize;
     private int pageNum;
     private String expect;

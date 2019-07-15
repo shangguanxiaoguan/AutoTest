@@ -7,15 +7,15 @@
     <!--id,category_id,sub_category_id,company_id,title,keyword,photo,recommend_flag,build_date,origin_addr,
         business_model,product,crowd,area,support,invest_min,invest_max,margin,facility_cost,other_cost,description,
         direct_store,join_store,message_num,company_name,register_time,
-        created_at,updated_at,creator,modifier,delete_flag-->
+        created_at,updated_at,creator,modifier,delete_flag,direct_store as directStore,
+        join_store as joinStore,message_num messageNum,-->
     <sql id="columns">
         <!--@mbg.generated-->
-        id,created_at as createAt,updated_at as updateAt,creator,modifier,direct_store as directStore,
-        join_store as joinStore,message_num messageNum,category_id categoryId,sub_category_id subCategoryId,company_id companyId,
+        id,created_at as createAt,updated_at as updateAt,creator,modifier,category_id categoryId,sub_category_id subCategoryId,company_id companyId,
         title,keyword,photo,recommend_flag recommendFlag,register_time registerTime,
         company_name companyName,build_date buildDate,origin_addr originAddr,business_model businessModel,product,crowd,
         area,support,invest_min investMin,invest_max investMax,margin,facility_cost facilityCost,other_cost otherCost,description,
-        state,attribute,delete_flag deleteFlag,core,invest_code investCode,invest_value investValue,region_id regionId
+        state,attribute,delete_flag deleteFlag,core,invest_code investCode,invest_value investValue,region_id regionId,random
     </sql>
 
     <!--获取APP更新接口case-->
@@ -30,7 +30,7 @@
     </select>
     <!--根据条件查询品牌接口case-->
     <select id="searchProjectForConditionCase" parameterType="Integer" resultType="com.sangame.hjm.model.SearchProjectForConditionCase">
-        select title,amountCode,sortCode,subCategoryId,pageSize,pageNum,expect from searchprojectforconditioncase
+        select title,amountCode,sortCode,subCategoryId,categoryId,pageSize,pageNum,expect from searchprojectforconditioncase
         where id =#{id}
     </select>
     <!--猜你喜欢接口case-->
@@ -78,6 +78,19 @@
         select passportId,expect from userregistercase
         where id=#{id}
     </select>
+    <!--用户登录发送短信验证码-->
+    <select id="sendMobileCase" parameterType="Integer" resultType="com.sangame.hjm.model.SendMobileCase">
+        select mobile,expect from sendmobilecase
+        where id=#{id}
+    </select>
+    <!--用户注册、登录-->
+    <select id="loginOrRegisterCase" parameterType="Integer" resultType="com.sangame.hjm.model.SendMobileCase">
+        select mobile,authCode,expect from loginorregistercase
+        where id=#{id}
+    </select>
+
+
+
 
 
 
@@ -151,14 +164,14 @@
         select
         <include refid="columns"/>
          from jm_project
-        where state=1 and attribute=0
+        where state=1 and attribute=0 and delete_flag=0
         order by id
         LIMIT #{pageNum},#{pageSize}
     </select>
     <!--pageNum =  (page-1)*pageSize-->
     <!--获取猜你喜欢总条数-->
     <select id="searchYourLikeTotal" parameterType="com.sangame.hjm.model.SearchYourLikeCase" resultType="Integer">
-        select count(1) from jm_project where state=1 and attribute=0
+        select count(1) from jm_project where state=1 and attribute=0 and delete_flag=0
     </select>
 
     <!--商铺详情接口-->
@@ -367,14 +380,14 @@
 
     <!--查询商机热搜   WHERE s.created_at > DATE_SUB(CURDATE(), INTERVAL 1 WEEK)-->
     <select id="getBusinessHotSearch" parameterType="Integer" resultType="com.sangame.hjm.model.BusinessHotSearch">
-        select p.id,p.created_at as createAt,p.updated_at as updateAt,p.creator,p.modifier,direct_store as directStore,
-        join_store as joinStore,message_num messageNum,category_id categoryId,sub_category_id subCategoryId,company_id companyId,
-        title,keyword,photo,recommend_flag recommendFlag,register_time registerTime,
+        select p.id,p.created_at as createAt,p.updated_at as updateAt,p.creator,p.modifier,category_id categoryId,sub_category_id subCategoryId,
+        company_id companyId,title,keyword,photo,recommend_flag recommendFlag,register_time registerTime,
         company_name companyName,build_date buildDate,origin_addr originAddr,business_model businessModel,product,crowd,
         area,support,invest_min investMin,invest_max investMax,margin,facility_cost facilityCost,other_cost otherCost,description,
-        state,attribute,p.delete_flag deleteFlag,core,invest_code investCode,invest_value investValue,region_id regionId,apply_count,visit_count
+        state,attribute,p.delete_flag deleteFlag,core,invest_code investCode,invest_value investValue,region_id regionId,p.random,apply_count,visit_count
         from jm_project p INNER JOIN jm_project_stat s on p.id=s.project_id
         where p.state=1
+        and p.delete_flag=0 and s.delete_flag=0
         ORDER BY s.visit_count DESC
         LIMIT 0,10;
     </select>

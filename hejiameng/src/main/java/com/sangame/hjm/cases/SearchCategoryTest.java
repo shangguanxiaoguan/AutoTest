@@ -26,11 +26,11 @@ import java.util.List;
 
 public class SearchCategoryTest {
 
-//    @BeforeTest(groups = "loginTrue",description = "测试准备工作，获取httpClient对象")
-//    public void beforeTest(){
-//        TestConfig.searchCategoryUrl = ConfigFile.getUrl(InterfaceName.SEARCHCATEGORY);
-//        TestConfig.defaultHttpClient = new DefaultHttpClient();
-//    }
+    @BeforeTest(groups = "loginTrue",description = "测试准备工作，获取httpClient对象")
+    public void beforeTest(){
+        TestConfig.searchCategoryUrl = ConfigFile.getUrl(InterfaceName.SEARCHCATEGORY);
+        TestConfig.defaultHttpClient = new DefaultHttpClient();
+    }
 
     @Test(description = "查询分类接口")
     public void searchCategory() throws IOException {

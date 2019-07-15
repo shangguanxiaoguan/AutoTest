@@ -27,11 +27,11 @@ import java.util.List;
 
 
 public class SearchHomeJoinHeadlineTest {
-//    @BeforeTest
-//    public void beforeTest(){
-//        TestConfig.searchHomeJoinHeadlineUrl = ConfigFile.getUrl(InterfaceName.GETHOMEJOINHEADLINE);
-//        TestConfig.defaultHttpClient = new DefaultHttpClient();
-//    }
+    @BeforeTest
+    public void beforeTest(){
+        TestConfig.searchHomeJoinHeadlineUrl = ConfigFile.getUrl(InterfaceName.GETHOMEJOINHEADLINE);
+        TestConfig.defaultHttpClient = new DefaultHttpClient();
+    }
     @Test(description = "查询首页加盟头条接口测试")
     public void searchHomeJoinHeadline() throws IOException {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
@@ -40,6 +40,7 @@ public class SearchHomeJoinHeadlineTest {
         SearchHomeJoinHeadlineResult result = getResponseResult();
         System.out.println("查询首页加盟头条接口返回的结果：" + result.toString());
         System.out.println("查询首页加盟头条接口返回的data结果：" + result.getData().toString());
+        System.out.println("查询首页加盟头条接口返回的data结果条数：" + result.getData().size());
 
         //获取数据库数据
         List<JmProject> expectedResult =sqlSession.selectList("getHomeJoinHeadline");

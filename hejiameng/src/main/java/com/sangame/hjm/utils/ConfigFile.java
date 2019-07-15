@@ -69,6 +69,15 @@ public class ConfigFile {
         if (name == InterfaceName.USERREGISTER){
             uri = bundle.getString("userRegister.uri");
         }
+        if (name == InterfaceName.SENDMOBILE){
+            uri = bundle.getString("sendMobile.uri");
+        }
+        if (name == InterfaceName.LOGINORREGISTER){
+            uri = bundle.getString("loginOrRegister.uri");
+        }
+        if (name == InterfaceName.SEARCHALLTRADE)  {
+            uri = bundle.getString("searchAllTrade.uri");
+        }
         testUrl = address + uri;
         return testUrl;
     }

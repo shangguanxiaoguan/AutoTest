@@ -30,9 +30,9 @@ public class JmProject {
     private Object facilityCost;
     private Integer otherCost;
     private String description;
-    private int directStore;
-    private int joinStore;
-    private int messageNum;
+//    private int directStore;
+//    private int joinStore;
+//    private int messageNum;
     private Object companyName;
     private int registerTime;
     private Object projectExtra;
@@ -44,4 +44,6 @@ public class JmProject {
     private Integer investCode;
     private double investValue;
     private int regionId;
+    private int random;
 }
+
