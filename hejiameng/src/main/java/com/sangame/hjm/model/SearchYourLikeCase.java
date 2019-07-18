@@ -6,5 +6,5 @@ import lombok.Data;
 public class SearchYourLikeCase {
     private int id;
     private int pageSize;
-    private int pageNum;
+    private int pageStart;
 }

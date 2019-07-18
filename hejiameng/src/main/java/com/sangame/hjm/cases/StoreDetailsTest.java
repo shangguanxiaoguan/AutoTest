@@ -32,7 +32,7 @@ public class StoreDetailsTest {
     @Test(description = "商铺详情接口测试")
     public void storeDetails() throws IOException {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
-        StoreDetailsCase storeDetailsCase = sqlSession.selectOne("storeDetailsCase",1);
+        StoreDetailsCase storeDetailsCase = sqlSession.selectOne("storeDetailsCase",2);
         System.out.println("storeDetailsCase:" + storeDetailsCase.toString());
 
         //发送请求，获取接口返回数据

@@ -9,6 +9,7 @@ import com.sangame.hjm.model.SearchProjectForConditionResult;
 import com.sangame.hjm.utils.ConfigFile;
 import com.sangame.hjm.utils.DateFormatChange;
 import com.sangame.hjm.utils.DatebaseUtil;
+import com.sangame.hjm.utils.PageInfoUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -38,10 +39,17 @@ public class SearchProjectForConditionTest {
     @Test(description = "根据条件查询品牌接口测试")
     public void searchProjectForCondition() throws IOException {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
-        SearchProjectForConditionCase searchProjectForConditionCase = sqlSession.selectOne("searchProjectForConditionCase",2);
+        SearchProjectForConditionCase searchProjectForConditionCase = sqlSession.selectOne("searchProjectForConditionCase",3);
         System.out.println("SearchProjectForConditionCase:" + searchProjectForConditionCase.toString());
+        //获取原始的测试数据传给接口
+        Integer startPage = searchProjectForConditionCase.getPageStart();
+        //处理开始页数，用于查询数据库数据
+        Integer pageStart = PageInfoUtil.pageTransformation(searchProjectForConditionCase.getPageSize(),searchProjectForConditionCase.getPageStart());
+        searchProjectForConditionCase.setPageStart(pageStart);
+//        System.out.println("pageNum:" + searchProjectForConditionCase.getPageStart());
+
         //发送请求，获取接口返回数据
-        SearchProjectForConditionResult result = getResponseResult(searchProjectForConditionCase);
+        SearchProjectForConditionResult result = getResponseResult(searchProjectForConditionCase,startPage);
         System.out.println("根据条件查询品牌接口返回的数据：" + result.toString());
         System.out.println("根据条件查询品牌接口返回的data数据：" + result.getData().toString());
 
@@ -108,7 +116,7 @@ public class SearchProjectForConditionTest {
         }
     }
 
-    private SearchProjectForConditionResult getResponseResult(SearchProjectForConditionCase searchProjectForConditionCase) throws IOException {
+    private SearchProjectForConditionResult getResponseResult(SearchProjectForConditionCase searchProjectForConditionCase,int startPage) throws IOException {
 //        searchProjectForConditionCase = new SearchProjectForConditionCase();
         //获取对象类里面的字段
 //        Field[] fields = searchProjectForConditionCase.getClass().getDeclaredFields();
@@ -118,7 +126,7 @@ public class SearchProjectForConditionTest {
                 + "&sortCode=" + searchProjectForConditionCase.getSortCode()
                 + "&subCategoryId=" + searchProjectForConditionCase.getSubCategoryId()
                 + "&pageSize=" + searchProjectForConditionCase.getPageSize()
-                + "&pageNum=" + searchProjectForConditionCase.getPageNum());
+                + "&pageStart=" + startPage);
         System.out.println("searchProjectForCondition get:" + get);
         HttpResponse response = TestConfig.defaultHttpClient.execute(get);
         String result = EntityUtils.toString(response.getEntity());

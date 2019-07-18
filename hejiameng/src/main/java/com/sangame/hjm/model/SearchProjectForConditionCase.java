@@ -11,6 +11,6 @@ public class SearchProjectForConditionCase {
     private int subCategoryId;
     private int categoryId;
     private int pageSize;
-    private int pageNum;
+    private int pageStart;
     private String expect;
 }

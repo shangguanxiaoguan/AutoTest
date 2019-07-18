@@ -9,6 +9,7 @@ import com.sangame.hjm.model.KeyWordSearchResult;
 import com.sangame.hjm.utils.ConfigFile;
 import com.sangame.hjm.utils.DateFormatChange;
 import com.sangame.hjm.utils.DatebaseUtil;
+import com.sangame.hjm.utils.PageInfoUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -29,20 +30,23 @@ import java.util.List;
 
 public class KeyWordSearchTest {
 
-//    @BeforeTest(groups = "loginTrue",description = "测试准备工作，获取httpClient对象")
-//    public void beforeTest(){
-//        TestConfig.keyWordSearchUrl = ConfigFile.getUrl(InterfaceName.KEYWORDSEARCH);
-//        TestConfig.defaultHttpClient = new DefaultHttpClient();
-//    }
-
+    @BeforeTest(groups = "loginTrue",description = "测试准备工作，获取httpClient对象")
+    public void beforeTest(){
+        TestConfig.keyWordSearchUrl = ConfigFile.getUrl(InterfaceName.KEYWORDSEARCH);
+        TestConfig.defaultHttpClient = new DefaultHttpClient();
+    }
     @Test(description = "关键字搜索接口测试")
     public void keyWordSearch() throws IOException {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
         KeyWordSearchCase keyWordSearchCase = sqlSession.selectOne("keyWordSearchCase",1);
         System.out.println("keyWordSearchCase:" + keyWordSearchCase);
+        int startPage = keyWordSearchCase.getPageStart();
+        Integer pageStart = PageInfoUtil.pageTransformation(keyWordSearchCase.getPageSize(),keyWordSearchCase.getPageStart());
+        keyWordSearchCase.setPageStart(pageStart);
+        System.out.println("pageNum:" + keyWordSearchCase.getPageStart());
 
         //发送请求，获取接口返回结果
-        KeyWordSearchResult result = getResponseResult(keyWordSearchCase);
+        KeyWordSearchResult result = getResponseResult(keyWordSearchCase,startPage);
         System.out.println("关键字搜索接口返回结果：" + result.toString());
         System.out.println("关键字搜索接口返回的data数据：" + result.getData().toString());
 
@@ -62,7 +66,7 @@ public class KeyWordSearchTest {
             Assert.assertEquals(result.getTotalPage(),0);
         }else{
             Assert.assertEquals(result.getPageSize(),keyWordSearchCase.getPageSize());
-            Assert.assertEquals(result.getPageNum(),0);  //keyWordSearchCase.getPageNum()
+//            Assert.assertEquals(result.getPageNum(),0);  //keyWordSearchCase.getPageNum()
             Assert.assertEquals(result.getTotal(),expectedTotal);
 //            System.out.println("++++++：" + (float)expectedTotal/keyWordSearchCase.getPageSize());
 //            System.out.println("页数：" + Math.ceil((float)expectedTotal/keyWordSearchCase.getPageSize()));
@@ -120,9 +124,9 @@ public class KeyWordSearchTest {
         }
     }
 
-    private KeyWordSearchResult getResponseResult(KeyWordSearchCase keyWordSearchCase) throws IOException {
+    private KeyWordSearchResult getResponseResult(KeyWordSearchCase keyWordSearchCase,int startPage) throws IOException {
         HttpGet get = new HttpGet(TestConfig.keyWordSearchUrl + "?keyword=" + keyWordSearchCase.getKeyword()
-                + "&pageStart=" + keyWordSearchCase.getPageNum() + "&pageSize=" + keyWordSearchCase.getPageSize() );
+                + "&pageStart=" + startPage + "&pageSize=" + keyWordSearchCase.getPageSize() );
         System.out.println("KeyWordSearchUrl get:" + get);
         HttpResponse response = TestConfig.defaultHttpClient.execute(get);
         String result = EntityUtils.toString(response.getEntity());

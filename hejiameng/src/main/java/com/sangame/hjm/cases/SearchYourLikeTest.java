@@ -39,12 +39,13 @@ public class SearchYourLikeTest {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
         SearchYourLikeCase searchYourLikeCase = sqlSession.selectOne("searchYourLikeCase",1);
         System.out.println("searchYourLikeCase:" + searchYourLikeCase.toString());
-        Integer pageStart = PageInfoUtil.pageTransformation(searchYourLikeCase.getPageSize(),searchYourLikeCase.getPageNum());
-        searchYourLikeCase.setPageNum(pageStart);
-        System.out.println("pageNum:" + searchYourLikeCase.getPageNum());
+        int startPage = searchYourLikeCase.getPageStart();
+        Integer pageStart = PageInfoUtil.pageTransformation(searchYourLikeCase.getPageSize(),searchYourLikeCase.getPageStart());
+        searchYourLikeCase.setPageStart(pageStart);
+        System.out.println("pageNum:" + searchYourLikeCase.getPageStart());
 
         //发送请求，获取接口返回数据
-        SearchYourLikeResult result = getResponseResult(searchYourLikeCase);
+        SearchYourLikeResult result = getResponseResult(searchYourLikeCase,startPage);
         System.out.println("猜你喜欢接口返回数据：" + result.toString());
         System.out.println("猜你喜欢接口返回的data数据：" + result.getData().toString());
 
@@ -101,14 +102,11 @@ public class SearchYourLikeTest {
                 Assert.assertEquals(result.getData().get(i).getDescription(),expectedResult.get(i).getDescription());
             }
         }
-
-
-
     }
 
-    private SearchYourLikeResult getResponseResult(SearchYourLikeCase searchYourLikeCase) throws IOException {
+    private SearchYourLikeResult getResponseResult(SearchYourLikeCase searchYourLikeCase,int startPage) throws IOException {
         HttpGet get = new HttpGet(TestConfig.searchYourLikeUrl + "?pageSize=" + searchYourLikeCase.getPageSize()
-                + "&pageNum=" + searchYourLikeCase.getPageNum());
+                + "&pageStart=" + startPage);
         System.out.println("searchYourLikeUrl get:" + get);
         HttpResponse response = TestConfig.defaultHttpClient.execute(get);
         String result = EntityUtils.toString(response.getEntity());

@@ -6,7 +6,7 @@ import lombok.Data;
 public class KeyWordSearchCase {
 //    private int id;
     private String keyword;
-    private int pageNum;
+    private int pageStart;
     private int pageSize;
     private String expect;
 }
