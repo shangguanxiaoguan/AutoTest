@@ -127,6 +127,8 @@
 
     <listeners>
         <listener class-name="com.sangame.hjm.config.ExtentTestNGIReporterListener"/>
+        <listener class-name="com.sangame.hjm.config.RetryListener"/>
+        <listener class-name="com.sangame.hjm.config.TestngListener"/>
     </listeners>
 
 

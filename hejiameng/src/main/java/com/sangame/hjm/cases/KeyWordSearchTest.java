@@ -2,6 +2,7 @@ package com.sangame.hjm.cases;
 
 import com.google.gson.Gson;
 import com.sangame.hjm.config.TestConfig;
+import com.sangame.hjm.config.TestNGRetry;
 import com.sangame.hjm.model.InterfaceName;
 import com.sangame.hjm.model.JmProject;
 import com.sangame.hjm.model.KeyWordSearchCase;
@@ -35,7 +36,7 @@ public class KeyWordSearchTest {
         TestConfig.keyWordSearchUrl = ConfigFile.getUrl(InterfaceName.KEYWORDSEARCH);
         TestConfig.defaultHttpClient = new DefaultHttpClient();
     }
-    @Test(description = "关键字搜索接口测试")
+    @Test(retryAnalyzer = TestNGRetry.class,description = "关键字搜索接口测试")
     public void keyWordSearch() throws IOException {
         SqlSession sqlSession = DatebaseUtil.getSqlSession();
         KeyWordSearchCase keyWordSearchCase = sqlSession.selectOne("keyWordSearchCase",1);

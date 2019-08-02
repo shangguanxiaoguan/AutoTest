@@ -3,6 +3,7 @@ package com.sangame.hjm.cases;
 
 import com.google.gson.Gson;
 import com.sangame.hjm.config.TestConfig;
+import com.sangame.hjm.config.TestNGRetry;
 import com.sangame.hjm.model.InterfaceName;
 import com.sangame.hjm.model.JmNeed;
 import com.sangame.hjm.model.ProjectCustomCase;
