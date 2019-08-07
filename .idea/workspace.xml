@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3890c92-0e19-47f6-93a2-114a20ef0d8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/base/BaseApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/manager/LoginByExcel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/utils/ReadExcel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/hejiameng.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/hejiameng.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/manager/LoginByExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/manager/LoginByExcel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Chapter/target/" />
     <ignored path="$PROJECT_DIR$/Chapter5/target/" />
@@ -58,19 +53,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="34" />
-          <entry key="java" value="39693" />
+          <entry key="java" value="39714" />
           <entry key="json" value="271" />
           <entry key="properties" value="1167" />
-          <entry key="txt" value="271" />
+          <entry key="txt" value="287" />
           <entry key="xml" value="6490" />
           <entry key="yml" value="250" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="39693" />
+          <entry key="JAVA" value="39714" />
           <entry key="JSON" value="271" />
-          <entry key="PLAIN_TEXT" value="305" />
+          <entry key="PLAIN_TEXT" value="321" />
           <entry key="Properties" value="1167" />
           <entry key="SQL" value="132" />
           <entry key="XML" value="6358" />
@@ -141,10 +136,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/manager/LoginByExcel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="412">
+              <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2090#2091#0" expanded="true" />
+                <element signature="e#2130#2131#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -396,6 +393,16 @@
               <item name="hejiameng" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hjm" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="hejiameng" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -430,7 +437,7 @@
     <property name="SearchEverywhereHistoryKey" value="设置静态文件&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565176048615" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565176481296" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="F:/hejiameng/server" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -574,7 +581,7 @@
       <workItem from="1563763563823" duration="33841000" />
       <workItem from="1564363099027" duration="19547000" />
       <workItem from="1565089700947" duration="865000" />
-      <workItem from="1565165411282" duration="6308000" />
+      <workItem from="1565165411282" duration="6741000" />
     </task>
     <task id="LOCAL-00001" summary="TestNG的基本注解">
       <created>1558937379964</created>
@@ -765,7 +772,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564739376164</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="使用Excel传递参数">
+      <created>1565176122155</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1565176122155</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -801,7 +815,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="517038000" />
+    <option name="totallyTimeSpent" value="517471000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -859,7 +873,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TestNG的基本注解" />
     <MESSAGE value="TestNG的套件测试" />
     <MESSAGE value="TestNG的组测试；类分组测试；异常测试；依赖测试" />
     <MESSAGE value="TestNG的参数化测试、注解方式多线程测试" />
@@ -884,7 +897,8 @@
     <MESSAGE value="增加使用HttpURLConnection发送get请求的工具类" />
     <MESSAGE value="Java基础题" />
     <MESSAGE value="TestNG的失败重试机制" />
-    <option name="LAST_COMMIT_MESSAGE" value="TestNG的失败重试机制" />
+    <MESSAGE value="使用Excel传递参数" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用Excel传递参数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1269,10 +1283,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hejiameng/src/main/java/com/sangame/hjm/manager/LoginByExcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="412">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2090#2091#0" expanded="true" />
+            <element signature="e#2130#2131#0" expanded="true" />
           </folding>
         </state>
       </provider>
