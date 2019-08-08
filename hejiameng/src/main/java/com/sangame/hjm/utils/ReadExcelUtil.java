@@ -15,7 +15,7 @@ import java.io.IOException;
  */
 
 
-public class ReadExcel {
+public class ReadExcelUtil {
     //遍历Excel，sheet参数
     public static Object[][] readExData(String filePath,int sheetId) throws IOException {
         File file = new File(filePath);
