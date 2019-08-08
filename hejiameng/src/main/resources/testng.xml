@@ -2,6 +2,13 @@
 <suite name="合加盟测试套件">
     <test name="合加盟测试用例">
         <classes>
+            <class name="com.sangame.hjm.manager.LoginByExcel">
+                <methods>
+                    <include name="post"/>
+                    <include name="login"/>
+                </methods>
+            </class>
+
             <class name="com.sangame.hjm.cases.LoginTest">
                 <methods>
                     <include name="beforeTest"/>
