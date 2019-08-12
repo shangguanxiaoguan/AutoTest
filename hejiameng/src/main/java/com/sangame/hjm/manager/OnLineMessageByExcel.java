@@ -3,37 +3,46 @@ package com.sangame.hjm.manager;
 import com.google.gson.Gson;
 import com.sangame.hjm.base.BaseApi;
 import com.sangame.hjm.config.TestConfig;
-import com.sangame.hjm.model.LoginOrRegisterCase;
-import com.sangame.hjm.model.LoginOrRegisterResult;
-import com.sangame.hjm.utils.DatebaseUtil;
+import com.sangame.hjm.model.InterfaceName;
+import com.sangame.hjm.model.OnLineMessageResult;
+import com.sangame.hjm.utils.ConfigFile;
 import com.sangame.hjm.utils.HttpMethodPostUtil;
 import com.sangame.hjm.utils.ReadExcelUtil;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.util.EntityUtils;
-import org.apache.ibatis.session.SqlSession;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-public class LoginByExcel extends BaseApi {
+public class OnLineMessageByExcel extends BaseApi {
+
+    @BeforeTest
+    public void beforeTest(){
+        TestConfig.onLineMessageUrl = ConfigFile.getUrl(InterfaceName.ONLINEMESSAGE);
+        TestConfig.defaultHttpClient = new DefaultHttpClient();
+    }
+
     @DataProvider(name = "post")
     public Object[][] post() throws IOException {
         //Excel表格中的sheet页来填写数字参数，第一页下标为0
         System.out.println("========哈哈哈哈");
-        Object[][] objects = ReadExcelUtil.readExData(testCaseExcel,1);
-        System.out.println(objects.toString());
-          return ReadExcelUtil.readExData(testCaseExcel,1);
-        //return null;
+//        Object[][] objects = ReadExcelUtil.readExData(testCaseExcel,1);
+//        System.out.println(objects.toString());
+//          return ReadExcelUtil.readExData(testCaseExcel,1);
+        List<Map<String,String>> data = ReadExcelUtil.getData(testCaseExcel);
+        System.out.println("从Excel中获取的数据：" + data.toString());
+
+        return null;
 }
 
     @Test(dataProvider = "post")
     //此处传递的参数必须和Excel表中的顺序一致，不然会报错
-    public void login(String mobile, String authCode, String expect) throws Exception {
+    public void onLineMessage(String cngoldId, String commentId,String content) throws Exception {
         System.out.println("黄金矿工的科技感的空间发");
         //使用构造函数将传入的用户名密码初始化成登录请求参数
 //        LoginOrRegisterCase loginParameters = new LoginOrRegisterCase(account,loginPwd,partnerCode);
@@ -59,18 +68,19 @@ public class LoginByExcel extends BaseApi {
 
         //发送请求，获取接口返回的结果
         Map<String,Object> map = new HashMap<>();
-        map.put("mobile",mobile);
-        map.put("authCode",authCode);
-        System.out.println("map" + map.toString());
-        String result = HttpMethodPostUtil.httpMethodPost(TestConfig.loginOrRegisterUrl,map);
-        LoginOrRegisterResult loginOrRegisterResult = new Gson().fromJson(result,LoginOrRegisterResult.class);
-        System.out.println("用户注册、登录接口返回的结果：" + loginOrRegisterResult.toString());
+        map.put("cngoldId",cngoldId);
+        map.put("commentId",commentId);
+        map.put("content",content);
+        System.out.println("在线留言测试数据：" + map.toString());
+        String result = HttpMethodPostUtil.httpMethodPost(TestConfig.onLineMessageUrl,map);
+        OnLineMessageResult onLineMessageResult = new Gson().fromJson(result,OnLineMessageResult.class);
+        System.out.println("在线留言接口返回的结果：" + onLineMessageResult.toString());
 
         //验证结果
 //        SqlSession expectedSession = DatebaseUtil.getSqlSession();
 //        JmUser expectedResult = expectedSession.selectOne("getUserInfo",loginOrRegisterCase.getMobile());
 //        System.out.println("数据库获取结果：" + expectedResult.toString());
-        Assert.assertEquals(loginOrRegisterResult.getCode(),0);
+        Assert.assertEquals(onLineMessageResult.getCode(),0);
 
     }
 //    @BeforeClass
