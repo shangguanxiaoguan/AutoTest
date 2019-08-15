@@ -1,8 +1,8 @@
-public class ExtendsClass {
+public class A {
     static {
         System.out.println("1");
     }
-    public void  A(){
+    public A(){
         System.out.println("2");
     }
 }

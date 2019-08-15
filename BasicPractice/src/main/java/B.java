@@ -1,14 +1,14 @@
-public class B  extends ExtendsClass {
+public class B  extends A {
     static {
         System.out.println("a");
     }
-    public void b(){
+    public B(){
         System.out.println("b");
     }
 
 
     public static void main(String[] args){
-        ExtendsClass a = new B();
+        A a = new B();
         a = new B();
 
     }

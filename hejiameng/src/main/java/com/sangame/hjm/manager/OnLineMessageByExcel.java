@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -28,7 +29,7 @@ public class OnLineMessageByExcel extends BaseApi {
     }
 
     @DataProvider(name = "post")
-    public Object[][] post() throws IOException {
+    public Iterator<Object[]> post() throws IOException {
         //Excel表格中的sheet页来填写数字参数，第一页下标为0
         System.out.println("========哈哈哈哈");
 //        Object[][] objects = ReadExcelUtil.readExData(testCaseExcel,1);
@@ -36,6 +37,7 @@ public class OnLineMessageByExcel extends BaseApi {
 //          return ReadExcelUtil.readExData(testCaseExcel,1);
         List<Map<String,String>> data = ReadExcelUtil.getData(testCaseExcel);
         System.out.println("从Excel中获取的数据：" + data.toString());
+//        data.add()
 
         return null;
 }
